@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.nexora-acadmy.com/sitemap.xml
+Sitemap: https://www.nile2orinoco.com/sitemap.xml
