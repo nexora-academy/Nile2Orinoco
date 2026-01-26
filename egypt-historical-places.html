@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Nile2Orinoco - اكتشف عظمة مصر</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <link rel="Icon" href="img/logo-removed-one.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* إعدادات الخلفية للهيرو */
+        .hero-header {
+            background: linear-gradient(rgba(20, 20, 31, 0.7), rgba(20, 20, 31, 0.7)), url('img/egypt-bg.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: -100px; /* لضمان تداخلها مع الناف بار الشفاف إذا لزم الأمر */
+            padding-top: 150px;
+        }
+
+        /* الحفاظ على خاصية Sticky Navbar من الكود القديم */
+        .sticky-top.nav-bar {
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-secondary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <div class="container-fluid bg-primary px-5 d-none d-lg-block">
+        <div class="row gx-0 align-items-center">
+            <div class="col-lg-5 text-center text-lg-start mb-lg-0">
+                <div class="d-flex">
+                    <a href="#" class="text-muted me-4"><i class="fas fa-envelope text-secondary me-2"></i>info@nile2orinoco.com</a>
+                    <a href="#" class="text-muted me-0"><i class="fas fa-phone-alt text-secondary me-2"></i>+01234567890</a>
+                </div>
+            </div>
+            <div class="col-lg-3 row-cols-1 text-center mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal text-secondary"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal text-secondary"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal text-secondary"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal text-secondary"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle" href=""><i class="fab fa-youtube fw-normal text-secondary"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a href="contact.html" class="text-muted me-2"> Help</a><small> / </small>
+                    <a href="contact.html" class="text-muted mx-2"> Support</a><small> / </small>
+                    <a href="contact.html" class="text-muted ms-2"> Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid nav-bar sticky-top px-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+                <h1 class="display-5 m-0" style="display: flex; align-items: center;">
+                    <img src="img/logo-removed-one.png" class="img-fluid" alt="Logo" style="max-height: 50px; margin-left: 10px;">
+                    <span style="color: #e63946;">Nile</span><span style="color: #1d3557;">2Orinoco</span>
+                </h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="egypt.html" class="nav-item nav-link">Discover Egypt</a>
+                    <a href="egypt-historical-places.html" class="nav-item nav-link active">Historical Places</a>
+                    <a href="egypt-flight-booking.html" class="nav-item nav-link">Flight Booking</a>
+                    <a href="egypt-safety-guidelines.html" class="nav-item nav-link">Safety Guidelines</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="egypt-gallery.html" class="dropdown-item">Gallery</a>
+                            <a href="egypt-articles.html" class="dropdown-item">Articles</a>
+                        </div>
+                    </div>
+                    <a href="index.html" class="nav-item nav-link">Back To Home Page</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="fa fa-language me-2"></i>Language
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end m-0">
+                            <a href="javascript:void(0)" onclick="setLanguage('ar')" class="dropdown-item">العربية</a>
+                            <a href="javascript:void(0)" onclick="setLanguage('en')" class="dropdown-item">English</a>
+                            <a href="javascript:void(0)" onclick="setLanguage('es')" class="dropdown-item">Español</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+        <div class="container py-5">
+            <div class="row justify-content-center py-5">
+                <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">Explore the Wonders of Egypt</h1>
+                    <p class="fs-4 text-white mb-4 animated slideInDown">Discover 7,000 years of history and the breathtaking beauty of the Nile.</p>
+                    <div class="position-relative w-75 mx-auto animated slideInDown">
+                        <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Search historical sites...">
+                        <button type="button" class="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2" style="margin-top: 7px;">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100 rounded" src="img/about5-2.png" alt="Ancient Egypt History" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h6 class="section-title bg-white text-start text-primary pe-3">Historical Overview</h6>
+                    <h1 class="mb-4">Witness the <span class="text-primary">7,000 Years</span> of Legacy</h1>
+                    <p class="mb-4">Egypt's history is the bedrock of human civilization. From the architectural precision of the Old Kingdom to the artistic splendor of the New Kingdom, every stone tells a story of gods, kings, and eternal life.</p>
+                    <p class="mb-4">Explore our curated guide to the most significant archaeological sites, where you can walk through the same halls as Ramses the Great and Tutankhamun.</p>
+                    
+                    <div class="row gy-2 gx-4 mb-4">
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-university text-primary me-2"></i>Expert Egyptologists</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-map-marker-alt text-primary me-2"></i>Top Historical Sites</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-id-card text-primary me-2"></i>Private Museum Tours</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-clock text-primary me-2"></i>Fast-Track Entry</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-camera text-primary me-2"></i>Exclusive Photo Ops</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-headset text-primary me-2"></i>Multi-lingual Guides</p>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary py-3 px-5 mt-2" href="egypt-gallery.html">View Blog Gallery</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid service overflow-hidden py-5" style="background-color: #f8f9fa; border-top: 1px solid #eee;">
+    <div class="container">
+        <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="sub-style">
+                <h5 class="sub-title text-primary px-3">Ancient Treasures</h5>
+            </div>
+            <h1 class="display-5 mb-4">Top Historical Landmarks</h1>
+            <p class="mb-0">Explore the most iconic historical sites in Egypt, where every stone tells a story from thousands of years ago.</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="service-inner">
+                        <div class="service-img">
+                            <img src="img/pyramids.jpg" class="img-fluid w-100 rounded" alt="Giza Pyramids">
+                        </div>
+                        <div class="service-title">
+                            <div class="service-title-name">
+                                <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                                    <a href="the-giza-pyramids.html" class="h4 text-white mb-0">The Giza Pyramids</a>
+                                </div>
+                                <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="the-giza-pyramids.html">Explore Now</a>
+                            </div>
+                            <div class="service-content pb-4">
+                                <a href="the-giza-pyramids.html"><h4 class="text-white mb-4 py-3">The Giza Pyramids</h4></a>
+                                <div class="px-4">
+                                    <p class="mb-4">The last of the ancient Seven Wonders of the World, standing as a testament to engineering greatness.</p>
+                                    <a class="btn btn-primary border-secondary rounded-pill py-3 px-5" href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="service-item">
+                    <div class="service-inner">
+                        <div class="service-img">
+                            <img src="img/gem.jpg" class="img-fluid w-100 rounded" alt="Grand Egyptian Museum">
+                        </div>
+                        <div class="service-title">
+                            <div class="service-title-name">
+                                <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                                    <a href="#" class="h4 text-white mb-0">Grand Egyptian Museum</a>
+                                </div>
+                                <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="grand-egyptian-museum.html">Explore Now</a>
+                            </div>
+                            <div class="service-content pb-4">
+                                <a href="grand-egyptian-museum.html"><h4 class="text-white mb-4 py-3">Grand Egyptian Museum</h4></a>
+                                <div class="px-4">
+                                    <p class="mb-4">The largest archaeological museum in the world, home to the complete King Tutankhamun collection.</p>
+                                    <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="grand-egyptian-museum.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item">
+                    <div class="service-inner">
+                        <div class="service-img">
+                            <img src="img/valley-kings.jpg" class="img-fluid w-100 rounded" alt="Valley of the Kings">
+                        </div>
+                        <div class="service-title">
+                            <div class="service-title-name">
+                                <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                                    <a href="#" class="h4 text-white mb-0">Valley of the Kings</a>
+                                </div>
+                                <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="valley-of-the-kings.html">Explore Now</a>
+                            </div>
+                            <div class="service-content pb-4">
+                                <a href="valley-of-the-kings.html"><h4 class="text-white mb-4 py-3">Valley of the Kings</h4></a>
+                                <div class="px-4">
+                                    <p class="mb-4">Discover the royal burial ground of the New Kingdom pharaohs in the heart of the Theban hills.</p>
+                                    <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="valley-of-the-kings.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="service-inner">
+                        <div class="service-img">
+                            <img src="img/abu-simbel.jpg" class="img-fluid w-100 rounded" alt="Abu Simbel">
+                        </div>
+                        <div class="service-title">
+                            <div class="service-title-name">
+                                <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                                    <a href="abu-simbel-temple.html" class="h4 text-white mb-0">Abu Simbel Temple</a>
+                                </div>
+                                <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="abu-simbel-temple.html">Explore Now</a>
+                            </div>
+                            <div class="service-content pb-4">
+                                <a href="abu-simbel-temple.html"><h4 class="text-white mb-4 py-3">Abu Simbel Temple</h4></a>
+                                <div class="px-4">
+                                    <p class="mb-4">The majestic temple of Ramses II, carved into the mountainside and famous for its solar alignment.</p>
+                                    <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="abu-simbel-temple.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="service-item">
+                    <div class="service-inner">
+                        <div class="service-img">
+                            <img src="img/st-catherine.jpg" class="img-fluid w-100 rounded" alt="St. Catherine">
+                        </div>
+                        <div class="service-title">
+                            <div class="service-title-name">
+                                <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                                    <a href="st-catherine-monastery.html" class="h4 text-white mb-0">St. Catherine Monastery</a>
+                                </div>
+                                <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="st-catherine-monastery.html">Explore Now</a>
+                            </div>
+                            <div class="service-content pb-4">
+                                <a href="st-catherine-monastery.html"><h4 class="text-white mb-4 py-3">St. Catherine Monastery</h4></a>
+                                <div class="px-4">
+                                    <p class="mb-4">The world’s oldest continuously inhabited Christian monastery, located at the foot of Mount Sinai.</p>
+                                    <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="st-catherine-monastery.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item">
+                    <div class="service-inner">
+                        <div class="service-img">
+                            <img src="img/complex.jpg" class="img-fluid w-100 rounded" alt="Religious Complex">
+                        </div>
+                        <div class="service-title">
+                            <div class="service-title-name">
+                                <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                                    <a href="religious-complex.html" class="h4 text-white mb-0">Religious Complex</a>
+                                </div>
+                                <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="religious-complex.html">Explore Now</a>
+                            </div>
+                            <div class="service-content pb-4">
+                                <a href="religious-complex.html"><h4 class="text-white mb-4 py-3">Religious Complex</h4></a>
+                                <div class="px-4">
+                                    <p class="mb-4">Old Cairo's holy ground, containing the Hanging Church, Amr ibn al-Aas Mosque, and Ben Ezra Synagogue.</p>
+                                    <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="religious-complex.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="service-inner">
+                        <div class="service-img">
+                            <img src="img/nubia.jpg" class="img-fluid w-100 rounded" alt="Nubian Village">
+                        </div>
+                        <div class="service-title">
+                            <div class="service-title-name">
+                                <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                                    <a href="nubian-heritage.html" class="h4 text-white mb-0">Nubian Heritage</a>
+                                </div>
+                                <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="nubian-heritage.html">Explore Now</a>
+                            </div>
+                            <div class="service-content pb-4">
+                                <a href="nubian-heritage.html"><h4 class="text-white mb-4 py-3">Nubian Heritage</h4></a>
+                                <div class="px-4">
+                                    <p class="mb-4">Experience the colorful Nubian houses and the rich traditions of the ancient kingdom on the Nile.</p>
+                                    <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="nubian-heritage.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="service-item">
+                    <div class="service-inner">
+                        <div class="service-img">
+                            <img src="img/khan.jpg" class="img-fluid w-100 rounded" alt="Khan El Khalili">
+                        </div>
+                        <div class="service-title">
+                            <div class="service-title-name">
+                                <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                                    <a href="khan-el-khalili.html" class="h4 text-white mb-0">Khan El Khalili</a>
+                                </div>
+                                <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="khan-el-khalili.html">Explore Now</a>
+                            </div>
+                            <div class="service-content pb-4">
+                                <a href="khan-el-khalili.html"><h4 class="text-white mb-4 py-3">Khan El Khalili</h4></a>
+                                <div class="px-4">
+                                    <p class="mb-4">Cairo's legendary bazaar, where the scents of spices and the shine of copper create a magical atmosphere.</p>
+                                    <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="khan-el-khalili.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item">
+                    <div class="service-inner">
+                        <div class="service-img">
+                            <img src="img/alex-library.jpg" class="img-fluid w-100 rounded" alt="Alexandria Library">
+                        </div>
+                        <div class="service-title">
+                            <div class="service-title-name">
+                                <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                                    <a href="library-of-alexandria.html" class="h4 text-white mb-0">Library of Alexandria</a>
+                                </div>
+                                <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="library-of-alexandria.html">Explore Now</a>
+                            </div>
+                            <div class="service-content pb-4">
+                                <a href="library-of-alexandria.html"><h4 class="text-white mb-4 py-3">Library of Alexandria</h4></a>
+                                <div class="px-4">
+                                    <p class="mb-4">A modern architectural marvel that commemorates the legendary Great Library of the ancient world.</p>
+                                    <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="library-of-alexandria.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="service-inner">
+                        <div class="service-img">
+                            <img src="img/geology.jpg" class="img-fluid w-100 rounded" alt="Geological Museum">
+                        </div>
+                        <div class="service-title">
+                            <div class="service-title-name">
+                                <div class="bg-primary text-center rounded p-3 mx-5 mb-4">
+                                    <a href="geological-museum.html" class="h4 text-white mb-0">Geological Museum</a>
+                                </div>
+                                <a class="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="geological-museum.html">Explore Now</a>
+                            </div>
+                            <div class="service-content pb-4">
+                                <a href="geological-museum.html"><h4 class="text-white mb-4 py-3">Geological Museum</h4></a>
+                                <div class="px-4">
+                                    <p class="mb-4">Explore Egypt’s natural history, featuring rare fossils and the world-renowned Fayum meteorites.</p>
+                                    <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5" href="geological-museum.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid py-5">
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-lg-6" style="min-height: 500px;">
+                <div class="position-relative h-100 wow fadeInLeft" data-wow-delay="0.1s">
+                    <img class="position-absolute w-100 h-100 rounded shadow" src="img/gem-main.jpg" style="object-fit: cover;" alt="Grand Egyptian Museum">
+                </div>
+            </div>
+            
+            <div class="col-lg-6 pt-5 pb-lg-5 wow fadeInRight" data-wow-delay="0.3s">
+                <div class="about-text bg-white p-4 p-lg-5 my-lg-5 shadow-sm border-start border-5 border-primary" style="border-radius: 0 20px 20px 0;">
+                    <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;" data-i18n="gem_subtitle">World's Largest Museum</h6>
+                    <h1 class="mb-3" data-i18n="gem_title">The Grand Egyptian Museum</h1>
+                    <p data-i18n="gem_desc">Discover the home of King Tutankhamun's entire collection and thousands of rare artifacts. The GEM is not just a museum; it's a global cultural hub located just steps away from the Great Pyramids of Giza, showcasing the full glory of ancient Egypt.</p>
+                    
+                    <div class="row mb-4">
+                        <div class="col-6">
+                            <img class="img-fluid rounded shadow-sm" src="img/gem-statue.jpg" alt="Ramses II Statue">
+                            <small class="text-muted d-block mt-2 text-center" data-i18n="gem_cap_1">Colossus of Ramses II</small>
+                        </div>
+                        <div class="col-6">
+                            <img class="img-fluid rounded shadow-sm" src="img/gem-stairs.jpg" alt="Grand Staircase">
+                            <small class="text-muted d-block mt-2 text-center" data-i18n="gem_cap_2">The Grand Staircase</small>
+                        </div>
+                    </div>
+                    
+                    <a href="https://visit-gem.com/ar/AdmissionTkt" target="_blank" class="btn btn-primary rounded-pill py-3 px-5 mt-1 shadow" data-i18n="btn_book_ticket">Book Your Ticket Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid flight-booking overflow-hidden py-5" style="background-color: #f8f9fa; border-top: 1px solid #eee;">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-7 wow fadeInLeft" data-wow-delay="0.1s">
+                <div class="sub-style">
+                    <h5 class="sub-title text-primary pe-3" data-i18n="flight_subtitle">Ready to Fly?</h5>
+                </div>
+                <h1 class="display-4 text-dark mb-4" data-i18n="flight_title">Book Your Flight to <span class="text-primary">Egypt</span></h1>
+                <p class="text-muted mb-5 fs-5" data-i18n="flight_desc">Embark on a journey to the land of Pharaohs. We partner with world-class airlines to ensure your 2026 trip to the Nile is comfortable and unforgettable.</p>
+                
+                <div class="d-flex align-items-center">
+                    <a href="egypt-flight-booking.html" target="_blank" class="btn btn-primary rounded-pill py-3 px-5 me-4 shadow wow pulse" data-wow-iteration="infinite" data-wow-duration="2s">
+                        <i class="fa fa-plane-departure me-2"></i> Book Your Ticket
+                    </a>
+                    <div class="d-flex flex-column text-dark border-start ps-4 border-2">
+                        <span class="h4 mb-0 fw-bold">Best Rates</span>
+                        <small class="text-muted">For 2026 Expeditions</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5 wow fadeInRight" data-wow-delay="0.3s">
+                <div class="bg-white p-5 rounded-4 shadow-sm border">
+                    <h6 class="text-center text-uppercase text-muted mb-4" style="letter-spacing: 2px;">Our Trusted Partners</h6>
+                    <div class="row g-4 align-items-center text-center">
+                        <div class="col-6">
+                            <img src="img/airline-1.png" class="img-fluid airline-logo" alt="EgyptAir" style="max-height: 40px; filter: grayscale(1); opacity: 0.7;">
+                        </div>
+                        <div class="col-6">
+                            <img src="img/airline-2.png" class="img-fluid airline-logo" alt="Emirates" style="max-height: 40px; filter: grayscale(1); opacity: 0.7;">
+                        </div>
+                        <div class="col-6">
+                            <img src="img/airline-3.png" class="img-fluid airline-logo" alt="Qatar Airways" style="max-height: 40px; filter: grayscale(1); opacity: 0.7;">
+                        </div>
+                        <div class="col-6">
+                            <img src="img/airline-4.png" class="img-fluid airline-logo" alt="Turkish Airlines" style="max-height: 40px; filter: grayscale(1); opacity: 0.7;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    /* تأثير جميل عند تمرير الماوس على اللوجوهات */
+    .airline-logo:hover {
+        filter: grayscale(0) !important;
+        opacity: 1 !important;
+        transform: scale(1.05);
+        transition: all 0.3s ease;
+    }
+    .flight-booking {
+        position: relative;
+        z-index: 1;
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Contact End -->
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Contact Info</h4>
+                            <a href=""><i class="fa fa-map-marker-alt me-2"></i> Ras Sidr, South Sinai, Egypt</a>
+                            <a href=""><i class="fas fa-envelope me-2"></i> info@nile2orinoco.com</a>
+                            <a href=""><i class="fas fa-phone me-2"></i> +012 345 67890</a>
+                            <a href="" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-share fa-2x text-secondary me-2"></i>
+                                <a class="btn mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Opening Time</h4>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Monday - Thursday:</h6>
+                                <p class="text-white mb-0">09.00 am to 07.00 pm</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Saturday:</h6>
+                                <p class="text-white mb-0">10.00 am to 05.00 pm</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Vacation:</h6>
+                                <p class="text-white mb-0">All Friday is our vacation</p>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="col-md-6 col-lg-6 col-xl-3">
+    <div class="footer-item d-flex flex-column">
+        <h4 class="text-secondary mb-4" data-i18n="footer_explore_title">Explore Destinations</h4>
+        
+        <a href="egypt.html" class="mb-2">
+            <i class="fas fa-angle-right me-2"></i>
+            <span data-i18n="footer_explore_egypt">Explore Egypt</span>
+        </a>
+        
+        <a href="venezuela.html" class="mb-2">
+            <i class="fas fa-angle-right me-2"></i>
+            <span data-i18n="footer_explore_ven">Explore Venezuela</span>
+        </a>
+    </div>
+</div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="text-secondary mb-4">News Letters</h4>
+                            <p class="text-white mb-3">Subscribe to get the latest news about Egypt and Venezuela tours.</p>
+                            <div class="position-relative mx-auto rounded-pill">
+                                <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                                <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-white"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Nile2Orinoco</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-white">
+                        <!--/*** The author’s attribution link must remain intact in the template. ***/-->
+                        <!--/*** If you wish to remove this credit link, please purchase the Pro Version . ***/-->
+                         <a class="border-bottom text-white" href="contact.html">info@nile2orinoco.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  
+
+<script>
+const counters = document.querySelectorAll('.counter');
+const speed = 200; // كلما زاد الرقم قلّت السرعة
+
+const startCounters = () => {
+    counters.forEach(counter => {
+        const updateCount = () => {
+            const target = +counter.getAttribute('data-target');
+            const count = +counter.innerText.replace(',', ''); // إزالة الفواصل إن وجدت للعمليات الحسابية
+
+            // حساب سرعة الزيادة
+            const inc = target / speed;
+
+            if (count < target) {
+                // إضافة الرقم وتنسيقه ليحتوي على فواصل آلاف (11,485)
+                const nextCount = Math.ceil(count + inc);
+                counter.innerText = nextCount.toLocaleString();
+                setTimeout(updateCount, 1);
+            } else {
+                counter.innerText = target.toLocaleString();
+            }
+        };
+        updateCount();
+    });
+};
+
+// تشغيل العدّاد عند ظهور القسم على الشاشة فقط (Intersection Observer)
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            startCounters();
+            observer.unobserve(entry.target); // تشغيلها مرة واحدة فقط
+        }
+    });
+}, { threshold: 0.5 });
+
+counters.forEach(counter => observer.observe(counter));
+</script>
+
+
+
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
