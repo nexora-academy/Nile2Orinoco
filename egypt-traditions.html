@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Nile2Orinoco - عادات وتقاليد المصريين</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <link rel="Icon" href="img/logo-removed-one.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* إعدادات الخلفية للهيرو */
+        .hero-header {
+            background: linear-gradient(rgba(20, 20, 31, 0.7), rgba(20, 20, 31, 0.7)), url('img/egypt-bg.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: -100px; /* لضمان تداخلها مع الناف بار الشفاف إذا لزم الأمر */
+            padding-top: 150px;
+        }
+
+        /* الحفاظ على خاصية Sticky Navbar من الكود القديم */
+        .sticky-top.nav-bar {
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-secondary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <div class="container-fluid bg-primary px-5 d-none d-lg-block">
+        <div class="row gx-0 align-items-center">
+            <div class="col-lg-5 text-center text-lg-start mb-lg-0">
+                <div class="d-flex">
+                    <a href="#" class="text-muted me-4"><i class="fas fa-envelope text-secondary me-2"></i>info@nile2orinoco.com</a>
+                    <a href="#" class="text-muted me-0"><i class="fas fa-phone-alt text-secondary me-2"></i>+01234567890</a>
+                </div>
+            </div>
+            <div class="col-lg-3 row-cols-1 text-center mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal text-secondary"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal text-secondary"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal text-secondary"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal text-secondary"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle" href=""><i class="fab fa-youtube fw-normal text-secondary"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a href="contact.html" class="text-muted me-2"> Help</a><small> / </small>
+                    <a href="contact.html" class="text-muted mx-2"> Support</a><small> / </small>
+                    <a href="contact.html" class="text-muted ms-2"> Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid nav-bar sticky-top px-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+                <h1 class="display-5 m-0" style="display: flex; align-items: center;">
+                    <img src="img/logo-removed-one.png" class="img-fluid" alt="Logo" style="max-height: 50px; margin-left: 10px;">
+                    <span style="color: #e63946;">Nile</span><span style="color: #1d3557;">2Orinoco</span>
+                </h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="egypt.html" class="nav-item nav-link">Discover Egypt</a>
+                    <a href="egypt-historical-places.html" class="nav-item nav-link">Historical Places</a>
+                                        <a href="egypt-traditions.html" class="nav-item nav-link active">traditions</a>
+                    <a href="egypt-flight-booking.html" class="nav-item nav-link">Flight Booking</a>
+                    <a href="egypt-safety-guidelines.html" class="nav-item nav-link">Safety Guidelines</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="egypt-gallery.html" class="dropdown-item">Gallery</a>
+                            <a href="egypt-articles.html" class="dropdown-item">Articles</a>
+                        </div>
+                    </div>
+                    <a href="index.html" class="nav-item nav-link">Back To Home Page</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="fa fa-language me-2"></i>Language
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end m-0">
+                            <a href="javascript:void(0)" onclick="setLanguage('ar')" class="dropdown-item">العربية</a>
+                            <a href="javascript:void(0)" onclick="setLanguage('en')" class="dropdown-item">English</a>
+                            <a href="javascript:void(0)" onclick="setLanguage('es')" class="dropdown-item">Español</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid bg-primary py-5 mb-5 trad-hero-header">
+    <div class="container py-5">
+        <div class="row justify-content-center py-5">
+            <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                <h1 class="display-3 text-white mb-3 animated slideInDown">The Soul of <span style="color: #D4A373;">Egyptian Heritage</span></h1>
+                
+                <p class="fs-4 text-white mb-4 animated slideInDown">
+                    Experience the warmth of Egyptian hospitality, authentic flavors, and centuries-old folk traditions.
+                </p>
+
+                <div class="position-relative w-75 mx-auto animated slideInDown">
+                    <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Search for food, crafts, or folklore...">
+                    <button type="button" class="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2" style="margin-top: 7px; background-color: #D4A373; border-color: #D4A373;">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    /* Unique styling for the Traditions page to distinguish it from the History page */
+    .trad-hero-header {
+        background: linear-gradient(rgba(20, 24, 62, 0.7), rgba(20, 24, 62, 0.7)), url('img/egyptian-streets-bg.jpg'); /* Suggestion: Use a photo of Old Cairo or a traditional market */
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* Custom Golden accent color to represent traditional crafts and lanterns */
+    .trad-hero-header span {
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+</style>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid py-5 trad-overview-section">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                <div class="position-relative h-100">
+                    <img class="img-fluid position-absolute w-100 h-100 rounded shadow" src="img/egypt-lifestyle.jpg" alt="Egyptian Lifestyle" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                <h6 class="section-title bg-white text-start text-primary pe-3">Cultural Soul</h6>
+                <h1 class="mb-4">Experience the <span class="text-primary">Authentic</span> Egyptian Spirit</h1>
+                <p class="mb-4">Beyond the monuments lies a vibrant culture built on warmth and hospitality. Egyptian traditions are a beautiful blend of ancient customs and modern life, where every gathering is a celebration of family and friendship.</p>
+                <p class="mb-4">From the aromatic spices of local markets to the rhythmic beats of folk music, immerse yourself in the daily rituals that make Egypt truly unique.</p>
+                
+                <div class="row gy-2 gx-4 mb-4">
+                    <div class="col-sm-6">
+                        <p class="mb-0"><i class="fa fa-coffee text-primary me-2"></i>Warm Hospitality</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="mb-0"><i class="fa fa-utensils text-primary me-2"></i>Authentic Cuisine</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="mb-0"><i class="fa fa-palette text-primary me-2"></i>Traditional Crafts</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="mb-0"><i class="fa fa-music text-primary me-2"></i>Folk Music & Dance</p>
+                    </div>
+                    </div>
+                
+                <a class="btn btn-primary py-3 px-5 mt-2" href="traditions-gallery.html">Explore Heritage</a>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    /* لمسة جمالية لتغيير لون الأيقونات لتناسب جو التقاليد الدافئ */
+    .trad-overview-section .text-primary {
+        color: #D4A373 !important; /* لون ذهبي/نحاسي يعبر عن الأصالة */
+    }
+    .trad-overview-section .btn-primary {
+        background-color: #D4A373;
+        border-color: #D4A373;
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+
+<div class="container-fluid contact overflow-hidden py-5">
+    <div class="container pb-5">
+        <div class="traditions-section">
+            <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="sub-style">
+                    <h5 class="sub-title text-primary px-3">Life in Egypt</h5>
+                </div>
+                <h1 class="display-5 mb-4">Discover Our Authentic Traditions</h1>
+                <p class="mb-0">Egyptian culture is a rich tapestry woven with thousands of years of social customs, generous hospitality, and unique daily rituals that define the Egyptian spirit.</p>
+            </div>
+            
+            <div class="row g-4 justify-content-center">
+                
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="office-item p-4 shadow-sm">
+                        <div class="office-img mb-4 position-relative overflow-hidden rounded">
+                            <a href="img/tradition-hospitality.jpg" data-lightbox="trad-gallery" data-title="Generosity (Karam)">
+                                <img src="img/tradition-hospitality.jpg" class="img-fluid w-100" alt="Hospitality">
+                                <div class="egy-overlay"><i class="fa fa-search-plus"></i></div>
+                            </a>
+                        </div>
+                        <div class="office-content d-flex flex-column text-center">
+                            <h4 class="mb-2 text-primary">Generosity (Karam)</h4>
+                            <p class="mb-0">A guest is always welcomed with food, tea, and a warm smile.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="office-item p-4 shadow-sm">
+                        <div class="office-img mb-4 position-relative overflow-hidden rounded">
+                            <a href="img/tradition-fanoos.jpg" data-lightbox="trad-gallery" data-title="Ramadan Vibes">
+                                <img src="img/tradition-fanoos.jpg" class="img-fluid w-100" alt="Ramadan">
+                                <div class="egy-overlay"><i class="fa fa-search-plus"></i></div>
+                            </a>
+                        </div>
+                        <div class="office-content d-flex flex-column text-center">
+                            <h4 class="mb-2 text-primary">Ramadan Vibes</h4>
+                            <p class="mb-0">The "Fanoos" and communal "Iftar" are iconic symbols of the holy month.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="office-item p-4 shadow-sm">
+                        <div class="office-img mb-4 position-relative overflow-hidden rounded">
+                            <a href="img/tradition-tea.jpg" data-lightbox="trad-gallery" data-title="The Tea Ritual">
+                                <img src="img/tradition-tea.jpg" class="img-fluid w-100" alt="Tea">
+                                <div class="egy-overlay"><i class="fa fa-search-plus"></i></div>
+                            </a>
+                        </div>
+                        <div class="office-content d-flex flex-column text-center">
+                            <h4 class="mb-2 text-primary">The Tea Ritual</h4>
+                            <p class="mb-0">Tea is the national drink and the center of every social conversation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="office-item p-4 shadow-sm">
+                        <div class="office-img mb-4 position-relative overflow-hidden rounded">
+                            <a href="img/tradition-tannoura.jpg" data-lightbox="trad-gallery" data-title="Folk Arts">
+                                <img src="img/tradition-tannoura.jpg" class="img-fluid w-100" alt="Arts">
+                                <div class="egy-overlay"><i class="fa fa-search-plus"></i></div>
+                            </a>
+                        </div>
+                        <div class="office-content d-flex flex-column text-center">
+                            <h4 class="mb-2 text-primary">Folk Arts</h4>
+                            <p class="mb-0">From the "Tannoura" dance to "Tabla," Egyptian arts are vibrant.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="office-item p-4 shadow-sm">
+                        <div class="office-img mb-4 position-relative overflow-hidden rounded">
+                            <a href="img/tradition-friday.jpg" data-lightbox="trad-gallery" data-title="Friday Family Gathering">
+                                <img src="img/tradition-friday.jpg" class="img-fluid w-100" alt="Family">
+                                <div class="egy-overlay"><i class="fa fa-search-plus"></i></div>
+                            </a>
+                        </div>
+                        <div class="office-content d-flex flex-column text-center">
+                            <h4 class="mb-2 text-primary">Friday Family</h4>
+                            <p class="mb-0">The sacred family lunch on Fridays is a non-negotiable tradition.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="office-item p-4 shadow-sm">
+                        <div class="office-img mb-4 position-relative overflow-hidden rounded">
+                            <a href="img/tradition-sham.jpg" data-lightbox="trad-gallery" data-title="Sham El-Nessim">
+                                <img src="img/tradition-sham.jpg" class="img-fluid w-100" alt="Spring">
+                                <div class="egy-overlay"><i class="fa fa-search-plus"></i></div>
+                            </a>
+                        </div>
+                        <div class="office-content d-flex flex-column text-center">
+                            <h4 class="mb-2 text-primary">Sham El-Nessim</h4>
+                            <p class="mb-0">A spring festival dating back to Pharaonic times with colored eggs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="office-item p-4 shadow-sm">
+                        <div class="office-img mb-4 position-relative overflow-hidden rounded">
+                            <a href="img/tradition-food.jpg" data-lightbox="trad-gallery" data-title="Street Food Culture">
+                                <img src="img/tradition-food.jpg" class="img-fluid w-100" alt="Food">
+                                <div class="egy-overlay"><i class="fa fa-search-plus"></i></div>
+                            </a>
+                        </div>
+                        <div class="office-content d-flex flex-column text-center">
+                            <h4 class="mb-2 text-primary">Street Food</h4>
+                            <p class="mb-0">Sharing "Koshary" or "Ful" on a street cart brings everyone together.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="office-item p-4 shadow-sm">
+                        <div class="office-img mb-4 position-relative overflow-hidden rounded">
+                            <a href="img/tradition-henna.jpg" data-lightbox="trad-gallery" data-title="Henna Nights">
+                                <img src="img/tradition-henna.jpg" class="img-fluid w-100" alt="Henna">
+                                <div class="egy-overlay"><i class="fa fa-search-plus"></i></div>
+                            </a>
+                        </div>
+                        <div class="office-content d-flex flex-column text-center">
+                            <h4 class="mb-2 text-primary">Henna Nights</h4>
+                            <p class="mb-0">A joyful pre-wedding ritual with traditional music and henna art.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Background Blur when Lightbox is open */
+    .lb-disable-scrolling { overflow: hidden !important; }
+    .lightboxOverlay { 
+        background-color: rgba(0, 0, 0, 0.85) !important; 
+        backdrop-filter: blur(10px); /* The Blur Effect */
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    /* Card Styling */
+    .office-item {
+        background: #ffffff;
+        border-radius: 15px;
+        transition: 0.4s ease;
+        border: 1px solid #eee;
+    }
+    .office-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+        border-color: #d47378;
+    }
+
+    /* Image Hover Overlay */
+    .office-img img {
+        height: 200px;
+        object-fit: cover;
+        transition: 0.6s ease;
+    }
+    .egy-overlay {
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background: rgba(125, 151, 223, 0.5); /* Primary color overlay */
+        display: flex; align-items: center; justify-content: center;
+        opacity: 0; transition: 0.5s;
+        color: white; font-size: 1.5rem;
+    }
+    .office-img:hover .egy-overlay { opacity: 1; }
+    .office-img:hover img { transform: scale(1.1); }
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid flight-booking overflow-hidden py-5" style="background-color: #f8f9fa; border-top: 1px solid #eee;">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-7 wow fadeInLeft" data-wow-delay="0.1s">
+                <div class="sub-style">
+                    <h5 class="sub-title text-primary pe-3" data-i18n="flight_subtitle">Ready to Fly?</h5>
+                </div>
+                <h1 class="display-4 text-dark mb-4" data-i18n="flight_title">Book Your Flight to <span class="text-primary">Egypt</span></h1>
+                <p class="text-muted mb-5 fs-5" data-i18n="flight_desc">Embark on a journey to the land of Pharaohs. We partner with world-class airlines to ensure your 2026 trip to the Nile is comfortable and unforgettable.</p>
+                
+                <div class="d-flex align-items-center">
+                    <a href="egypt-flight-booking.html" target="_blank" class="btn btn-primary rounded-pill py-3 px-5 me-4 shadow wow pulse" data-wow-iteration="infinite" data-wow-duration="2s">
+                        <i class="fa fa-plane-departure me-2"></i> Book Your Ticket
+                    </a>
+                    <div class="d-flex flex-column text-dark border-start ps-4 border-2">
+                        <span class="h4 mb-0 fw-bold">Best Rates</span>
+                        <small class="text-muted">For 2026 Expeditions</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5 wow fadeInRight" data-wow-delay="0.3s">
+                <div class="bg-white p-5 rounded-4 shadow-sm border">
+                    <h6 class="text-center text-uppercase text-muted mb-4" style="letter-spacing: 2px;">Our Trusted Partners</h6>
+                    <div class="row g-4 align-items-center text-center">
+                        <div class="col-6">
+                            <img src="img/airline-1.png" class="img-fluid airline-logo" alt="EgyptAir" style="max-height: 40px; filter: grayscale(1); opacity: 0.7;">
+                        </div>
+                        <div class="col-6">
+                            <img src="img/airline-2.png" class="img-fluid airline-logo" alt="Emirates" style="max-height: 40px; filter: grayscale(1); opacity: 0.7;">
+                        </div>
+                        <div class="col-6">
+                            <img src="img/airline-3.png" class="img-fluid airline-logo" alt="Qatar Airways" style="max-height: 40px; filter: grayscale(1); opacity: 0.7;">
+                        </div>
+                        <div class="col-6">
+                            <img src="img/airline-4.png" class="img-fluid airline-logo" alt="Turkish Airlines" style="max-height: 40px; filter: grayscale(1); opacity: 0.7;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    /* تأثير جميل عند تمرير الماوس على اللوجوهات */
+    .airline-logo:hover {
+        filter: grayscale(0) !important;
+        opacity: 1 !important;
+        transform: scale(1.05);
+        transition: all 0.3s ease;
+    }
+    .flight-booking {
+        position: relative;
+        z-index: 1;
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Contact End -->
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Contact Info</h4>
+                            <a href=""><i class="fa fa-map-marker-alt me-2"></i> Ras Sidr, South Sinai, Egypt</a>
+                            <a href=""><i class="fas fa-envelope me-2"></i> info@nile2orinoco.com</a>
+                            <a href=""><i class="fas fa-phone me-2"></i> +012 345 67890</a>
+                            <a href="" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-share fa-2x text-secondary me-2"></i>
+                                <a class="btn mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Opening Time</h4>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Monday - Thursday:</h6>
+                                <p class="text-white mb-0">09.00 am to 07.00 pm</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Saturday:</h6>
+                                <p class="text-white mb-0">10.00 am to 05.00 pm</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Vacation:</h6>
+                                <p class="text-white mb-0">All Friday is our vacation</p>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="col-md-6 col-lg-6 col-xl-3">
+    <div class="footer-item d-flex flex-column">
+        <h4 class="text-secondary mb-4" data-i18n="footer_explore_title">Explore Destinations</h4>
+        
+        <a href="egypt.html" class="mb-2">
+            <i class="fas fa-angle-right me-2"></i>
+            <span data-i18n="footer_explore_egypt">Explore Egypt</span>
+        </a>
+        
+        <a href="venezuela.html" class="mb-2">
+            <i class="fas fa-angle-right me-2"></i>
+            <span data-i18n="footer_explore_ven">Explore Venezuela</span>
+        </a>
+    </div>
+</div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="text-secondary mb-4">News Letters</h4>
+                            <p class="text-white mb-3">Subscribe to get the latest news about Egypt and Venezuela tours.</p>
+                            <div class="position-relative mx-auto rounded-pill">
+                                <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                                <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-white"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Nile2Orinoco</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-white">
+                        <!--/*** The author’s attribution link must remain intact in the template. ***/-->
+                        <!--/*** If you wish to remove this credit link, please purchase the Pro Version . ***/-->
+                         <a class="border-bottom text-white" href="contact.html">info@nile2orinoco.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  
+
+<script>
+const counters = document.querySelectorAll('.counter');
+const speed = 200; // كلما زاد الرقم قلّت السرعة
+
+const startCounters = () => {
+    counters.forEach(counter => {
+        const updateCount = () => {
+            const target = +counter.getAttribute('data-target');
+            const count = +counter.innerText.replace(',', ''); // إزالة الفواصل إن وجدت للعمليات الحسابية
+
+            // حساب سرعة الزيادة
+            const inc = target / speed;
+
+            if (count < target) {
+                // إضافة الرقم وتنسيقه ليحتوي على فواصل آلاف (11,485)
+                const nextCount = Math.ceil(count + inc);
+                counter.innerText = nextCount.toLocaleString();
+                setTimeout(updateCount, 1);
+            } else {
+                counter.innerText = target.toLocaleString();
+            }
+        };
+        updateCount();
+    });
+};
+
+// تشغيل العدّاد عند ظهور القسم على الشاشة فقط (Intersection Observer)
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            startCounters();
+            observer.unobserve(entry.target); // تشغيلها مرة واحدة فقط
+        }
+    });
+}, { threshold: 0.5 });
+
+counters.forEach(counter => observer.observe(counter));
+</script>
+
+
+
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
