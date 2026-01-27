@@ -1,0 +1,1716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Nile2Orinoco - The Grand Egyptian Museum</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <link rel="Icon" href="img/logo-removed-one.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* إعدادات الخلفية للهيرو */
+        .hero-header {
+            background: linear-gradient(rgba(20, 20, 31, 0.7), rgba(20, 20, 31, 0.7)), url('img/egypt-bg.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: -100px; /* لضمان تداخلها مع الناف بار الشفاف إذا لزم الأمر */
+            padding-top: 150px;
+        }
+
+        /* الحفاظ على خاصية Sticky Navbar من الكود القديم */
+        .sticky-top.nav-bar {
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-secondary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <div class="container-fluid bg-primary px-5 d-none d-lg-block">
+        <div class="row gx-0 align-items-center">
+            <div class="col-lg-5 text-center text-lg-start mb-lg-0">
+                <div class="d-flex">
+                    <a href="#" class="text-muted me-4"><i class="fas fa-envelope text-secondary me-2"></i>info@nile2orinoco.com</a>
+                    <a href="#" class="text-muted me-0"><i class="fas fa-phone-alt text-secondary me-2"></i>+01234567890</a>
+                </div>
+            </div>
+            <div class="col-lg-3 row-cols-1 text-center mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal text-secondary"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal text-secondary"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal text-secondary"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal text-secondary"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle" href=""><i class="fab fa-youtube fw-normal text-secondary"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a href="contact.html" class="text-muted me-2"> Help</a><small> / </small>
+                    <a href="contact.html" class="text-muted mx-2"> Support</a><small> / </small>
+                    <a href="contact.html" class="text-muted ms-2"> Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid nav-bar sticky-top px-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+                <h1 class="display-5 m-0" style="display: flex; align-items: center;">
+                    <img src="img/logo-removed-one.png" class="img-fluid" alt="Logo" style="max-height: 50px; margin-left: 10px;">
+                    <span style="color: #e63946;">Nile</span><span style="color: #1d3557;">2Orinoco</span>
+                </h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="egypt.html" class="nav-item nav-link">Discover Egypt</a>
+                    <a href="egypt-historical-places.html" class="nav-item nav-link active">Historical Places</a>
+                                        <a href="egypt-traditions.html" class="nav-item nav-link">traditions</a>
+                    <a href="egypt-flight-booking.html" class="nav-item nav-link">Flight Booking</a>
+                    <a href="egypt-safety-guidelines.html" class="nav-item nav-link">Safety Guidelines</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="egypt-gallery.html" class="dropdown-item">Gallery</a>
+                            <a href="egypt-articles.html" class="dropdown-item">Articles</a>
+                        </div>
+                    </div>
+                    <a href="index.html" class="nav-item nav-link">Back To Home Page</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="fa fa-language me-2"></i>Language
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end m-0">
+                            <a href="javascript:void(0)" onclick="setLanguage('ar')" class="dropdown-item">العربية</a>
+                            <a href="javascript:void(0)" onclick="setLanguage('en')" class="dropdown-item">English</a>
+                            <a href="javascript:void(0)" onclick="setLanguage('es')" class="dropdown-item">Español</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid gem-ticket-hero py-5 mb-5">
+    <div class="container py-4">
+        <div class="row align-items-center">
+            <div class="col-lg-7 text-center text-lg-start wow fadeInLeft" data-wow-delay="0.1s">
+                <h1 class="display-5 text-white mb-2">The Grand <span class="text-gold">Egyptian Museum</span></h1>
+                <p class="text-white-50 mb-0 fs-5">Explore the world's largest collection of Pharaonic treasures.</p>
+            </div>
+            <div class="col-lg-5 text-center text-lg-end mt-4 mt-lg-0 wow fadeInRight" data-wow-delay="0.3s">
+                <a href="gem-tickets-booking.html" class="booking-btn-compact shadow-lg">
+                    <span class="icon-space"><i class="fas fa-ticket-alt"></i></span>
+                    <span class="text-space">Book Your <strong class="text-gold">Museum Ticket</strong></span>
+                    <i class="fas fa-chevron-right ms-2 arrow-move"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* التنسيقات الفنية للقسم */
+    .gem-ticket-hero {
+        /* يمكنك استبدال الرابط أدناه بصورة المتحف الخاصة بك */
+        background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), 
+                    url('img/eg-gr-0.jpg'); 
+        background-position: center;
+        background-size: cover;
+        border-bottom: 4px solid #D4A373;
+        position: relative;
+    }
+
+    .text-gold { color: #D4A373 !important; }
+
+    /* تصميم الزر الجذاب بحواف انسيابية */
+    .booking-btn-compact {
+        display: inline-flex;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        color: white;
+        padding: 15px 35px;
+        border-radius: 100px;
+        text-decoration: none;
+        border: 1px solid rgba(212, 163, 115, 0.6);
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        font-weight: 500;
+    }
+
+    .booking-btn-compact:hover {
+        background: #D4A373;
+        color: white;
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(212, 163, 115, 0.3);
+    }
+
+    .icon-space {
+        background: #D4A373;
+        width: 42px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin-right: 15px;
+        transition: 0.4s;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .booking-btn-compact:hover .icon-space {
+        background: white;
+        color: #D4A373;
+        transform: rotate(360deg);
+    }
+
+    .arrow-move {
+        transition: 0.3s;
+    }
+
+    .booking-btn-compact:hover .arrow-move {
+        transform: translateX(6px);
+    }
+
+    /* تحسين الظهور على الموبايل */
+    @media (max-width: 991px) {
+        .gem-ticket-hero { 
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+        .booking-btn-compact {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+</style>
+</div>
+<style>
+    .giza-compact-hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/eg-py-7.webp');
+        background-position: center 30%; /* يركز على قمة الأهرامات */
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-bottom: 4px solid #D4A373; /* خط ذهبي رفيع في النهاية */
+    }
+
+    .text-gold {
+        color: #D4A373 !important;
+    }
+
+    /* زر الحجز المضغوط */
+    .booking-btn-compact {
+        display: inline-flex;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(212, 163, 115, 0.5);
+        padding: 12px 25px;
+        border-radius: 50px;
+        color: white;
+        text-decoration: none !important;
+        transition: 0.4s ease;
+    }
+
+    .booking-btn-compact .icon-space {
+        font-size: 1.4rem;
+        color: #D4A373;
+        margin-right: 15px;
+    }
+
+    .booking-btn-compact .text-space {
+        font-size: 1.1rem;
+    }
+
+    /* تأثيرات الحركة */
+    .booking-btn-compact:hover {
+        background: #D4A373;
+        color: #fff;
+        transform: scale(1.03);
+    }
+
+    .booking-btn-compact:hover .icon-space, 
+    .booking-btn-compact:hover .text-gold {
+        color: #fff !important;
+    }
+
+    .arrow-move {
+        transition: 0.3s;
+    }
+
+    .booking-btn-compact:hover .arrow-move {
+        transform: translateX(5px);
+    }
+
+    /* ضبط الحجم للشاشات الصغيرة */
+    @media (max-width: 991px) {
+        .giza-compact-hero { padding: 40px 0; }
+        .display-5 { font-size: 2.2rem; }
+    }
+</style>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid py-5 giza-vertical-video-section" id="videoSection">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            
+            <div class="col-lg-5 wow zoomIn" data-wow-delay="0.1s">
+                <div class="vertical-video-wrapper shadow-lg mx-auto">
+                    <video id="gizaVideo" muted loop playsinline class="vertical-video">
+                        <source src="video/eg-gr-3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    
+                    <div class="video-frame-decoration"></div>
+
+                    <button id="muteBtn" class="mute-control-btn">
+                        <i class="fas fa-volume-mute" id="muteIcon"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.3s">
+    <h6 class="section-title bg-white text-start text-primary pe-3">The Grand Discovery</h6>
+    <h1 class="mb-4">The Treasures of <span class="text-primary">King Tutankhamun</span> Unveiled</h1>
+    
+    <p class="mb-4 fw-bold text-dark">Step into the future of history. The Grand Egyptian Museum (GEM) is a modern architectural masterpiece housing the complete collection of the Golden King for the first time.</p>
+
+    <p class="mb-4">Beyond the iconic Ramses II statue greeting you at the entrance, explore thousands of artifacts in a state-of-the-art environment. Our immersive digital perspective allows you to witness the craftsmanship of ancient artisans and the scale of Egypt's newest cultural beacon.</p>
+
+    <div class="row g-3 mb-4">
+        <div class="col-sm-6">
+            <div class="d-flex align-items-center p-3 border rounded shadow-sm bg-white">
+                <i class="fa fa-gem fa-2x text-primary me-3"></i>
+                <h6 class="mb-0">Tutankhamun Gallery</h6>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="d-flex align-items-center p-3 border rounded shadow-sm bg-white">
+                <i class="fa fa-university fa-2x text-primary me-3"></i>
+                <h6 class="mb-0">World-Class Curation</h6>
+            </div>
+        </div>
+    </div>
+
+    <a href="gem-tickets-booking.html" class="btn btn-primary py-3 px-5 rounded-pill shadow">Secure Your Museum Ticket</a>
+</div>
+            
+        </div>
+    </div>
+</div>
+<style>
+    /* تنسيق الحاوية والألوان */
+    .giza-vertical-video-section {
+        background-color: #fdfaf5;
+    }
+    .giza-vertical-video-section .text-primary {
+        color: #D4A373 !important;
+    }
+    .giza-vertical-video-section .btn-primary {
+        background-color: #D4A373;
+        border-color: #D4A373;
+    }
+
+    /* أبعاد الفيديو الطولي (9:16) */
+    .vertical-video-wrapper {
+        position: relative;
+        width: 300px;
+        height: 530px;
+        border-radius: 30px;
+        overflow: hidden;
+        z-index: 2;
+        background: #000;
+        border: 10px solid #1a1a1a;
+    }
+
+    .vertical-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* زر كتم الصوت */
+    .mute-control-btn {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        background: rgba(212, 163, 115, 0.8);
+        border: none;
+        color: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+    }
+
+    .mute-control-btn:hover {
+        background: #D4A373;
+        transform: scale(1.1);
+    }
+
+    /* إطار ذهبي ديكوري خلف الفيديو */
+    .video-frame-decoration {
+        position: absolute;
+        top: 20px;
+        left: -20px;
+        width: 100%;
+        height: 100%;
+        border: 2px solid #D4A373;
+        border-radius: 30px;
+        z-index: -1;
+    }
+
+    @media (max-width: 576px) {
+        .vertical-video-wrapper {
+            width: 260px;
+            height: 460px;
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const video = document.getElementById('gizaVideo');
+        const muteBtn = document.getElementById('muteBtn');
+        const muteIcon = document.getElementById('muteIcon');
+
+        //Intersection Observer للتحكم في التشغيل والايقاف عند الرؤية
+        const options = {
+            root: null,
+            threshold: 0.5 // يبدأ العمل عندما يظهر 50% من السكشن
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    video.play().catch(error => console.log("Autoplay prevented, waiting for user click."));
+                    // المتصفحات ترفض Unmute تلقائي بدون نقرة مستخدم
+                    // لذا سيبقى مكتوم حتى يضغط المستخدم أو يلمس الصفحة
+                } else {
+                    video.pause();
+                }
+            });
+        }, options);
+
+        observer.observe(video);
+
+        // وظيفة زر كتم/تشغيل الصوت يدوياً
+        muteBtn.addEventListener('click', function() {
+            if (video.muted) {
+                video.muted = false;
+                muteIcon.classList.remove('fa-volume-mute');
+                muteIcon.classList.add('fa-volume-up');
+            } else {
+                video.muted = true;
+                muteIcon.classList.remove('fa-volume-up');
+                muteIcon.classList.add('fa-volume-mute');
+            }
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid py-5 giza-tablet-style-section" style="background-color: #ffffff;">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            
+            <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+    <h6 class="section-title bg-white text-start text-primary pe-3">Architectural Marvel</h6>
+    <h1 class="mb-4 display-5 fw-bold">The Grand Museum: A <span class="text-primary">Modern Wonder</span></h1>
+    
+    <p class="mb-4 fw-bold text-dark">Experience the monumental design where ancient heritage meets 21st-century visionary architecture.</p>
+    
+    <p class="mb-4">Witness the breathtaking "Grand Staircase" and the translucent stone facade that aligns perfectly with the Great Pyramids. Every angle of this masterpiece was crafted to bridge the gap between Egypt's glorious past and its inspiring future, creating a sanctuary for over 100,000 artifacts.</p>
+
+    <div class="row g-3 mb-4">
+        <div class="col-sm-6">
+            <div class="d-flex align-items-center p-3 border rounded shadow-sm bg-white">
+                <i class="fa fa-archway fa-2x text-primary me-3"></i>
+                <h6 class="mb-0">The Grand Staircase</h6>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="d-flex align-items-center p-3 border rounded shadow-sm bg-white">
+                <i class="fa fa-microchip fa-2x text-primary me-3"></i>
+                <h6 class="mb-0">Smart Museum Tech</h6>
+            </div>
+        </div>
+    </div>
+
+    <a href="gem-tickets-booking.html" class="btn btn-primary py-3 px-5 rounded-pill shadow">Explore the Treasures</a>
+</div>
+
+            <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+                <div class="tablet-frame-wrapper shadow-lg mx-auto">
+                    <video id="tabletGizaVideo" muted loop playsinline class="tablet-video-content">
+                        <source src="video/eg-gr-12.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    
+                    <div class="tablet-frame-decoration"></div>
+
+                    <button id="muteBtnTablet" class="mute-control-btn">
+                        <i class="fas fa-volume-mute" id="muteIconTablet"></i>
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<style>
+    /* الحفاظ على هوية الألوان والخطوط من السكاشن السابقة */
+    .giza-tablet-style-section .text-primary {
+        color: #D4A373 !important;
+    }
+    .giza-tablet-style-section .btn-primary {
+        background-color: #D4A373;
+        border-color: #D4A373;
+    }
+    .giza-tablet-style-section .section-title::after {
+        background: #D4A373 !important;
+    }
+
+    /* إطار التابلت العرضي - مصمم ليشبه ستايل الموبايل الذي أعجبك */
+    .tablet-frame-wrapper {
+        position: relative;
+        width: 100%; /* يأخذ عرض العمود */
+        max-width: 550px; 
+        aspect-ratio: 16 / 10; /* نسبة التابلت العرضي */
+        border-radius: 20px;
+        overflow: hidden;
+        z-index: 2;
+        background: #000;
+        border: 10px solid #1a1a1a; /* نفس سمك إطار الموبايل */
+    }
+
+    .tablet-video-content {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* الإطار الذهبي الديكوري خلف التابلت (نفس منطق السكاشن القديمة) */
+    .tablet-frame-decoration {
+        position: absolute;
+        top: -15px;
+        right: -15px;
+        width: 100%;
+        height: 100%;
+        border: 2px solid #D4A373;
+        border-radius: 20px;
+        z-index: -1;
+    }
+
+    /* زر الصوت بنفس الستايل السابق */
+    .mute-control-btn {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        background: rgba(212, 163, 115, 0.8);
+        border: none;
+        color: white;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* استجابة الموبايل */
+    @media (max-width: 991px) {
+        .tablet-frame-wrapper {
+            max-width: 100%;
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const videoT = document.getElementById('tabletGizaVideo');
+        const muteBtnT = document.getElementById('muteBtnTablet');
+        const muteIconT = document.getElementById('muteIconTablet');
+
+        const observerT = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    videoT.play().catch(() => {});
+                } else {
+                    videoT.pause();
+                }
+            });
+        }, { threshold: 0.5 });
+
+        observerT.observe(videoT);
+
+        muteBtnT.addEventListener('click', function() {
+            videoT.muted = !videoT.muted;
+            muteIconT.classList.toggle('fa-volume-mute');
+            muteIconT.classList.toggle('fa-volume-up');
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid py-5 video-tour-section" style="background-color: #ffffff;">
+    <div class="container py-5">
+        
+        <div class="section-title-wrapper text-center mb-5">
+            <h6 class="section-title bg-white text-center text-primary px-3">Visual Legacy</h6>
+            <h1 class="display-5 mb-5">Grand Egyptian Museum <span class="text-primary">Stories</span></h1>
+        </div>
+
+        <div class="row g-4 align-items-center">
+            
+            <div class="col-lg-4 col-md-5">
+                <div class="phone-container-master">
+                    <div class="video-phone-frame shadow-phone">
+                        <video id="mainPlayer" autoplay muted loop playsinline class="vertical-video-main">
+                            <source id="mainSource" src="video/eg-gr-1.mp4" type="video/mp4">
+                        </video>
+                        
+                        <button id="muteBtn" class="mute-control-btn" onclick="toggleMute()">
+                            <i id="muteIcon" class="fas fa-volume-mute"></i>
+                        </button>
+
+                        <div class="phone-screen-glare"></div>
+                    </div>
+                    <div class="phone-bottom-shadow"></div>
+                </div>
+            </div>
+
+            <div class="col-lg-5 col-md-7 text-center text-lg-start">
+                <div id="infoArea" class="info-text-box p-4">
+                    <div class="now-playing-tag mb-3">
+                        <span class="pulse-icon"></span> NOW EXPLORING
+                    </div>
+                    <h2 id="activeTitle" class="display-6 fw-bold text-dark mb-3">The Grand Atrium</h2>
+                    <div class="gold-line mb-4 mx-auto mx-lg-0"></div>
+                    <p id="activeDesc" class="text-muted fs-5 leading-relaxed">Experience the vast space of the GEM entrance, where the 3,200-year-old statue of Ramses II greets every visitor with timeless majesty.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="vertical-gallery-sidebar p-3 rounded-4 bg-light shadow-sm">
+                    <h6 class="fw-bold mb-3 text-uppercase small ls-2 text-dark"><i class="fas fa-list me-2 text-primary"></i> 10 Masterpieces</h6>
+                    <div class="vertical-video-list custom-scrollbar">
+                        
+                        <div class="v-item-portrait active" onclick="swapCinematic(this, 'The Grand Atrium', 'The heart of the museum where the 3,200-year-old statue of Ramses II welcomes guests.', 'video/eg-gr-1.mp4')">
+                            <video muted loop playsinline><source src="video/eg-gr-1.mp4"></video>
+                            <div class="play-hint-center"><i class="fas fa-play"></i></div>
+                        </div>
+
+                        <div class="v-item-portrait" onclick="swapCinematic(this, 'Tutankhamun Treasures', 'A deep dive into the golden collection of the boy king, featuring over 5,000 artifacts.', 'video/eg-gr-2.mp4')">
+                            <video muted loop playsinline><source src="video/eg-gr-2.mp4"></video>
+                            <div class="play-hint-center"><i class="fas fa-play"></i></div>
+                        </div>
+
+                        <div class="v-item-portrait" onclick="swapCinematic(this, 'The Grand Staircase', 'A monumental vertical gallery featuring 60 massive statues overlooking the Giza Pyramids.', 'video/eg-gr-3.mp4')">
+                            <video muted loop playsinline><source src="video/eg-gr-3.mp4"></video>
+                            <div class="play-hint-center"><i class="fas fa-play"></i></div>
+                        </div>
+
+                        <div class="v-item-portrait" onclick="swapCinematic(this, 'Khufu Solar Boat', 'The legendary vessel of King Khufu, perfectly preserved for 4,500 years in its new home.', 'video/eg-gr-4.mp4')">
+                            <video muted loop playsinline><source src="video/eg-gr-4.mp4"></video>
+                            <div class="play-hint-center"><i class="fas fa-play"></i></div>
+                        </div>
+
+                        <div class="v-item-portrait" onclick="swapCinematic(this, 'Hanging Obelisk', 'The world\'s first hanging obelisk, showcasing the genius of Egyptian engineering.', 'video/eg-gr-5.mp4')">
+                            <video muted loop playsinline><source src="video/eg-gr-5.mp4"></video>
+                            <div class="play-hint-center"><i class="fas fa-play"></i></div>
+                        </div>
+
+                        <div class="v-item-portrait" onclick="swapCinematic(this, 'The King\'s Gallery', 'A series of halls dedicated to the monarchs of Egypt through the millennia.', 'video/eg-gr-6.mp4')">
+                            <video muted loop playsinline><source src="video/eg-gr-6.mp4"></video>
+                            <div class="play-hint-center"><i class="fas fa-play"></i></div>
+                        </div>
+
+                        <div class="v-item-portrait" onclick="swapCinematic(this, 'Restoration Labs', 'Peek into where experts restore and preserve ancient treasures with modern science.', 'video/eg-gr-7.mp4')">
+                            <video muted loop playsinline><source src="video/eg-gr-7.mp4"></video>
+                            <div class="play-hint-center"><i class="fas fa-play"></i></div>
+                        </div>
+
+                        <div class="v-item-portrait" onclick="swapCinematic(this, 'Digital Immersive', 'High-tech screens telling stories of ancient Egyptian gods and mythology.', 'video/eg-gr-8.mp4')">
+                            <video muted loop playsinline><source src="video/eg-gr-8.mp4"></video>
+                            <div class="play-hint-center"><i class="fas fa-play"></i></div>
+                        </div>
+
+                        <div class="v-item-portrait" onclick="swapCinematic(this, 'The Children\'s Museum', 'Interactive displays designed to inspire the next generation of archaeologists.', 'video/eg-gr-9.mp4')">
+                            <video muted loop playsinline><source src="video/eg-gr-9.mp4"></video>
+                            <div class="play-hint-center"><i class="fas fa-play"></i></div>
+                        </div>
+
+                        <div class="v-item-portrait" onclick="swapCinematic(this, 'Pyramid View Balcony', 'The breathtaking panoramic view where the museum meets the horizons of Giza.', 'video/eg-gr-10.mp4')">
+                            <video muted loop playsinline><source src="video/eg-gr-10.mp4"></video>
+                            <div class="play-hint-center"><i class="fas fa-play"></i></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<style>
+    :root { --gem-gold: #D4A373; }
+    .text-primary { color: var(--gem-gold) !important; }
+
+    /* حاوية الموبايل */
+    .video-phone-frame {
+        width: 100%; max-width: 300px; height: 580px;
+        background: #000; border-radius: 50px;
+        border: 12px solid #1a1a1a; position: relative;
+        z-index: 2; overflow: hidden; margin: 0 auto;
+    }
+    .shadow-phone { box-shadow: 0 50px 100px -20px rgba(0,0,0,0.5), 0 30px 60px -30px rgba(0,0,0,0.6); }
+    .phone-bottom-shadow {
+        position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+        width: 80%; height: 20px; background: rgba(0,0,0,0.2);
+        filter: blur(20px); border-radius: 50%; z-index: 1;
+    }
+
+    .vertical-video-main { width: 100%; height: 100%; object-fit: cover; transition: 0.8s filter ease, 0.8s opacity ease; }
+
+    /* زر الصوت */
+    .mute-control-btn {
+        position: absolute; bottom: 30px; right: 20px;
+        width: 45px; height: 45px; border-radius: 50%;
+        background: rgba(212, 163, 115, 0.85); backdrop-filter: blur(5px);
+        border: none; color: white; z-index: 10; cursor: pointer;
+    }
+
+    /* القائمة الجانبية */
+    .vertical-video-list { max-height: 550px; overflow-y: auto; padding-right: 10px; }
+    .v-item-portrait {
+        height: 170px; border-radius: 20px; margin-bottom: 15px;
+        overflow: hidden; cursor: pointer; border: 3px solid transparent;
+        transition: 0.4s; position: relative; background: #000;
+    }
+    .v-item-portrait video { width: 100%; height: 100%; object-fit: cover; opacity: 0.4; }
+    .v-item-portrait.active { border-color: var(--gem-gold); transform: scale(0.96); }
+    .v-item-portrait.active video { opacity: 1; }
+
+    /* أيقونة Play في المنتصف */
+    .play-hint-center {
+        position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        width: 40px; height: 40px; border-radius: 50%;
+        background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(2px);
+        color: white; display: flex; align-items: center; justify-content: center;
+        font-size: 0.8rem; border: 1px solid rgba(255,255,255,0.4);
+        pointer-events: none; transition: 0.3s;
+    }
+    .v-item-portrait:hover .play-hint-center { background: var(--gem-gold); border-color: var(--gem-gold); }
+
+    /* Pulse & Misc */
+    .pulse-icon { width: 8px; height: 8px; background: var(--gem-gold); border-radius: 50%; display: inline-block; margin-right: 10px; animation: pulse 1.5s infinite; }
+    @keyframes pulse { 0% { transform: scale(0.95); opacity: 0.7; } 70% { transform: scale(1.5); opacity: 0; } 100% { transform: scale(0.95); opacity: 0; } }
+    .custom-scrollbar::-webkit-scrollbar { width: 3px; }
+    .custom-scrollbar::-webkit-scrollbar-thumb { background: var(--gem-gold); }
+    .blur-effect { filter: blur(15px); opacity: 0.5; }
+</style>
+
+<script>
+    // نظام التحكم في الصوت (يتحكم في الحالة العامة للفيديو الرئيسي)
+    function toggleMute() {
+        const video = document.getElementById('mainPlayer');
+        const icon = document.getElementById('muteIcon');
+        video.muted = !video.muted;
+        icon.className = video.muted ? 'fas fa-volume-mute' : 'fas fa-volume-up';
+    }
+
+    // تبديل الفيديو مع إصلاح الصوت لكل فيديو جديد
+    function swapCinematic(element, title, desc, source) {
+        const video = document.getElementById('mainPlayer');
+        const videoSrc = document.getElementById('mainSource');
+        const titleEl = document.getElementById('activeTitle');
+        const descEl = document.getElementById('activeDesc');
+        const icon = document.getElementById('muteIcon');
+
+        if(videoSrc.src.includes(source)) return;
+
+        // تأثير الحركة
+        video.classList.add('blur-effect');
+        document.getElementById('infoArea').style.opacity = '0';
+
+        setTimeout(() => {
+            videoSrc.src = source;
+            video.load();
+            
+            // إصلاح الصوت: نحافظ على حالة الصوت المختارة من قبل المستخدم
+            // إذا ضغط المستخدم "تشغيل الصوت"، الفيديو التالي سيعمل بالصوت تلقائياً
+            video.onloadeddata = function() {
+                video.play();
+                // التأكد من تطبيق حالة الأيقونة الحالية على الفيديو الجديد
+                if (icon.classList.contains('fa-volume-up')) {
+                    video.muted = false;
+                } else {
+                    video.muted = true;
+                }
+            };
+
+            titleEl.innerText = title;
+            descEl.innerText = desc;
+
+            video.classList.remove('blur-effect');
+            document.getElementById('infoArea').style.opacity = '1';
+        }, 600);
+
+        document.querySelectorAll('.v-item-portrait').forEach(item => item.classList.remove('active'));
+        element.classList.add('active');
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid py-5 interactive-showcase" style="background-color: #ffffff;">
+    <div class="container py-5">
+        
+        <div class="section-title-wrapper text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="section-title bg-white text-center text-primary px-3">Visual Legacy</h6>
+            <h1 class="display-5 mb-5">Treasures of the <span class="text-primary">Grand Museum</span></h1>
+        </div>
+
+        <div class="row g-5">
+            <div class="col-lg-7 wow fadeInLeft" data-wow-delay="0.2s">
+                <div class="main-viewer-wrapper position-relative">
+                    <div class="main-img-frame shadow-lg">
+                        <img id="activeGalleryImg" src="img/eg-gr-1.jpg" alt="Main View" class="gallery-main-img smooth-transition">
+                    </div>
+                    <div class="frame-decoration"></div>
+                    
+                    <div id="contentBox" class="content-box mt-4 p-4 border-start border-4 border-primary bg-light rounded shadow-sm" style="transition: 0.6s;">
+                        <h3 id="activeTitle" class="text-dark fw-bold">The Royal Collection</h3>
+                        <p id="activeDesc" class="text-muted mb-0">Explore a vast assembly of ancient masterpieces, showcasing the pinnacle of Egyptian craftsmanship and artistic heritage across the ages.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5 wow fadeInRight" data-wow-delay="0.4s">
+                <div class="thumbs-container shadow-sm p-4 border rounded-4 bg-white">
+                    <div class="d-flex justify-content-between align-items-center mb-3 border-bottom pb-3">
+                        <h5 class="fw-bold text-dark mb-0">Artifact Gallery</h5>
+                        <span class="badge bg-primary rounded-pill">10 Masterpieces</span>
+                    </div>
+                    
+                    <div class="thumbs-grid custom-scroll">
+                        <div class="thumb-card active" onclick="swapView(this, 'Golden Legacies', 'Iconic funerary treasures reflecting the divine status of Egypt\'s ancient rulers.', 'img/eg-gr-2.PNG')">
+                            <img src="img/eg-gr-2.PNG">
+                        </div>
+                        <div class="thumb-card" onclick="swapView(this, 'Statues of Power', 'Colossal stone figures carved with millimetric precision to stand for eternity.', 'img/eg-gr-2.jpg')">
+                            <img src="img/eg-gr-3.PNG">
+                        </div>
+                        <div class="thumb-card" onclick="swapView(this, 'Sacred Artifacts', 'Ritual objects used in the daily life and religious ceremonies of the Pharaohs.', 'img/eg-gr-4.PNG')">
+                            <img src="img/eg-gr-4.PNG">
+                        </div>
+                        <div class="thumb-card" onclick="swapView(this, 'Ancient Engineering', 'Remarkable tools and structures that highlight the advanced science of old builders.', 'img/eg-gr-5.PNG')">
+                            <img src="img/eg-gr-5.PNG">
+                        </div>
+                        <div class="thumb-card" onclick="swapView(this, 'Hieroglyphic Records', 'Stone inscriptions and papyrus scrolls preserving the wisdom of ancient scribes.', 'img/eg-gr-6.PNG')">
+                            <img src="img/eg-gr-6.PNG">
+                        </div>
+                        <div class="thumb-card" onclick="swapView(this, 'Royal Jewelry', 'Exquisite gold and semi-precious stones crafted for the Egyptian royal court.', 'img/eg-gr-7.PNG')">
+                            <img src="img/eg-gr-7.PNG">
+                        </div>
+                        <div class="thumb-card" onclick="swapView(this, 'Eternal Vessels', 'Ceramics and alabaster jars designed to accompany souls through the afterlife.', 'img/eg-gr-8.PNG')">
+                            <img src="img/eg-gr-8.PNG">
+                        </div>
+                        <div class="thumb-card" onclick="swapView(this, 'Military Heritage', 'Weaponry and chariots representing the strength of the New Kingdom empire.', 'img/eg-gr-9.PNG')">
+                            <img src="img/eg-gr-9.PNG">
+                        </div>
+                        <div class="thumb-card" onclick="swapView(this, 'Daily Life Antiques', 'Furniture and personal items that reveal how the ancient Egyptians lived.', 'img/eg-gr-10.PNG')">
+                            <img src="img/eg-gr-10.PNG">
+                        </div>
+                        <div class="thumb-card" onclick="swapView(this, 'Funerary Art', 'Beautifully painted sarcophagi that tell the story of the journey to the Duat.', 'img/eg-gr-11.PNG')">
+                            <img src="img/eg-gr-11.PNG">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .interactive-showcase .text-primary { color: #D4A373 !important; }
+    .interactive-showcase .border-primary { border-color: #D4A373 !important; }
+    .interactive-showcase .bg-primary { background-color: #D4A373 !important; }
+
+    .main-img-frame {
+        width: 100%; height: 450px; background: #111;
+        border: 10px solid #1a1a1a; border-radius: 30px;
+        overflow: hidden; position: relative; z-index: 2;
+    }
+    .gallery-main-img { width: 100%; height: 100%; object-fit: cover; }
+    .smooth-transition { transition: opacity 0.7s ease-in-out; }
+    
+    .frame-decoration {
+        position: absolute; top: -15px; left: -15px; width: 100%; height: 100%;
+        border: 2px solid #D4A373; border-radius: 35px; z-index: 1;
+    }
+
+    .thumbs-container { height: 550px; display: flex; flex-direction: column; }
+    .thumbs-grid {
+        display: grid; grid-template-columns: repeat(2, 1fr); /* 2 per row for better look with 10 items */
+        gap: 15px; overflow-y: auto; padding-right: 10px;
+    }
+    
+    .thumb-card {
+        cursor: pointer; border-radius: 15px; overflow: hidden;
+        height: 120px; border: 3px solid transparent; transition: 0.3s; background: #000;
+    }
+    .thumb-card img { width: 100%; height: 100%; object-fit: cover; opacity: 0.6; }
+    .thumb-card.active { border-color: #D4A373; transform: scale(0.96); }
+    .thumb-card:hover img, .thumb-card.active img { opacity: 1; }
+
+    .custom-scroll::-webkit-scrollbar { width: 5px; }
+    .custom-scrollbar::-webkit-scrollbar-thumb { background: #D4A373; border-radius: 10px; }
+    .img-fade-out { opacity: 0.2; filter: blur(5px); }
+</style>
+
+<script>
+    function swapView(element, title, desc, imgSrc) {
+        const mainImg = document.getElementById('activeGalleryImg');
+        const mainTitle = document.getElementById('activeTitle');
+        const mainDesc = document.getElementById('activeDesc');
+        const contentBox = document.getElementById('contentBox');
+
+        if(mainImg.src.includes(imgSrc)) return;
+
+        mainImg.classList.add('img-fade-out');
+        contentBox.style.opacity = '0';
+        contentBox.style.transform = 'translateY(10px)';
+        
+        setTimeout(() => {
+            mainImg.src = imgSrc;
+            mainTitle.innerText = title;
+            mainDesc.innerText = desc;
+            
+            mainImg.classList.remove('img-fade-out');
+            contentBox.style.opacity = '1';
+            contentBox.style.transform = 'translateY(0)';
+        }, 600);
+
+        document.querySelectorAll('.thumb-card').forEach(card => card.classList.remove('active'));
+        element.classList.add('active');
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid py-5 interactive-tour-section" id="vr-section" style="background-color: #ffffff;">
+    <div class="container py-5">
+        
+        <div class="section-title-wrapper text-center mb-5 wow fadeInUp">
+            <h6 class="section-title bg-white text-center text-primary px-3" style="letter-spacing: 3px; font-weight: 600;">VIRTUAL EXPERIENCE</h6>
+            <h1 class="display-5 mb-3 fw-bold">Explore the <span class="text-primary">Grand Atrium</span></h1>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-11">
+                <div class="tour-main-frame shadow-custom position-relative">
+                    
+                    <div id="tourCover" class="tour-cover d-flex align-items-center justify-content-center">
+                        <div class="blur-background"></div>
+                        
+                        <div class="cover-content text-center text-white p-4" style="z-index: 5;">
+                            <div class="vr-icon-box mb-4">
+                                <i class="fas fa-vr-cardboard fa-5x text-primary vr-float"></i>
+                            </div>
+                            
+                            <h2 class="fw-bold mb-4" style="letter-spacing: 2px;">Immersive 360° Journey</h2>
+                            
+                            <button onclick="launchMatterport()" class="btn-gem-refined">
+                                START TOUR
+                                <span class="btn-line"></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="vrWrapper" class="vr-wrapper d-none h-100">
+                        <div class="top-mask"></div>
+                        <div class="bottom-mask">
+                            <small class="text-white-50">Grand Egyptian Museum Virtual Gallery</small>
+                        </div>
+
+                        <iframe 
+                            id="gemVrIframe"
+                            src="" 
+                            width="100%" 
+                            height="112%" 
+                            style="border:0; margin-top: -40px;" 
+                            allowfullscreen 
+                            allow="xr-spatial-tracking">
+                        </iframe>
+                        
+                        <div class="vr-controls">
+                            <button onclick="exitVrPortal()" class="btn-close-vr">
+                                <i class="fas fa-times me-2"></i> Close
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    :root { --gem-gold: #D4A373; --gem-soft-gold: rgba(212, 163, 115, 0.2); }
+    .text-primary { color: var(--gem-gold) !important; }
+
+    .tour-main-frame {
+        height: 600px; background: #111; border-radius: 45px;
+        overflow: hidden; border: 1px solid rgba(212, 163, 115, 0.2);
+        position: relative;
+    }
+    .shadow-custom { box-shadow: 0 40px 80px rgba(0,0,0,0.12); }
+
+    /* تأثير الخلفية المشوشة */
+    .tour-cover {
+        position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+        z-index: 100; transition: 1.5s cubic-bezier(0.8, 0, 0.2, 1);
+        overflow: hidden;
+    }
+    .blur-background {
+        position: absolute; width: 110%; height: 110%;
+        background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                    url('img/eg-gr-1.jpg') center/cover;
+        filter: blur(20px); /* تشويش قوي وهادئ */
+        transform: scale(1.1);
+    }
+
+    /* أنيميشن النظارة */
+    .vr-float {
+        animation: floatingVR 4s ease-in-out infinite;
+        filter: drop-shadow(0 15px 15px rgba(0,0,0,0.4));
+    }
+    @keyframes floatingVR {
+        0%, 100% { transform: translateY(0) rotate(-2deg); }
+        50% { transform: translateY(-30px) rotate(2deg); }
+    }
+
+    /* الزر المتناسق */
+    .btn-gem-refined {
+        background: var(--gem-gold);
+        color: #fff;
+        border: none;
+        padding: 16px 50px;
+        border-radius: 50px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        font-size: 14px;
+        position: relative;
+        transition: 0.4s;
+        box-shadow: 0 10px 20px rgba(212, 163, 115, 0.3);
+    }
+    .btn-gem-refined:hover {
+        background: #fff;
+        color: var(--gem-gold);
+        transform: scale(1.05);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+
+    /* الأقنعة لتغطية الشعارات */
+    .top-mask {
+        position: absolute; top: 0; left: 0; width: 100%; height: 70px;
+        background: linear-gradient(to bottom, #000 40%, transparent); z-index: 10;
+    }
+    .bottom-mask {
+        position: absolute; bottom: 0; left: 0; width: 100%; height: 50px;
+        background: #000; z-index: 10; display: flex; align-items: center; justify-content: center;
+    }
+
+    .vr-controls { position: absolute; top: 25px; right: 25px; z-index: 101; }
+    .btn-close-vr {
+        background: rgba(0,0,0,0.6); color: #fff; border: 1px solid var(--gem-gold);
+        padding: 8px 20px; border-radius: 30px; backdrop-filter: blur(10px);
+    }
+
+    .exit-up { transform: translateY(-100%); opacity: 0; }
+    
+    @media (max-width: 768px) {
+        .tour-main-frame { height: 450px; border-radius: 30px; }
+        .btn-gem-refined { padding: 12px 35px; font-size: 12px; }
+    }
+</style>
+
+<script>
+    function launchMatterport() {
+        const cover = document.getElementById('tourCover');
+        const wrapper = document.getElementById('vrWrapper');
+        const iframe = document.getElementById('gemVrIframe');
+        const link = "https://my.matterport.com/show/?m=R2qJ77hmqAz&play=1&brand=0&title=0&tourir=1&help=0&hl=1"; 
+
+        cover.classList.add('exit-up');
+        setTimeout(() => {
+            wrapper.classList.remove('d-none');
+            iframe.src = link;
+        }, 800);
+    }
+
+    function exitVrPortal() {
+        const cover = document.getElementById('tourCover');
+        const wrapper = document.getElementById('vrWrapper');
+        const iframe = document.getElementById('gemVrIframe');
+        
+        iframe.src = "";
+        wrapper.classList.add('d-none');
+        cover.classList.remove('exit-up');
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid flight-booking overflow-hidden py-5" style="background-color: #ffffff;">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-7 wow fadeInLeft" data-wow-delay="0.1s">
+                <div class="sub-style">
+                    <h5 class="sub-title text-primary pe-3" data-i18n="flight_subtitle">Ready to Fly?</h5>
+                </div>
+                <h1 class="display-4 text-dark mb-4" data-i18n="flight_title">Book Your Flight to <span class="text-primary">Egypt</span></h1>
+                <p class="text-muted mb-5 fs-5" data-i18n="flight_desc">Embark on a journey to the land of Pharaohs. We partner with world-class airlines to ensure your 2026 trip to the Nile is comfortable and unforgettable.</p>
+                
+                <div class="d-flex align-items-center">
+                    <a href="egypt-flight-booking.html" target="_blank" class="btn btn-primary rounded-pill py-3 px-5 me-4 shadow wow pulse" data-wow-iteration="infinite" data-wow-duration="2s">
+                        <i class="fa fa-plane-departure me-2"></i> Book Your Ticket
+                    </a>
+                    <div class="d-flex flex-column text-dark border-start ps-4 border-2">
+                        <span class="h4 mb-0 fw-bold">Best Rates</span>
+                        <small class="text-muted">For 2026 Expeditions</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5 wow fadeInRight" data-wow-delay="0.3s">
+                <div class="bg-white p-5 rounded-4 shadow-sm border">
+                    <h6 class="text-center text-uppercase text-muted mb-4" style="letter-spacing: 2px;">Our Trusted Partners</h6>
+                    <div class="row g-4 align-items-center text-center">
+                        <div class="col-6">
+                            <img src="img/airline-1.png" class="img-fluid airline-logo" alt="EgyptAir" style="max-height: 40px; filter: grayscale(1); opacity: 0.7;">
+                        </div>
+                        <div class="col-6">
+                            <img src="img/airline-2.png" class="img-fluid airline-logo" alt="Emirates" style="max-height: 40px; filter: grayscale(1); opacity: 0.7;">
+                        </div>
+                        <div class="col-6">
+                            <img src="img/airline-3.png" class="img-fluid airline-logo" alt="Qatar Airways" style="max-height: 40px; filter: grayscale(1); opacity: 0.7;">
+                        </div>
+                        <div class="col-6">
+                            <img src="img/airline-4.png" class="img-fluid airline-logo" alt="Turkish Airlines" style="max-height: 40px; filter: grayscale(1); opacity: 0.7;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    /* تأثير جميل عند تمرير الماوس على اللوجوهات */
+    .airline-logo:hover {
+        filter: grayscale(0) !important;
+        opacity: 1 !important;
+        transform: scale(1.05);
+        transition: all 0.3s ease;
+    }
+    .flight-booking {
+        position: relative;
+        z-index: 1;
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Contact End -->
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Contact Info</h4>
+                            <a href=""><i class="fa fa-map-marker-alt me-2"></i> Ras Sidr, South Sinai, Egypt</a>
+                            <a href=""><i class="fas fa-envelope me-2"></i> info@nile2orinoco.com</a>
+                            <a href=""><i class="fas fa-phone me-2"></i> +012 345 67890</a>
+                            <a href="" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-share fa-2x text-secondary me-2"></i>
+                                <a class="btn mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Opening Time</h4>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Monday - Thursday:</h6>
+                                <p class="text-white mb-0">09.00 am to 07.00 pm</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Saturday:</h6>
+                                <p class="text-white mb-0">10.00 am to 05.00 pm</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Vacation:</h6>
+                                <p class="text-white mb-0">All Friday is our vacation</p>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="col-md-6 col-lg-6 col-xl-3">
+    <div class="footer-item d-flex flex-column">
+        <h4 class="text-secondary mb-4" data-i18n="footer_explore_title">Explore Destinations</h4>
+        
+        <a href="egypt.html" class="mb-2">
+            <i class="fas fa-angle-right me-2"></i>
+            <span data-i18n="footer_explore_egypt">Explore Egypt</span>
+        </a>
+        
+        <a href="venezuela.html" class="mb-2">
+            <i class="fas fa-angle-right me-2"></i>
+            <span data-i18n="footer_explore_ven">Explore Venezuela</span>
+        </a>
+    </div>
+</div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="text-secondary mb-4">News Letters</h4>
+                            <p class="text-white mb-3">Subscribe to get the latest news about Egypt and Venezuela tours.</p>
+                            <div class="position-relative mx-auto rounded-pill">
+                                <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                                <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-white"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Nile2Orinoco</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-white">
+                        <!--/*** The author’s attribution link must remain intact in the template. ***/-->
+                        <!--/*** If you wish to remove this credit link, please purchase the Pro Version . ***/-->
+                         <a class="border-bottom text-white" href="contact.html">info@nile2orinoco.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  
+
+<script>
+const counters = document.querySelectorAll('.counter');
+const speed = 200; // كلما زاد الرقم قلّت السرعة
+
+const startCounters = () => {
+    counters.forEach(counter => {
+        const updateCount = () => {
+            const target = +counter.getAttribute('data-target');
+            const count = +counter.innerText.replace(',', ''); // إزالة الفواصل إن وجدت للعمليات الحسابية
+
+            // حساب سرعة الزيادة
+            const inc = target / speed;
+
+            if (count < target) {
+                // إضافة الرقم وتنسيقه ليحتوي على فواصل آلاف (11,485)
+                const nextCount = Math.ceil(count + inc);
+                counter.innerText = nextCount.toLocaleString();
+                setTimeout(updateCount, 1);
+            } else {
+                counter.innerText = target.toLocaleString();
+            }
+        };
+        updateCount();
+    });
+};
+
+// تشغيل العدّاد عند ظهور القسم على الشاشة فقط (Intersection Observer)
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            startCounters();
+            observer.unobserve(entry.target); // تشغيلها مرة واحدة فقط
+        }
+    });
+}, { threshold: 0.5 });
+
+counters.forEach(counter => observer.observe(counter));
+</script>
+
+
+
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
