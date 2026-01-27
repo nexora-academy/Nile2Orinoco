@@ -1,0 +1,1648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Nile2Orinoco - The Giza Pyramids</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <link rel="Icon" href="img/logo-removed-one.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* إعدادات الخلفية للهيرو */
+        .hero-header {
+            background: linear-gradient(rgba(20, 20, 31, 0.7), rgba(20, 20, 31, 0.7)), url('img/egypt-bg.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: -100px; /* لضمان تداخلها مع الناف بار الشفاف إذا لزم الأمر */
+            padding-top: 150px;
+        }
+
+        /* الحفاظ على خاصية Sticky Navbar من الكود القديم */
+        .sticky-top.nav-bar {
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-secondary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <div class="container-fluid bg-primary px-5 d-none d-lg-block">
+        <div class="row gx-0 align-items-center">
+            <div class="col-lg-5 text-center text-lg-start mb-lg-0">
+                <div class="d-flex">
+                    <a href="#" class="text-muted me-4"><i class="fas fa-envelope text-secondary me-2"></i>info@nile2orinoco.com</a>
+                    <a href="#" class="text-muted me-0"><i class="fas fa-phone-alt text-secondary me-2"></i>+01234567890</a>
+                </div>
+            </div>
+            <div class="col-lg-3 row-cols-1 text-center mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal text-secondary"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal text-secondary"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal text-secondary"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal text-secondary"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle" href=""><i class="fab fa-youtube fw-normal text-secondary"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a href="contact.html" class="text-muted me-2"> Help</a><small> / </small>
+                    <a href="contact.html" class="text-muted mx-2"> Support</a><small> / </small>
+                    <a href="contact.html" class="text-muted ms-2"> Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid nav-bar sticky-top px-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+                <h1 class="display-5 m-0" style="display: flex; align-items: center;">
+                    <img src="img/logo-removed-one.png" class="img-fluid" alt="Logo" style="max-height: 50px; margin-left: 10px;">
+                    <span style="color: #e63946;">Nile</span><span style="color: #1d3557;">2Orinoco</span>
+                </h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="egypt.html" class="nav-item nav-link">Discover Egypt</a>
+                    <a href="egypt-historical-places.html" class="nav-item nav-link active">Historical Places</a>
+                                        <a href="egypt-traditions.html" class="nav-item nav-link">traditions</a>
+                    <a href="egypt-flight-booking.html" class="nav-item nav-link">Flight Booking</a>
+                    <a href="egypt-safety-guidelines.html" class="nav-item nav-link">Safety Guidelines</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="egypt-gallery.html" class="dropdown-item">Gallery</a>
+                            <a href="egypt-articles.html" class="dropdown-item">Articles</a>
+                        </div>
+                    </div>
+                    <a href="index.html" class="nav-item nav-link">Back To Home Page</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="fa fa-language me-2"></i>Language
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end m-0">
+                            <a href="javascript:void(0)" onclick="setLanguage('ar')" class="dropdown-item">العربية</a>
+                            <a href="javascript:void(0)" onclick="setLanguage('en')" class="dropdown-item">English</a>
+                            <a href="javascript:void(0)" onclick="setLanguage('es')" class="dropdown-item">Español</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid giza-compact-hero py-5 mb-5">
+    <div class="container py-4">
+        <div class="row align-items-center">
+            <div class="col-lg-7 text-center text-lg-start wow fadeInLeft" data-wow-delay="0.1s">
+                <h1 class="display-5 text-white mb-2">The Great <span class="text-gold">Pyramids of Giza</span></h1>
+                <p class="text-white-50 mb-0 fs-5">Journey through the heart of history's greatest mystery.</p>
+            </div>
+            <div class="col-lg-5 text-center text-lg-end mt-4 mt-lg-0 wow fadeInRight" data-wow-delay="0.3s">
+                <a href="booking.html" class="booking-btn-compact shadow-lg">
+                    <span class="icon-space"><i class="fas fa-ticket-alt"></i></span>
+                    <span class="text-space">Book Your Ticket to <strong class="text-gold">Egypt</strong></span>
+                    <i class="fas fa-chevron-right ms-2 arrow-move"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .giza-compact-hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/eg-py-7.webp');
+        background-position: center 30%; /* يركز على قمة الأهرامات */
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-bottom: 4px solid #D4A373; /* خط ذهبي رفيع في النهاية */
+    }
+
+    .text-gold {
+        color: #D4A373 !important;
+    }
+
+    /* زر الحجز المضغوط */
+    .booking-btn-compact {
+        display: inline-flex;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(212, 163, 115, 0.5);
+        padding: 12px 25px;
+        border-radius: 50px;
+        color: white;
+        text-decoration: none !important;
+        transition: 0.4s ease;
+    }
+
+    .booking-btn-compact .icon-space {
+        font-size: 1.4rem;
+        color: #D4A373;
+        margin-right: 15px;
+    }
+
+    .booking-btn-compact .text-space {
+        font-size: 1.1rem;
+    }
+
+    /* تأثيرات الحركة */
+    .booking-btn-compact:hover {
+        background: #D4A373;
+        color: #fff;
+        transform: scale(1.03);
+    }
+
+    .booking-btn-compact:hover .icon-space, 
+    .booking-btn-compact:hover .text-gold {
+        color: #fff !important;
+    }
+
+    .arrow-move {
+        transition: 0.3s;
+    }
+
+    .booking-btn-compact:hover .arrow-move {
+        transform: translateX(5px);
+    }
+
+    /* ضبط الحجم للشاشات الصغيرة */
+    @media (max-width: 991px) {
+        .giza-compact-hero { padding: 40px 0; }
+        .display-5 { font-size: 2.2rem; }
+    }
+</style>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid py-5 giza-vertical-video-section" id="videoSection">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            
+            <div class="col-lg-5 wow zoomIn" data-wow-delay="0.1s">
+                <div class="vertical-video-wrapper shadow-lg mx-auto">
+                    <video id="gizaVideo" muted loop playsinline class="vertical-video">
+                        <source src="video/eg-v1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    
+                    <div class="video-frame-decoration"></div>
+
+                    <button id="muteBtn" class="mute-control-btn">
+                        <i class="fas fa-volume-mute" id="muteIcon"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.3s">
+                <h6 class="section-title bg-white text-start text-primary pe-3">Experience Giza</h6>
+                <h1 class="mb-4">The Majesty of <span class="text-primary">Ancient Egypt</span> In Motion</h1>
+                
+                <p class="mb-4 fw-bold text-dark">Watch as history comes to life. This exclusive footage captures the spiritual energy and architectural brilliance of the pyramids.</p>
+
+                <p class="mb-4">Standing at the foot of these giants, you feel the weight of 4,500 years. Our cinematic vertical perspective is designed to show you the true scale—from the golden desert sands to the tip of the Great Pyramid touching the sky.</p>
+
+                <div class="row g-3 mb-4">
+                    <div class="col-sm-6">
+                        <div class="d-flex align-items-center p-3 border rounded shadow-sm bg-white">
+                            <i class="fa fa-vr-cardboard fa-2x text-primary me-3"></i>
+                            <h6 class="mb-0">Immersive Experience</h6>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="d-flex align-items-center p-3 border rounded shadow-sm bg-white">
+                            <i class="fa fa-headphones fa-2x text-primary me-3"></i>
+                            <h6 class="mb-0">Spatial Audio History</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="egypt-flight-booking.html" class="btn btn-primary py-3 px-5 rounded-pill shadow">Secure Your Visit</a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<style>
+    /* تنسيق الحاوية والألوان */
+    .giza-vertical-video-section {
+        background-color: #fdfaf5;
+    }
+    .giza-vertical-video-section .text-primary {
+        color: #D4A373 !important;
+    }
+    .giza-vertical-video-section .btn-primary {
+        background-color: #D4A373;
+        border-color: #D4A373;
+    }
+
+    /* أبعاد الفيديو الطولي (9:16) */
+    .vertical-video-wrapper {
+        position: relative;
+        width: 300px;
+        height: 530px;
+        border-radius: 30px;
+        overflow: hidden;
+        z-index: 2;
+        background: #000;
+        border: 10px solid #1a1a1a;
+    }
+
+    .vertical-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* زر كتم الصوت */
+    .mute-control-btn {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        background: rgba(212, 163, 115, 0.8);
+        border: none;
+        color: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+    }
+
+    .mute-control-btn:hover {
+        background: #D4A373;
+        transform: scale(1.1);
+    }
+
+    /* إطار ذهبي ديكوري خلف الفيديو */
+    .video-frame-decoration {
+        position: absolute;
+        top: 20px;
+        left: -20px;
+        width: 100%;
+        height: 100%;
+        border: 2px solid #D4A373;
+        border-radius: 30px;
+        z-index: -1;
+    }
+
+    @media (max-width: 576px) {
+        .vertical-video-wrapper {
+            width: 260px;
+            height: 460px;
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const video = document.getElementById('gizaVideo');
+        const muteBtn = document.getElementById('muteBtn');
+        const muteIcon = document.getElementById('muteIcon');
+
+        //Intersection Observer للتحكم في التشغيل والايقاف عند الرؤية
+        const options = {
+            root: null,
+            threshold: 0.5 // يبدأ العمل عندما يظهر 50% من السكشن
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    video.play().catch(error => console.log("Autoplay prevented, waiting for user click."));
+                    // المتصفحات ترفض Unmute تلقائي بدون نقرة مستخدم
+                    // لذا سيبقى مكتوم حتى يضغط المستخدم أو يلمس الصفحة
+                } else {
+                    video.pause();
+                }
+            });
+        }, options);
+
+        observer.observe(video);
+
+        // وظيفة زر كتم/تشغيل الصوت يدوياً
+        muteBtn.addEventListener('click', function() {
+            if (video.muted) {
+                video.muted = false;
+                muteIcon.classList.remove('fa-volume-mute');
+                muteIcon.classList.add('fa-volume-up');
+            } else {
+                video.muted = true;
+                muteIcon.classList.remove('fa-volume-up');
+                muteIcon.classList.add('fa-volume-mute');
+            }
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid py-5 giza-tablet-style-section" style="background-color: #ffffff;">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            
+            <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-start text-primary pe-3">Architectural Mastery</h6>
+                <h1 class="mb-4 display-5 fw-bold">The Great Pyramid: A <span class="text-primary">Global Wonder</span></h1>
+                
+                <p class="mb-4 fw-bold text-dark">Experience the legendary precision that has fascinated travelers and scientists for thousands of years.</p>
+                
+                <p class="mb-4">Witness the monumental scale of the Giza Plateau through this cinematic panoramic view. From the perfectly aligned corners to the massive limestone blocks, every detail reflects a civilization that aimed for eternity.</p>
+
+                <div class="row g-3 mb-4">
+                    <div class="col-sm-6">
+                        <div class="d-flex align-items-center p-3 border rounded shadow-sm bg-white">
+                            <i class="fa fa-monument fa-2x text-primary me-3"></i>
+                            <h6 class="mb-0">Structural Perfection</h6>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="d-flex align-items-center p-3 border rounded shadow-sm bg-white">
+                            <i class="fa fa-drafting-compass fa-2x text-primary me-3"></i>
+                            <h6 class="mb-0">Mathematical Genius</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="egypt-flight-booking.html" class="btn btn-primary py-3 px-5 rounded-pill shadow">Learn More Secrets</a>
+            </div>
+
+            <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+                <div class="tablet-frame-wrapper shadow-lg mx-auto">
+                    <video id="tabletGizaVideo" muted loop playsinline class="tablet-video-content">
+                        <source src="video/eg-v3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    
+                    <div class="tablet-frame-decoration"></div>
+
+                    <button id="muteBtnTablet" class="mute-control-btn">
+                        <i class="fas fa-volume-mute" id="muteIconTablet"></i>
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<style>
+    /* الحفاظ على هوية الألوان والخطوط من السكاشن السابقة */
+    .giza-tablet-style-section .text-primary {
+        color: #D4A373 !important;
+    }
+    .giza-tablet-style-section .btn-primary {
+        background-color: #D4A373;
+        border-color: #D4A373;
+    }
+    .giza-tablet-style-section .section-title::after {
+        background: #D4A373 !important;
+    }
+
+    /* إطار التابلت العرضي - مصمم ليشبه ستايل الموبايل الذي أعجبك */
+    .tablet-frame-wrapper {
+        position: relative;
+        width: 100%; /* يأخذ عرض العمود */
+        max-width: 550px; 
+        aspect-ratio: 16 / 10; /* نسبة التابلت العرضي */
+        border-radius: 20px;
+        overflow: hidden;
+        z-index: 2;
+        background: #000;
+        border: 10px solid #1a1a1a; /* نفس سمك إطار الموبايل */
+    }
+
+    .tablet-video-content {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* الإطار الذهبي الديكوري خلف التابلت (نفس منطق السكاشن القديمة) */
+    .tablet-frame-decoration {
+        position: absolute;
+        top: -15px;
+        right: -15px;
+        width: 100%;
+        height: 100%;
+        border: 2px solid #D4A373;
+        border-radius: 20px;
+        z-index: -1;
+    }
+
+    /* زر الصوت بنفس الستايل السابق */
+    .mute-control-btn {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        background: rgba(212, 163, 115, 0.8);
+        border: none;
+        color: white;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* استجابة الموبايل */
+    @media (max-width: 991px) {
+        .tablet-frame-wrapper {
+            max-width: 100%;
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const videoT = document.getElementById('tabletGizaVideo');
+        const muteBtnT = document.getElementById('muteBtnTablet');
+        const muteIconT = document.getElementById('muteIconTablet');
+
+        const observerT = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    videoT.play().catch(() => {});
+                } else {
+                    videoT.pause();
+                }
+            });
+        }, { threshold: 0.5 });
+
+        observerT.observe(videoT);
+
+        muteBtnT.addEventListener('click', function() {
+            videoT.muted = !videoT.muted;
+            muteIconT.classList.toggle('fa-volume-mute');
+            muteIconT.classList.toggle('fa-volume-up');
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid py-5 giza-grandeur-section" style="background-color: #fffafa;">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            
+            <div class="col-lg-5 wow zoomIn" data-wow-delay="0.1s">
+                <div class="vertical-video-wrapper shadow-lg mx-auto">
+                    <video id="grandeurVideo" muted loop playsinline class="vertical-video">
+                        <source src="video/eg-v2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    
+                    <div class="video-frame-decoration-alt"></div>
+
+                    <button id="muteBtnGrandeur" class="mute-control-btn">
+                        <i class="fas fa-volume-mute" id="muteIconGrandeur"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.3s">
+                <h6 class="section-title bg-white text-start text-primary pe-3">The Peak of Human Glory</h6>
+                <h1 class="mb-4 display-5 fw-bold text-dark">An Eternal Icon of <span class="text-primary">Human Triumph</span></h1>
+                
+                <p class="mb-4 fs-5 fw-bold" style="color: #444; border-left: 4px solid #D4A373; padding-left: 15px;">
+                    "All the world fears Time, but Time fears the Pyramids." 
+                </p>
+
+                <p class="mb-4 lh-lg">
+                    The Pyramids of Giza are not merely structures of stone; they are a profound declaration of the human spirit’s victory over mortality. For millennia, they have stood as an unyielding witness to a civilization that did not just build monuments but mastered the stars and the laws of geometry to create a legacy that never fades. 
+                </p>
+
+                <p class="mb-4 text-muted">
+                    This is where architectural perfection meets divine inspiration. Every block, weighing tons and placed with millimetric precision, tells the story of a glory that refuses to be forgotten—a golden echo of a kingdom that conquered eternity.
+                </p>
+
+                <div class="row g-3 mb-4">
+                    <div class="col-sm-6">
+                        <div class="d-flex align-items-center p-2">
+                            <i class="fa fa-crown text-primary fa-2x me-3"></i>
+                            <h6 class="mb-0">Imperial Grandeur</h6>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="d-flex align-items-center p-2">
+                            <i class="fa fa-infinity text-primary fa-2x me-3"></i>
+                            <h6 class="mb-0">Timeless Legacy</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="egypt-flight-booking.html" class="btn btn-primary py-3 px-5 rounded-pill shadow-lg border-0" style="background: linear-gradient(45deg, #D4A373, #b0855b);">
+                    Walk Among Legends
+                </a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<style>
+    /* Section specific colors and borders */
+    .giza-grandeur-section .text-primary {
+        color: #D4A373 !important;
+    }
+    .giza-grandeur-section .section-title::after {
+        background: #D4A373 !important;
+    }
+
+    /* Vertical Frame Styles */
+    .vertical-video-wrapper {
+        position: relative;
+        width: 300px;
+        height: 530px;
+        border-radius: 30px;
+        overflow: hidden;
+        z-index: 2;
+        background: #000;
+        border: 10px solid #1a1a1a;
+    }
+
+    .vertical-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Decoration frame oriented to the bottom-right for variety */
+    .video-frame-decoration-alt {
+        position: absolute;
+        bottom: 20px;
+        right: -20px;
+        width: 100%;
+        height: 100%;
+        border: 2px solid #D4A373;
+        border-radius: 30px;
+        z-index: -1;
+    }
+
+    .mute-control-btn {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        background: rgba(212, 163, 115, 0.8);
+        border: none;
+        color: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s ease;
+    }
+
+    .mute-control-btn:hover {
+        background: #D4A373;
+        transform: scale(1.1);
+    }
+
+    @media (max-width: 576px) {
+        .vertical-video-wrapper { width: 260px; height: 460px; }
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const video2 = document.getElementById('grandeurVideo');
+        const muteBtn2 = document.getElementById('muteBtnGrandeur');
+        const muteIcon2 = document.getElementById('muteIconGrandeur');
+
+        // Intersection Observer for Auto-play/Pause
+        const observer2 = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    video2.play().catch(e => console.log("Waiting for user interaction..."));
+                } else {
+                    video2.pause();
+                }
+            });
+        }, { threshold: 0.5 });
+
+        observer2.observe(video2);
+
+        // Individual Mute Toggle for this specific video
+        muteBtn2.addEventListener('click', function() {
+            if (video2.muted) {
+                video2.muted = false;
+                muteIcon2.classList.replace('fa-volume-mute', 'fa-volume-up');
+            } else {
+                video2.muted = true;
+                muteIcon2.classList.replace('fa-volume-up', 'fa-volume-mute');
+            }
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid py-5 interactive-showcase" style="background-color: #ffffff;">
+    <div class="container py-5">
+        
+        <div class="section-title-wrapper text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="section-title bg-white text-center text-primary px-3">Visual Legacy</h6>
+            <h1 class="display-5 mb-5">Chronicles of the <span class="text-primary">Pharaohs</span></h1>
+        </div>
+
+        <div class="row g-5">
+            <div class="col-lg-7 wow fadeInLeft" data-wow-delay="0.2s">
+                <div class="main-viewer-wrapper">
+                    <div class="main-img-frame shadow-lg">
+                        <img id="activeGalleryImg" src="img/eg-py-0.webp" alt="Active View" class="gallery-main-img smooth-transition">
+                    </div>
+                    <div class="frame-decoration"></div>
+                    
+                    <div id="contentBox" class="content-box mt-4 p-4 border-start border-4 border-primary bg-light rounded shadow-sm">
+                        <h3 id="activeTitle" class="text-dark fw-bold">The Great Pyramid of Giza</h3>
+                        <p id="activeDesc" class="text-muted mb-0">The oldest and largest of the three pyramids, built for Pharaoh Khufu. It remained the tallest man-made structure in the world for over 3,800 years.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5 wow fadeInRight" data-wow-delay="0.4s">
+                <div class="thumbs-container shadow-sm p-3 border rounded bg-white">
+                    <div class="d-flex justify-content-between align-items-center mb-3 border-bottom pb-2">
+                        <h5 class="fw-bold text-dark mb-0">Gallery Collection</h5>
+                        <span class="badge bg-primary rounded-pill">27 Views</span>
+                    </div>
+                    
+                    <div class="thumbs-grid custom-scroll">
+                        <div class="thumb-card active" onclick="swapView(this, 'The Great Pyramid', 'The oldest and largest of the three pyramids, built for Pharaoh Khufu.', 'img/eg-py-1.jpg')">
+                            <img src="img/eg-py-1.jpg">
+                        </div>
+                        <div class="thumb-card" onclick="swapView(this, 'The Silent Sphinx', 'A mythical creature with the head of a human and the body of a lion.', 'img/eg-py-2.jpg')">
+                            <img src="img/eg-py-2.jpg">
+                        </div>
+                        <div class="thumb-card" onclick="swapView(this, 'Pyramid of Khafre', 'The second-tallest pyramid, still retaining casing stones at its apex.', 'img/eg-py-3.webp')">
+                            <img src="img/eg-py-3.webp">
+                        </div>
+                        
+                        <div class="thumb-card" onclick="swapView(this, 'Menkaure Perspective', 'The smallest of the three main pyramids, featuring a complex temple.', 'img/eg-py-4.webp')">
+                            <img src="img/eg-py-4.webp">
+                        </div>
+                        <div class="thumb-card" onclick="swapView(this, 'The Solar Boat', 'An intact full-size vessel from Ancient Egypt sealed for millennia.', 'img/eg-py-5.webp')">
+                            <img src="img/eg-py-5.webp">
+                        </div>
+                        <div class="thumb-card" onclick="swapView(this, 'Night Illumination', 'Experience the magic of the Sound and Light show under the stars.', 'img/eg-py-6.webp')">
+                            <img src="img/eg-py-6.webp">
+                        </div>
+                        
+                        <div class="thumb-card" onclick="swapView(this, 'Panoramic Plateau', 'A breathtaking wide view of the entire Giza Necropolis.', 'img/eg-py-7.webp')">
+                            <img src="img/eg-py-7.webp">
+                        </div>
+                        <div class="thumb-card" onclick="swapView(this, 'The Valley Temple', 'Where the mummification process of the Pharaohs took place.', 'img/eg-py-8.webp')">
+                            <img src="img/eg-py-8.webp">
+                        </div>
+                        <div class="thumb-card" onclick="swapView(this, 'Sunset over Sahara', 'The golden hour where the limestone reflects a divine glow.', 'img/eg-py-9.webp')">
+                            <img src="img/eg-py-9.webp">
+                        </div>
+
+                        <div class="thumb-card" onclick="swapView(this, 'Ancient Engineering', 'Massive stone blocks fitted with millimetric precision.', 'img/eg-py-10.webp')">
+                            <img src="img/eg-py-10.webp">
+                        </div>
+                        <div class="thumb-card" onclick="swapView(this, 'Celestial Alignment', 'Aligned with the belt of Orion, showing advanced astronomy.', 'img/eg-py-11.jpg')">
+                            <img src="img/eg-py-11.jpg">
+                        </div>
+                        <div class="thumb-card" onclick="swapView(this, 'The Queens Pyramids', 'Small satellite pyramids built for the royal family members.', 'img/eg-py-12.jpg')">
+                            <img src="img/eg-py-12.jpg">
+                        </div>
+
+                        <div class="thumb-card" onclick="swapView(this, 'The Sphinx Paws', 'Between the paws lies the Dream Stele of Thutmose IV.', 'img/eg-py-13.jpg')">
+                            <img src="img/eg-py-13.jpg">
+                        </div>
+                        <div class="thumb-card" onclick="swapView(this, 'Desert Caravan', 'The timeless image of camels passing through history.', 'img/eg-py-14.jpg')">
+                            <img src="img/eg-py-14.jpg">
+                        </div>
+                        <div class="thumb-card" onclick="swapView(this, 'Inner Passages', 'Descending into the heart of the mysterious shafts.', 'img/eg-py-15.webp')">
+                            <img src="img/eg-py-15.webp">
+                        </div>
+                        <div class="thumb-card" onclick="swapView(this, 'The Grand Gallery', 'A masterpiece of ancient engineering, this rising passage leads deep into the heart of the Great Pyramid.', 'img/eg-py-16.webp')">
+    <img src="img/eg-py-16.webp">
+</div>
+
+<div class="thumb-card" onclick="swapView(this, 'The Mortuary Temple', 'Where offerings were made to the deceased King, these ruins showcase the spiritual side of the pyramid complex.', 'img/eg-py-17.webp')">
+    <img src="img/eg-py-17.webp">
+</div>
+
+<div class="thumb-card" onclick="swapView(this, 'Royal Casing Stones', 'A rare glimpse of the original polished limestone that once covered the entire pyramid, making it shine like a star.', 'img/eg-py-18.webp')">
+    <img src="img/eg-py-18.webp">
+</div>
+
+<div class="thumb-card" onclick="swapView(this, 'The Lost City', 'The archaeological site where the pyramid builders lived, proving they were skilled, well-fed laborers.', 'img/eg-py-19.webp')">
+    <img src="img/eg-py-19.webp">
+</div>
+
+<div class="thumb-card" onclick="swapView(this, 'Stellar Connections', 'Small shafts that point precisely toward the stars, designed to launch the King’s soul into the afterlife.', 'img/eg-py-20.webp')">
+    <img src="img/eg-py-20.webp">
+</div>
+
+<div class="thumb-card" onclick="swapView(this, 'Dawn of Civilizations', 'The first light of day hitting the apex, symbolizing the eternal rebirth of the sun god Ra.', 'img/eg-py-21.webp')">
+    <img src="img/eg-py-21.webp">
+</div>
+
+<div class="thumb-card" onclick="swapView(this, 'The King’s Resting Place', 'The massive rose granite coffer inside the King’s Chamber, carved with incredible precision.', 'img/eg-py-22.webp')">
+    <img src="img/eg-py-22.webp">
+</div>
+
+<div class="thumb-card" onclick="swapView(this, 'The Sacred Path', 'A long, walled corridor that connected the Valley Temple to the pyramid for the final funeral procession.', 'img/eg-py-23.webp')">
+    <img src="img/eg-py-23.webp">
+</div>
+
+<div class="thumb-card" onclick="swapView(this, 'Geometric Perfection', 'The pyramid’s dimensions encode the value of Pi and the golden ratio, a mathematical miracle of the past.', 'img/eg-py-24.webp')">
+    <img src="img/eg-py-24.webp">
+</div>
+
+<div class="thumb-card" onclick="swapView(this, 'The Capstone', 'Representing the top-most stone of the pyramid, often covered in gold to catch the sun’s reflection.', 'img/eg-py-25.webp')">
+    <img src="img/eg-py-25.webp">
+</div>
+
+<div class="thumb-card" onclick="swapView(this, 'Desert Sentinel', 'The pyramids emerging from the shifting sands, a symbol of permanence in a changing world.', 'img/eg-py-26.webp')">
+    <img src="img/eg-py-26.webp">
+</div>
+
+<div class="thumb-card" onclick="swapView(this, 'Shadows of History', 'The sundial effect of the Great Pyramid, which can accurately mark the solstices and equinoxes.', 'img/eg-py-27.webp')">
+    <img src="img/eg-py-27.webp">
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* الألوان والثوابت */
+    .interactive-showcase .text-primary { color: #D4A373 !important; }
+    .interactive-showcase .border-primary { border-color: #D4A373 !important; }
+    .interactive-showcase .bg-primary { background-color: #D4A373 !important; }
+    .interactive-showcase .section-title::after { background: #D4A373 !important; }
+
+    /* ضبط الشاشة الكبيرة اليسرى */
+    .main-img-frame {
+        position: relative;
+        width: 100%;
+        height: 420px; /* ارتفاع ثابت لتوحيد العرض */
+        background: #111;
+        border: 10px solid #1a1a1a;
+        border-radius: 20px;
+        overflow: hidden;
+        z-index: 2;
+    }
+    .gallery-main-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* لقص الصور آلياً لتناسب البرواز */
+    }
+    .smooth-transition {
+        transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .frame-decoration {
+        position: absolute;
+        top: -15px;
+        left: -15px;
+        width: 100%;
+        height: 100%;
+        border: 2px solid #D4A373;
+        border-radius: 20px;
+        z-index: 1;
+    }
+
+    /* ضبط الحاوية اليمنى */
+    .thumbs-container { 
+        height: 570px; /* ارتفاع يتناسب مع الجهة اليسرى */
+        display: flex;
+        flex-direction: column;
+    }
+    .thumbs-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        overflow-y: auto;
+        padding-right: 10px;
+    }
+    .thumb-card {
+        cursor: pointer;
+        border-radius: 12px;
+        overflow: hidden;
+        height: 100px; /* مقاس موحد للصور الصغيرة */
+        border: 3px solid transparent;
+        transition: 0.3s;
+        background: #000;
+    }
+    .thumb-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* جعل الصور الصغيرة مربعة دائماً */
+        opacity: 0.6;
+    }
+    .thumb-card.active {
+        border-color: #D4A373;
+        transform: scale(0.94);
+    }
+    .thumb-card:hover img, .thumb-card.active img { opacity: 1; }
+
+    /* سكرول بار ذهبي جذاب */
+    .custom-scroll::-webkit-scrollbar { width: 5px; }
+    .custom-scroll::-webkit-scrollbar-track { background: #f8f8f8; }
+    .custom-scroll::-webkit-scrollbar-thumb { background: #D4A373; border-radius: 10px; }
+
+    .img-fade-out { opacity: 0; }
+</style>
+
+<script>
+    function swapView(element, title, desc, imgSrc) {
+        const mainImg = document.getElementById('activeGalleryImg');
+        const mainTitle = document.getElementById('activeTitle');
+        const mainDesc = document.getElementById('activeDesc');
+        const contentBox = document.getElementById('contentBox');
+
+        if(mainImg.src.includes(imgSrc)) return;
+
+        // بدء التبديل ببطء
+        mainImg.classList.add('img-fade-out');
+        contentBox.style.opacity = '0';
+        
+        setTimeout(() => {
+            mainImg.src = imgSrc;
+            mainTitle.innerText = title;
+            mainDesc.innerText = desc;
+            
+            mainImg.classList.remove('img-fade-out');
+            contentBox.style.opacity = '1';
+        }, 600); // سرعة متوسطة لملاحظة الترانزيشن
+
+        document.querySelectorAll('.thumb-card').forEach(card => card.classList.remove('active'));
+        element.classList.add('active');
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid py-5 interactive-tour-section" style="background-color: #fffafa;">
+    <div class="container py-5">
+        
+        <div class="section-title-wrapper text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="section-title bg-white text-center text-primary px-3">Immersive Journey</h6>
+            <h1 class="display-5 mb-3">Experience the <span class="text-primary">Greatness</span></h1>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="tour-main-frame shadow-lg position-relative shadow-custom">
+                    
+                    <div id="tourCover" class="tour-cover d-flex align-items-center justify-content-center">
+                        <div class="cover-content text-center text-white p-4">
+                            <div class="vr-icon-wrapper mb-4">
+                                <i class="fas fa-vr-cardboard fa-5x text-primary vr-float"></i>
+                            </div>
+                            
+                            <h2 class="fw-bold mb-3 display-6">Heart of the Pyramids</h2>
+                            <p class="mb-5 opacity-75 fs-5">Start your virtual walk through the Giza Plateau now.</p>
+                            
+                            <button onclick="activateTour()" class="btn-tour-refined">
+                                TAKE A TOUR FROM THE HEART OF PYRAMIDS
+                                <i class="fas fa-chevron-right ms-2"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="mapWrapper" class="map-wrapper d-none h-100">
+                        <iframe 
+                            id="googleMapIframe"
+                            src="https://www.google.com/maps/embed?pb=!1m0!4v1706364000000!6m8!1m7!1sAF1QipN9_8jS4F6Vv3n9v6v9v6v9v6v9v6v9v6v9v6v!2m2!1d29.9792345!2d31.1342019!3f0!4f0!5f0.7820865974627469" 
+                            width="100%" 
+                            height="600" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        <div class="tour-guide-hint bg-dark text-white p-2 text-center">
+                            <i class="fas fa-mouse-pointer text-primary me-2"></i> Click arrows to walk | Drag to explore 360°
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .interactive-tour-section .text-primary { color: #D4A373 !important; }
+    
+    /* الإطار بحواف دائرية فخمة */
+    .tour-main-frame {
+        height: 600px;
+        background: #000;
+        border-radius: 30px; /* حواف دائرية احترافية */
+        overflow: hidden;
+        border: 1px solid rgba(212, 163, 115, 0.4);
+        position: relative;
+    }
+
+    .shadow-custom {
+        box-shadow: 0 20px 40px rgba(0,0,0,0.2), 0 0 15px rgba(212, 163, 115, 0.1);
+    }
+
+    /* أنيميشن النظارة (تطلع وتنزل ببطء) */
+    .vr-float {
+        display: inline-block;
+        animation: floatingVR 3s ease-in-out infinite;
+    }
+
+    @keyframes floatingVR {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-20px); }
+    }
+
+    .tour-cover {
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), 
+                    url('https://images.unsplash.com/photo-1539768942893-daf53e448371?auto=format&fit=crop&w=1400&q=80') center/cover;
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        z-index: 10;
+        transition: 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* الزر المعدل: جذاب بهوفر بسيط */
+    .btn-tour-refined {
+        background: #D4A373;
+        color: #fff;
+        border: 2px solid #D4A373;
+        padding: 18px 45px;
+        border-radius: 50px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+    }
+
+    .btn-tour-refined:hover {
+        background: transparent;
+        color: #D4A373;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(212, 163, 115, 0.2);
+    }
+
+    .exit-animation {
+        opacity: 0;
+        transform: scale(1.1);
+        visibility: hidden;
+    }
+
+    .map-wrapper { width: 100%; height: 100%; }
+
+    @media (max-width: 768px) {
+        .tour-main-frame { height: 450px; border-radius: 20px; }
+        .btn-tour-refined { font-size: 11px; padding: 15px 25px; }
+    }
+</style>
+
+<script>
+    function activateTour() {
+        const cover = document.getElementById('tourCover');
+        const map = document.getElementById('mapWrapper');
+        cover.classList.add('exit-animation');
+        setTimeout(() => {
+            map.classList.remove('d-none');
+            map.classList.add('wow', 'fadeIn');
+        }, 400);
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid flight-booking overflow-hidden py-5" style="background-color: #ffffff;">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-7 wow fadeInLeft" data-wow-delay="0.1s">
+                <div class="sub-style">
+                    <h5 class="sub-title text-primary pe-3" data-i18n="flight_subtitle">Ready to Fly?</h5>
+                </div>
+                <h1 class="display-4 text-dark mb-4" data-i18n="flight_title">Book Your Flight to <span class="text-primary">Egypt</span></h1>
+                <p class="text-muted mb-5 fs-5" data-i18n="flight_desc">Embark on a journey to the land of Pharaohs. We partner with world-class airlines to ensure your 2026 trip to the Nile is comfortable and unforgettable.</p>
+                
+                <div class="d-flex align-items-center">
+                    <a href="egypt-flight-booking.html" target="_blank" class="btn btn-primary rounded-pill py-3 px-5 me-4 shadow wow pulse" data-wow-iteration="infinite" data-wow-duration="2s">
+                        <i class="fa fa-plane-departure me-2"></i> Book Your Ticket
+                    </a>
+                    <div class="d-flex flex-column text-dark border-start ps-4 border-2">
+                        <span class="h4 mb-0 fw-bold">Best Rates</span>
+                        <small class="text-muted">For 2026 Expeditions</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5 wow fadeInRight" data-wow-delay="0.3s">
+                <div class="bg-white p-5 rounded-4 shadow-sm border">
+                    <h6 class="text-center text-uppercase text-muted mb-4" style="letter-spacing: 2px;">Our Trusted Partners</h6>
+                    <div class="row g-4 align-items-center text-center">
+                        <div class="col-6">
+                            <img src="img/airline-1.png" class="img-fluid airline-logo" alt="EgyptAir" style="max-height: 40px; filter: grayscale(1); opacity: 0.7;">
+                        </div>
+                        <div class="col-6">
+                            <img src="img/airline-2.png" class="img-fluid airline-logo" alt="Emirates" style="max-height: 40px; filter: grayscale(1); opacity: 0.7;">
+                        </div>
+                        <div class="col-6">
+                            <img src="img/airline-3.png" class="img-fluid airline-logo" alt="Qatar Airways" style="max-height: 40px; filter: grayscale(1); opacity: 0.7;">
+                        </div>
+                        <div class="col-6">
+                            <img src="img/airline-4.png" class="img-fluid airline-logo" alt="Turkish Airlines" style="max-height: 40px; filter: grayscale(1); opacity: 0.7;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    /* تأثير جميل عند تمرير الماوس على اللوجوهات */
+    .airline-logo:hover {
+        filter: grayscale(0) !important;
+        opacity: 1 !important;
+        transform: scale(1.05);
+        transition: all 0.3s ease;
+    }
+    .flight-booking {
+        position: relative;
+        z-index: 1;
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Contact End -->
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Contact Info</h4>
+                            <a href=""><i class="fa fa-map-marker-alt me-2"></i> Ras Sidr, South Sinai, Egypt</a>
+                            <a href=""><i class="fas fa-envelope me-2"></i> info@nile2orinoco.com</a>
+                            <a href=""><i class="fas fa-phone me-2"></i> +012 345 67890</a>
+                            <a href="" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-share fa-2x text-secondary me-2"></i>
+                                <a class="btn mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Opening Time</h4>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Monday - Thursday:</h6>
+                                <p class="text-white mb-0">09.00 am to 07.00 pm</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Saturday:</h6>
+                                <p class="text-white mb-0">10.00 am to 05.00 pm</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Vacation:</h6>
+                                <p class="text-white mb-0">All Friday is our vacation</p>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="col-md-6 col-lg-6 col-xl-3">
+    <div class="footer-item d-flex flex-column">
+        <h4 class="text-secondary mb-4" data-i18n="footer_explore_title">Explore Destinations</h4>
+        
+        <a href="egypt.html" class="mb-2">
+            <i class="fas fa-angle-right me-2"></i>
+            <span data-i18n="footer_explore_egypt">Explore Egypt</span>
+        </a>
+        
+        <a href="venezuela.html" class="mb-2">
+            <i class="fas fa-angle-right me-2"></i>
+            <span data-i18n="footer_explore_ven">Explore Venezuela</span>
+        </a>
+    </div>
+</div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="text-secondary mb-4">News Letters</h4>
+                            <p class="text-white mb-3">Subscribe to get the latest news about Egypt and Venezuela tours.</p>
+                            <div class="position-relative mx-auto rounded-pill">
+                                <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                                <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-white"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Nile2Orinoco</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-white">
+                        <!--/*** The author’s attribution link must remain intact in the template. ***/-->
+                        <!--/*** If you wish to remove this credit link, please purchase the Pro Version . ***/-->
+                         <a class="border-bottom text-white" href="contact.html">info@nile2orinoco.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  
+
+<script>
+const counters = document.querySelectorAll('.counter');
+const speed = 200; // كلما زاد الرقم قلّت السرعة
+
+const startCounters = () => {
+    counters.forEach(counter => {
+        const updateCount = () => {
+            const target = +counter.getAttribute('data-target');
+            const count = +counter.innerText.replace(',', ''); // إزالة الفواصل إن وجدت للعمليات الحسابية
+
+            // حساب سرعة الزيادة
+            const inc = target / speed;
+
+            if (count < target) {
+                // إضافة الرقم وتنسيقه ليحتوي على فواصل آلاف (11,485)
+                const nextCount = Math.ceil(count + inc);
+                counter.innerText = nextCount.toLocaleString();
+                setTimeout(updateCount, 1);
+            } else {
+                counter.innerText = target.toLocaleString();
+            }
+        };
+        updateCount();
+    });
+};
+
+// تشغيل العدّاد عند ظهور القسم على الشاشة فقط (Intersection Observer)
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            startCounters();
+            observer.unobserve(entry.target); // تشغيلها مرة واحدة فقط
+        }
+    });
+}, { threshold: 0.5 });
+
+counters.forEach(counter => observer.observe(counter));
+</script>
+
+
+
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
