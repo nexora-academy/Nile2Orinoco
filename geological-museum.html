@@ -1,0 +1,1609 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Nile2Orinoco - Geological Museum</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <link rel="Icon" href="img/logo-removed-one.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* إعدادات الخلفية للهيرو */
+        .hero-header {
+            background: linear-gradient(rgba(20, 20, 31, 0.7), rgba(20, 20, 31, 0.7)), url('img/egypt-bg.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: -100px; /* لضمان تداخلها مع الناف بار الشفاف إذا لزم الأمر */
+            padding-top: 150px;
+        }
+
+        /* الحفاظ على خاصية Sticky Navbar من الكود القديم */
+        .sticky-top.nav-bar {
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-secondary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <div class="container-fluid bg-primary px-5 d-none d-lg-block">
+        <div class="row gx-0 align-items-center">
+            <div class="col-lg-5 text-center text-lg-start mb-lg-0">
+                <div class="d-flex">
+                    <a href="contact.html" class="text-muted me-4"><i class="fas fa-envelope text-secondary me-2"></i>info@nile2orinoco.com</a>
+                    <a href="contact.html" class="text-muted me-0"><i class="fas fa-phone-alt text-secondary me-2"></i>+01234567890</a>
+                </div>
+            </div>
+            <div class="col-lg-3 row-cols-1 text-center mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal text-secondary"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal text-secondary"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal text-secondary"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal text-secondary"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle" href=""><i class="fab fa-youtube fw-normal text-secondary"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a href="contact.html" class="text-muted me-2"> Help</a><small> / </small>
+                    <a href="contact.html" class="text-muted mx-2"> Support</a><small> / </small>
+                    <a href="contact.html" class="text-muted ms-2"> Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid nav-bar sticky-top px-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+                <h1 class="display-5 m-0" style="display: flex; align-items: center;">
+                    <img src="img/logo-removed-one.png" class="img-fluid" alt="Logo" style="max-height: 50px; margin-left: 10px;">
+                    <span style="color: #e63946;">Nile</span><span style="color: #1d3557;">2Orinoco</span>
+                </h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="egypt.html" class="nav-item nav-link">Discover Egypt</a>
+                    <a href="egypt-historical-places.html" class="nav-item nav-link active">Historical Places</a>
+                                        <a href="egypt-traditions.html" class="nav-item nav-link">traditions</a>
+                    <a href="egypt-flight-booking.html" class="nav-item nav-link">Flight Booking</a>
+                    <a href="egypt-safety-guidelines.html" class="nav-item nav-link">Safety Guidelines</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="egypt-gallery.html" class="dropdown-item">Gallery</a>
+                            <a href="egypt-articles.html" class="dropdown-item">Articles</a>
+                        </div>
+                    </div>
+                    <a href="index.html" class="nav-item nav-link">Back To Home Page</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="fa fa-language me-2"></i>Language
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end m-0">
+                            <a href="javascript:void(0)" onclick="setLanguage('ar')" class="dropdown-item">العربية</a>
+                            <a href="javascript:void(0)" onclick="setLanguage('en')" class="dropdown-item">English</a>
+                            <a href="javascript:void(0)" onclick="setLanguage('es')" class="dropdown-item">Español</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid gem-ticket-hero py-5 mb-5">
+    <div class="container py-4">
+    <div class="row align-items-center">
+        <div class="col-lg-7 text-center text-lg-start wow fadeInLeft" data-wow-delay="0.1s">
+        <h1 class="display-5 text-white mb-2">The Egyptian <span class="text-gold" style="color: #D4A373;">Geological Museum</span></h1>
+<p class="text-white-50 mb-0 fs-5">Journey through time to discover prehistoric giants and Earth's rarest mineral treasures.</p></div>
+        
+        <div class="col-lg-5 text-center text-lg-end mt-4 mt-lg-0 wow fadeInRight" data-wow-delay="0.3s">
+            <a href="abusimbel-tickets-booking.html" class="booking-btn-compact shadow-lg" style="text-decoration: none; display: inline-flex; align-items: center; background: rgba(255,255,255,0.05); border: 1px solid #D4A373; padding: 15px 30px; border-radius: 50px; transition: 0.4s;">
+                <span class="icon-space me-3"><i class="fas fa-sun" style="color: #D4A373;"></i></span>
+                <span class="text-space text-white">Book Your <strong class="text-gold" style="color: #D4A373;">Ticket To Egypt</strong></span>
+                <i class="fas fa-chevron-right ms-3 arrow-move" style="color: #D4A373;"></i>
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+
+<style>
+    /* أنيميشن خفيف للسهم ليتحرك يميناً ويساراً */
+    .arrow-move {
+        animation: arrowSwipe 1.5s infinite;
+    }
+    @keyframes arrowSwipe {
+        0%, 100% { transform: translateX(0); }
+        50% { transform: translateX(5px); }
+    }
+
+    /* تأثير الهوفر للزر */
+    .booking-btn-compact:hover {
+        background: #D4A373 !important;
+        transform: translateY(-3px);
+    }
+    .booking-btn-compact:hover .text-white, 
+    .booking-btn-compact:hover .text-gold, 
+    .booking-btn-compact:hover i {
+        color: #fff !important;
+    }
+</style>
+</div>
+
+<style>
+    /* التنسيقات الفنية للقسم */
+    .gem-ticket-hero {
+        /* يمكنك استبدال الرابط أدناه بصورة المتحف الخاصة بك */
+        background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), 
+                    url('img/eg-as-1.PNG'); 
+        background-position: center;
+        background-size: cover;
+        border-bottom: 4px solid #D4A373;
+        position: relative;
+    }
+
+    .text-gold { color: #D4A373 !important; }
+
+    /* تصميم الزر الجذاب بحواف انسيابية */
+    .booking-btn-compact {
+        display: inline-flex;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        color: white;
+        padding: 15px 35px;
+        border-radius: 100px;
+        text-decoration: none;
+        border: 1px solid rgba(212, 163, 115, 0.6);
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        font-weight: 500;
+    }
+
+    .booking-btn-compact:hover {
+        background: #D4A373;
+        color: white;
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(212, 163, 115, 0.3);
+    }
+
+    .icon-space {
+        background: #D4A373;
+        width: 42px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin-right: 15px;
+        transition: 0.4s;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .booking-btn-compact:hover .icon-space {
+        background: white;
+        color: #D4A373;
+        transform: rotate(360deg);
+    }
+
+    .arrow-move {
+        transition: 0.3s;
+    }
+
+    .booking-btn-compact:hover .arrow-move {
+        transform: translateX(6px);
+    }
+
+    /* تحسين الظهور على الموبايل */
+    @media (max-width: 991px) {
+        .gem-ticket-hero { 
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+        .booking-btn-compact {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+</style>
+</div>
+<style>
+    .giza-compact-hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/eg-py-7.webp');
+        background-position: center 30%; /* يركز على قمة الأهرامات */
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-bottom: 4px solid #D4A373; /* خط ذهبي رفيع في النهاية */
+    }
+
+    .text-gold {
+        color: #D4A373 !important;
+    }
+
+    /* زر الحجز المضغوط */
+    .booking-btn-compact {
+        display: inline-flex;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(212, 163, 115, 0.5);
+        padding: 12px 25px;
+        border-radius: 50px;
+        color: white;
+        text-decoration: none !important;
+        transition: 0.4s ease;
+    }
+
+    .booking-btn-compact .icon-space {
+        font-size: 1.4rem;
+        color: #D4A373;
+        margin-right: 15px;
+    }
+
+    .booking-btn-compact .text-space {
+        font-size: 1.1rem;
+    }
+
+    /* تأثيرات الحركة */
+    .booking-btn-compact:hover {
+        background: #D4A373;
+        color: #fff;
+        transform: scale(1.03);
+    }
+
+    .booking-btn-compact:hover .icon-space, 
+    .booking-btn-compact:hover .text-gold {
+        color: #fff !important;
+    }
+
+    .arrow-move {
+        transition: 0.3s;
+    }
+
+    .booking-btn-compact:hover .arrow-move {
+        transform: translateX(5px);
+    }
+
+    /* ضبط الحجم للشاشات الصغيرة */
+    @media (max-width: 991px) {
+        .giza-compact-hero { padding: 40px 0; }
+        .display-5 { font-size: 2.2rem; }
+    }
+</style>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid py-5 geological-museum-section" id="geologySection">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            
+            <div class="col-lg-5 wow zoomIn" data-wow-delay="0.1s">
+                <div class="vertical-image-wrapper shadow-lg mx-auto">
+                    <img src="img/eg-gm-1.PNG" alt="Egyptian Geological Museum" class="vertical-static-image">
+                    
+                    <div class="image-frame-decoration"></div>
+                </div>
+            </div>
+
+            <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.3s">
+                <h6 class="section-title bg-white text-start text-primary pe-3">Natural History</h6>
+                <h1 class="mb-4">The Egyptian <span class="text-primary">Geological Museum</span></h1>
+                
+                <p class="mb-4 fw-bold text-dark">Explore the first museum of its kind in the Middle East and Africa. Established in 1904, it serves as a gateway to Egypt's prehistoric secrets.</p>
+
+                <p class="mb-4">From ancient dinosaur fossils discovered in the Western Desert to rare meteorites and sparkling gemstones, the museum houses a collection that spans millions of years of Earth's history.</p>
+
+                <div class="row g-3 mb-4">
+                    <div class="col-sm-6">
+                        <div class="d-flex align-items-center p-3 border rounded shadow-sm bg-white card-hover">
+                            <i class="fas fa-bone fa-2x text-primary me-3"></i>
+                            <h6 class="mb-0">Ancient Fossils</h6>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="d-flex align-items-center p-3 border rounded shadow-sm bg-white card-hover">
+                            <i class="fas fa-gem fa-2x text-primary me-3"></i>
+                            <h6 class="mb-0">Rare Minerals</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#explore" class="btn btn-primary py-3 px-5 rounded-pill shadow-lg main-museum-btn">Discover Earth's Treasures</a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<style>
+    /* التنسيقات العامة */
+    .geological-museum-section {
+        background-color: #fdfaf5;
+    }
+    .geological-museum-section .text-primary {
+        color: #D4A373 !important;
+    }
+    .geological-museum-section .btn-primary {
+        background-color: #D4A373;
+        border-color: #D4A373;
+        transition: 0.4s;
+    }
+    .main-museum-btn:hover {
+        background-color: #1a1a1a !important;
+        border-color: #1a1a1a !important;
+        transform: translateY(-5px);
+    }
+
+    /* إطار الصورة العمودية (نفس ستايل التابلت/الموبايل) */
+    .vertical-image-wrapper {
+        position: relative;
+        width: 320px;
+        height: 550px;
+        border-radius: 40px;
+        overflow: hidden;
+        z-index: 2;
+        background: #fff;
+        border: 10px solid #1a1a1a;
+        box-shadow: 0 25px 50px rgba(0,0,0,0.2) !important;
+    }
+
+    .vertical-static-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* لضمان ملء الصورة للإطار بشكل كامل */
+        transition: transform 0.5s ease;
+    }
+
+    .vertical-image-wrapper:hover .vertical-static-image {
+        transform: scale(1.05); /* حركة خفيفة عند تمرير الماوس */
+    }
+
+    /* الديكور الذهبي الخلفي */
+    .image-frame-decoration {
+        position: absolute;
+        top: 25px;
+        left: -25px;
+        width: 100%;
+        height: 100%;
+        border: 2px solid #D4A373;
+        border-radius: 40px;
+        z-index: -1;
+        opacity: 0.4;
+    }
+
+    /* تأثيرات البطاقات */
+    .card-hover {
+        transition: 0.3s;
+        border-left: 4px solid transparent !important;
+    }
+    .card-hover:hover {
+        border-left: 4px solid #D4A373 !important;
+        transform: translateX(10px);
+        background-color: #fff !important;
+    }
+
+    @media (max-width: 576px) {
+        .vertical-image-wrapper {
+            width: 280px;
+            height: 480px;
+        }
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid py-5 devices-showcase-section" style="background-color: #fdfaf5; overflow: hidden;">
+    <div class="container py-5">
+        
+        <div class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="section-title bg-white text-center px-3 mb-3" style="color: #D4A373; letter-spacing: 3px; font-weight: 600;">DIGITAL ARCHIVE</h6>
+            <h1 class="display-5 fw-bold mb-4">The Earth's Treasures <br><span style="color: #D4A373;">In Your Hands</span></h1>
+            <p class="text-secondary mx-auto" style="max-width: 600px;">Explore our rare fossils and mineral collections through an immersive digital experience optimized for all your devices.</p>
+        </div>
+
+        <div class="row g-4 align-items-center justify-content-center">
+            
+            <div class="col-lg-8">
+                <div class="devices-grid">
+                    
+                    <div class="device-mini phone wow zoomIn" data-wow-delay="0.2s">
+                        <div class="device-inner">
+                            <img src="img/eg-gm-2.PNG" alt="Fossil">
+                        </div>
+                    </div>
+
+                    <div class="device-mini tablet wow zoomIn" data-wow-delay="0.3s">
+                        <div class="device-inner">
+                            <img src="img/eg-gm-3.PNG" alt="Dinosaur">
+                        </div>
+                    </div>
+
+                    <div class="device-mini phone wow zoomIn" data-wow-delay="0.4s">
+                        <div class="device-inner">
+                            <img src="img/eg-gm-4.PNG" alt="Gemstone">
+                        </div>
+                    </div>
+
+                    <div class="device-mini phone wow zoomIn" data-wow-delay="0.5s">
+                        <div class="device-inner">
+                            <img src="img/eg-gm-5.PNG" alt="Meteorite">
+                        </div>
+                    </div>
+
+                    <div class="device-mini tablet wow zoomIn" data-wow-delay="0.6s">
+                        <div class="device-inner">
+                            <img src="img/eg-gm-6.PNG" alt="Hall">
+                        </div>
+                    </div>
+
+                    <div class="device-mini phone wow zoomIn" data-wow-delay="0.7s">
+                        <div class="device-inner">
+                            <img src="img/eg-gm-7.PNG" alt="Crystal">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<style>
+    /* تنسيق شبكة الأجهزة */
+    .devices-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        perspective: 1000px;
+    }
+
+    /* الستايل المشترك للأجهزة */
+    .device-mini {
+        background: #1a1a1a;
+        border: 6px solid #1a1a1a;
+        border-radius: 25px;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        overflow: hidden;
+        position: relative;
+        transition: transform 0.4s ease;
+    }
+
+    .device-mini:hover {
+        transform: scale(1.1) rotate(2deg);
+        z-index: 10;
+    }
+
+    .device-inner {
+        width: 100%;
+        height: 100%;
+        background: #000;
+        overflow: hidden;
+        border-radius: 18px;
+    }
+
+    .device-inner img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* أحجام الموبايلات الصغير */
+    .phone {
+        width: 130px;
+        height: 240px;
+        border-radius: 20px;
+    }
+
+    /* أحجام التابلت */
+    .tablet {
+        width: 280px;
+        height: 200px;
+        border-radius: 20px;
+    }
+
+    /* إضافة ثقب الكاميرا الصغير للموبايلات */
+    .phone::after {
+        content: '';
+        position: absolute;
+        top: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 8px;
+        height: 8px;
+        background: #333;
+        border-radius: 50%;
+    }
+
+    /* تفاعلية التصميم */
+    @media (max-width: 768px) {
+        .phone { width: 100px; height: 180px; }
+        .tablet { width: 200px; height: 150px; }
+    }
+
+    .section-title {
+        border-bottom: 2px solid #D4A373;
+        padding-bottom: 5px;
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid py-5 interactive-ecosystem" style="background-color: #fdfaf5; overflow: hidden;">
+    <div class="container py-5">
+        
+        <div class="text-center mb-5 wow fadeInUp">
+            <h6 class="section-title bg-white text-center px-3 mb-3" style="color: #D4A373; letter-spacing: 3px; font-weight: 600;">GEOLOGICAL DIGITAL HUB</h6>
+            <h1 class="display-5 fw-bold mb-4">The Earth's Treasures <br><span style="color: #D4A373;">Stacked Reality</span></h1>
+        </div>
+
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-8 order-2 order-lg-1">
+                <div class="stacked-devices-container">
+                    
+                    <div class="device-base tablet-main">
+                        <div class="device-inner shadow-lg">
+                            <img src="img/eg-gm-9.PNG" class="sync-target-img" id="mainView">
+                            <div class="screen-overlay"></div>
+                        </div>
+                    </div>
+
+                    <div class="device-base phone-top shadow-lg">
+                        <div class="device-inner">
+                            <img src="img/eg-gm-4.PNG" class="sync-target-img">
+                            <div class="screen-overlay"></div>
+                        </div>
+                    </div>
+
+                    <div class="device-base tablet-overlay shadow-lg">
+                        <div class="device-inner">
+                            <img src="img/eg-gm-8.PNG" class="sync-target-img">
+                            <div class="screen-overlay"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-4 order-1 order-lg-2">
+                <div class="premium-gallery-sidebar">
+                    <div class="sidebar-header d-flex justify-content-between align-items-center mb-4">
+                        <h5 class="fw-bold mb-0" style="color: #1a1a1a;">Collection</h5>
+                        <span class="items-count">22 Pieces</span>
+                    </div>
+                    
+                    <div class="premium-scroll-list custom-scroll" id="full-gm-list">
+                        </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<style>
+    /* تصميم الأجهزة المتداخلة (ثابتة) */
+    .stacked-devices-container {
+        position: relative;
+        height: 500px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .device-base {
+        background: #000;
+        border: 8px solid #1a1a1a;
+        border-radius: 35px;
+        position: absolute;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .device-inner { position: relative; width: 100%; height: 100%; border-radius: 25px; overflow: hidden; }
+    .device-inner img { width: 100%; height: 100%; object-fit: cover; transition: opacity 0.8s ease-in-out; }
+
+    /* الإحداثيات الثابتة للتداخل */
+    .tablet-main {
+        width: 80%;
+        height: 400px;
+        z-index: 1;
+        transform: rotate(-2deg); /* ميلان خفيف جداً للفخامة */
+    }
+
+    .phone-top {
+        width: 120px;
+        height: 230px;
+        right: 10%;
+        top: 10%;
+        z-index: 3;
+        border-width: 6px;
+        transform: rotate(3deg);
+    }
+
+    .tablet-overlay {
+        width: 280px;
+        height: 180px;
+        left: 5%;
+        bottom: 5%;
+        z-index: 2;
+        border-width: 6px;
+        transform: rotate(-5deg);
+    }
+
+    /* تأثير التغيير الهادئ (بدون إطفاء) */
+    .screen-overlay {
+        position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+        background: #000; opacity: 0; transition: 0.5s; z-index: 10;
+    }
+    .device-syncing .screen-overlay { opacity: 0.7; }
+
+    /* تصميم القائمة الجانبية الفخم */
+    .premium-gallery-sidebar {
+        background: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(212, 163, 115, 0.2);
+        padding: 20px;
+        border-radius: 30px;
+        height: 600px;
+    }
+
+    .items-count {
+        background: #D4A373; color: white;
+        padding: 5px 15px; border-radius: 20px; font-size: 12px;
+    }
+
+    .premium-scroll-list { height: 500px; overflow-y: auto; padding-right: 10px; }
+
+    .premium-item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 10px;
+        margin-bottom: 12px;
+        background: white;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+        border: 1px solid transparent;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    }
+
+    .premium-item .img-holder {
+        width: 60px; height: 60px; border-radius: 15px; overflow: hidden; flex-shrink: 0;
+    }
+
+    .premium-item .img-holder img { width: 100%; height: 100%; object-fit: cover; }
+    
+    .premium-item .item-info h6 { margin: 0; font-size: 14px; font-weight: 700; color: #333; }
+    .premium-item .item-info span { font-size: 11px; color: #999; }
+
+    .premium-item:hover { transform: translateX(-5px); background: #fffaf5; }
+    .premium-item.active { border-color: #D4A373; background: #fffaf5; box-shadow: 0 10px 20px rgba(212, 163, 115, 0.15); }
+
+    /* سكرول بار */
+    .custom-scroll::-webkit-scrollbar { width: 4px; }
+    .custom-scroll::-webkit-scrollbar-thumb { background: #D4A373; border-radius: 10px; }
+
+    @media (max-width: 768px) {
+        .stacked-devices-container { height: 350px; }
+        .tablet-main { width: 95%; height: 250px; }
+        .phone-top { width: 80px; height: 140px; }
+        .tablet-overlay { width: 150px; height: 100px; }
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const listContainer = document.getElementById('full-gm-list');
+        const syncImages = document.querySelectorAll('.sync-target-img');
+        const devices = document.querySelectorAll('.device-base');
+
+        for (let i = 1; i <= 22; i++) {
+            const item = document.createElement('div');
+            item.className = `premium-item ${i === 1 ? 'active' : ''}`;
+            item.innerHTML = `
+                <div class="img-holder">
+                    <img src="img/eg-gm-${i}.PNG">
+                </div>
+                <div class="item-info">
+                    <h6>Specimen #${i}</h6>
+                    <span>Geological Treasure</span>
+                </div>
+            `;
+            
+            item.onclick = function() {
+                if(this.classList.contains('active')) return;
+
+                document.querySelectorAll('.premium-item').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+
+                devices.forEach(d => d.classList.add('device-syncing'));
+
+                setTimeout(() => {
+                    const newSrc = `img/eg-gm-${i}.PNG`;
+                    syncImages.forEach(img => {
+                        img.src = newSrc;
+                    });
+
+                    setTimeout(() => {
+                        devices.forEach(d => d.classList.remove('device-syncing'));
+                    }, 100);
+                }, 400);
+            };
+
+            listContainer.appendChild(item);
+        }
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid py-5 bg-white overflow-hidden">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            
+            <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="stacked-map-container">
+                    
+                    <div class="tablet-frame-bold shadow-lg">
+                        <div class="tablet-black-bar d-flex align-items-center justify-content-between px-4">
+                            <div class="tablet-dots">
+                                <span class="dot-red"></span>
+                                <span class="dot-yellow"></span>
+                                <span class="dot-green"></span>
+                            </div>
+                            <div class="tablet-url-box">
+                                <i class="fas fa-shield-alt me-2 text-success" style="font-size: 10px;"></i>
+                                geological-museum.eg/satellite-view
+                            </div>
+                            <div class="tablet-icons">
+                                <i class="fas fa-redo-alt" style="font-size: 10px; opacity: 0.6;"></i>
+                            </div>
+                        </div>
+                        
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.332304953931!2d31.2291508!3d30.0034444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145846923557d6ad%3A0x34f4eb048fd5715c!2sThe%20Egyptian%20Geological%20Museum!5e1!3m2!1sen!2seg!4v1700000000000" 
+                            width="100%" 
+                            height="450" 
+                            style="border:0; display: block;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+
+                    <div class="phone-map-overlay shadow-lg d-none d-md-block">
+                        <div class="phone-screen">
+                            <div class="gps-stats">
+                                <i class="fas fa-map-marker-alt text-danger mb-2"></i>
+                                <small class="d-block text-white-50">LOCATION</small>
+                                <strong class="text-white" style="font-size: 11px;">22.3372° N, 31.6256° E</strong>
+                            </div>
+                            <img src="img/eg-gm-12.PNG" alt="Terrain Stats">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="ps-lg-5">
+                    <span class="site-tag">Satellite Mapping</span>
+                    <h2 class="display-5 fw-bold mt-3 mb-4">Precision <br><span class="text-gold">Terrain Analysis</span></h2>
+                    
+                    <div class="desc-box mb-4">
+                        <p class="text-secondary" style="font-size: 1.1rem; line-height: 1.8;">
+                            Explore the geological context of Egypt's treasures. Our high-resolution satellite mapping allows you to analyze soil compositions and topographical shifts surrounding historical excavation sites.
+                        </p>
+                    </div>
+
+                    <div class="feature-stack mb-5">
+                        <div class="f-card-mini mb-3">
+                            <div class="f-icon-black"><i class="fas fa-satellite"></i></div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Real-time Data</h6>
+                                <small class="text-muted">High-accuracy topographical sync</small>
+                            </div>
+                        </div>
+                        <div class="f-card-mini">
+                            <div class="f-icon-black"><i class="fas fa-layer-group"></i></div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Layered Imaging</h6>
+                                <small class="text-muted">Multi-spectrum rock analysis</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#" target="_blank" class="btn-black-bold w-100 text-center">
+                        EXPLORE GLOBAL MAPS
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<style>
+    :root { 
+        --pure-black: #000000;
+        --gold-theme: #D4A373;
+        --heavy-shadow: 0 40px 100px rgba(0, 0, 0, 0.2);
+    }
+
+    .text-gold { color: var(--gold-theme); }
+
+    /* Stacked Device Layout */
+    .stacked-map-container {
+        position: relative;
+        padding: 40px 0;
+    }
+
+    .tablet-frame-bold {
+        background: #fff;
+        border: 12px solid var(--pure-black);
+        border-radius: 40px;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+    }
+
+    /* The Overlapping Phone */
+    .phone-map-overlay {
+        position: absolute;
+        width: 150px;
+        height: 280px;
+        background: var(--pure-black);
+        border: 6px solid var(--pure-black);
+        border-radius: 25px;
+        bottom: -20px;
+        right: -30px;
+        z-index: 2;
+        overflow: hidden;
+        transform: rotate(-5deg);
+    }
+
+    .phone-screen {
+        position: relative;
+        height: 100%;
+        background: #1a1a1a;
+        border-radius: 18px;
+        overflow: hidden;
+    }
+
+    .phone-screen img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.5;
+    }
+
+    .gps-stats {
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+        background: rgba(0,0,0,0.3);
+    }
+
+    /* Content Styling */
+    .site-tag {
+        color: var(--gold-theme);
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 13px;
+        border-bottom: 2px solid var(--gold-theme);
+    }
+
+    .f-card-mini {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        background: #fcfcfc;
+        padding: 15px;
+        border-radius: 15px;
+        border: 1px solid #eee;
+    }
+
+    .f-icon-black {
+        width: 45px;
+        height: 45px;
+        background: var(--pure-black);
+        color: white;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn-black-bold {
+        display: inline-block;
+        background: var(--pure-black);
+        color: white;
+        padding: 18px 45px;
+        border-radius: 15px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-decoration: none;
+        transition: 0.3s;
+        border: 2px solid var(--pure-black);
+    }
+
+    .btn-black-bold:hover {
+        background: transparent;
+        color: var(--pure-black);
+    }
+
+    /* Responsive adjustment */
+    @media (max-width: 991px) {
+        .stacked-map-container { margin-bottom: 50px; }
+        .phone-map-overlay { width: 120px; height: 200px; right: 0; }
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid flight-booking overflow-hidden py-5" style="background-color: #ffffff;">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-7 wow fadeInLeft" data-wow-delay="0.1s">
+                <div class="sub-style">
+                    <h5 class="sub-title text-primary pe-3" data-i18n="flight_subtitle">Ready to Fly?</h5>
+                </div>
+                <h1 class="display-4 text-dark mb-4" data-i18n="flight_title">Book Your Flight to <span class="text-primary">Egypt</span></h1>
+                <p class="text-muted mb-5 fs-5" data-i18n="flight_desc">Embark on a journey to the land of Pharaohs. We partner with world-class airlines to ensure your 2026 trip to the Nile is comfortable and unforgettable.</p>
+                
+                <div class="d-flex align-items-center">
+                    <a href="egypt-flight-booking.html" target="_blank" class="btn btn-primary rounded-pill py-3 px-5 me-4 shadow wow pulse" data-wow-iteration="infinite" data-wow-duration="2s">
+                        <i class="fa fa-plane-departure me-2"></i> Book Your Ticket
+                    </a>
+                    <div class="d-flex flex-column text-dark border-start ps-4 border-2">
+                        <span class="h4 mb-0 fw-bold">Best Rates</span>
+                        <small class="text-muted">For 2026 Expeditions</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5 wow fadeInRight" data-wow-delay="0.3s">
+                <div class="bg-white p-5 rounded-4 shadow-sm border">
+                    <h6 class="text-center text-uppercase text-muted mb-4" style="letter-spacing: 2px;">Our Trusted Partners</h6>
+                    <div class="row g-4 align-items-center text-center">
+                        <div class="col-6">
+                            <img src="img/airline-1.png" class="img-fluid airline-logo" alt="EgyptAir" style="max-height: 40px; filter: grayscale(1); opacity: 0.7;">
+                        </div>
+                        <div class="col-6">
+                            <img src="img/airline-2.png" class="img-fluid airline-logo" alt="Emirates" style="max-height: 40px; filter: grayscale(1); opacity: 0.7;">
+                        </div>
+                        <div class="col-6">
+                            <img src="img/airline-3.png" class="img-fluid airline-logo" alt="Qatar Airways" style="max-height: 40px; filter: grayscale(1); opacity: 0.7;">
+                        </div>
+                        <div class="col-6">
+                            <img src="img/airline-4.png" class="img-fluid airline-logo" alt="Turkish Airlines" style="max-height: 40px; filter: grayscale(1); opacity: 0.7;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    /* تأثير جميل عند تمرير الماوس على اللوجوهات */
+    .airline-logo:hover {
+        filter: grayscale(0) !important;
+        opacity: 1 !important;
+        transform: scale(1.05);
+        transition: all 0.3s ease;
+    }
+    .flight-booking {
+        position: relative;
+        z-index: 1;
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Contact End -->
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Contact Info</h4>
+                            <a href=""><i class="fa fa-map-marker-alt me-2"></i> Ras Sidr, South Sinai, Egypt</a>
+                            <a href=""><i class="fas fa-envelope me-2"></i> info@nile2orinoco.com</a>
+                            <a href=""><i class="fas fa-phone me-2"></i> +012 345 67890</a>
+                            <a href="" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-share fa-2x text-secondary me-2"></i>
+                                <a class="btn mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-secondary mb-4">Opening Time</h4>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Monday - Thursday:</h6>
+                                <p class="text-white mb-0">09.00 am to 07.00 pm</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Saturday:</h6>
+                                <p class="text-white mb-0">10.00 am to 05.00 pm</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Vacation:</h6>
+                                <p class="text-white mb-0">All Friday is our vacation</p>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="col-md-6 col-lg-6 col-xl-3">
+    <div class="footer-item d-flex flex-column">
+        <h4 class="text-secondary mb-4" data-i18n="footer_explore_title">Explore Destinations</h4>
+        
+        <a href="egypt.html" class="mb-2">
+            <i class="fas fa-angle-right me-2"></i>
+            <span data-i18n="footer_explore_egypt">Explore Egypt</span>
+        </a>
+        
+        <a href="venezuela.html" class="mb-2">
+            <i class="fas fa-angle-right me-2"></i>
+            <span data-i18n="footer_explore_ven">Explore Venezuela</span>
+        </a>
+    </div>
+</div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="text-secondary mb-4">News Letters</h4>
+                            <p class="text-white mb-3">Subscribe to get the latest news about Egypt and Venezuela tours.</p>
+                            <div class="position-relative mx-auto rounded-pill">
+                                <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                                <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-white"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Nile2Orinoco</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-white">
+                        <!--/*** The author’s attribution link must remain intact in the template. ***/-->
+                        <!--/*** If you wish to remove this credit link, please purchase the Pro Version . ***/-->
+                         <a class="border-bottom text-white" href="contact.html">info@nile2orinoco.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  
+
+<script>
+const counters = document.querySelectorAll('.counter');
+const speed = 200; // كلما زاد الرقم قلّت السرعة
+
+const startCounters = () => {
+    counters.forEach(counter => {
+        const updateCount = () => {
+            const target = +counter.getAttribute('data-target');
+            const count = +counter.innerText.replace(',', ''); // إزالة الفواصل إن وجدت للعمليات الحسابية
+
+            // حساب سرعة الزيادة
+            const inc = target / speed;
+
+            if (count < target) {
+                // إضافة الرقم وتنسيقه ليحتوي على فواصل آلاف (11,485)
+                const nextCount = Math.ceil(count + inc);
+                counter.innerText = nextCount.toLocaleString();
+                setTimeout(updateCount, 1);
+            } else {
+                counter.innerText = target.toLocaleString();
+            }
+        };
+        updateCount();
+    });
+};
+
+// تشغيل العدّاد عند ظهور القسم على الشاشة فقط (Intersection Observer)
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            startCounters();
+            observer.unobserve(entry.target); // تشغيلها مرة واحدة فقط
+        }
+    });
+}, { threshold: 0.5 });
+
+counters.forEach(counter => observer.observe(counter));
+</script>
+
+
+
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
