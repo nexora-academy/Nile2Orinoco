@@ -687,67 +687,130 @@
 
 
 
-
-<div class="container-fluid flight-booking overflow-hidden py-5" style="background-color: #f8f9fa; border-top: 1px solid #eee;">
+<div class="container-fluid flight-booking overflow-hidden py-5" style="background-color: #fcfcfc;">
     <div class="container py-5">
         <div class="row g-5 align-items-center">
+            
             <div class="col-lg-7 wow fadeInLeft" data-wow-delay="0.1s">
-                <div class="sub-style">
-                    <h5 class="sub-title text-primary pe-3" data-i18n="flight_subtitle">Ready to Fly?</h5>
+                <div class="d-flex align-items-center mb-3">
+                    <div style="width: 35px; height: 3px; background: #D4A373; border-radius: 10px; margin-right: 15px;"></div>
+                    <h5 class="text-uppercase fw-bold mb-0" style="color: #D4A373; letter-spacing: 2px; font-size: 13px;">Official Partners</h5>
                 </div>
-                <h1 class="display-4 text-dark mb-4" data-i18n="flight_title">Book Your Flight to <span class="text-primary">Egypt</span></h1>
-                <p class="text-muted mb-5 fs-5" data-i18n="flight_desc">Embark on a journey to the land of Pharaohs. We partner with world-class airlines to ensure your 2026 trip to the Nile is comfortable and unforgettable.</p>
+                <h1 class="display-5 fw-bold text-dark mb-4">Book Your Official <br><span style="color: #bc1823;">Flight To Egypt</span></h1>
+                <p class="text-secondary mb-5 pe-lg-5" style="line-height: 1.8; font-size: 1.1rem;">
+                    We collaborate with premier global carriers to ensure your 2026 expedition starts with world-class comfort and reliability.
+                </p>
                 
-                <div class="d-flex align-items-center">
-                    <a href="flight-booking.html" target="_blank" class="btn btn-primary rounded-pill py-3 px-5 me-4 shadow wow pulse" data-wow-iteration="infinite" data-wow-duration="2s">
+                <div class="d-flex align-items-center flex-wrap gap-4">
+                    <a href="egypt-flight-booking.html" target="_blank" class="btn-smooth-red">
                         <i class="fa fa-plane-departure me-2"></i> Book Your Ticket
                     </a>
-                    <div class="d-flex flex-column text-dark border-start ps-4 border-2">
-                        <span class="h4 mb-0 fw-bold">Best Rates</span>
-                        <small class="text-muted">For 2026 Expeditions</small>
+                    
+                    <div class="ps-4 border-start border-2" style="border-color: #eee !important;">
+                        <span class="d-block h5 mb-0 fw-bold text-dark">Premium Service</span>
+                        <small class="text-muted">Direct Nile Expeditions</small>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-5 wow fadeInRight" data-wow-delay="0.3s">
-                <div class="bg-white p-5 rounded-4 shadow-sm border">
-                    <h6 class="text-center text-uppercase text-muted mb-4" style="letter-spacing: 2px;">Our Trusted Partners</h6>
-                    <div class="row g-4 align-items-center text-center">
+                <div class="official-partners-wrapper shadow-sm">
+                    <h6 class="text-center text-muted small mb-4 text-uppercase" style="letter-spacing: 2px;">Global Carrier Network</h6>
+                    <div class="row g-3">
                         <div class="col-6">
-                            <img src="img/airline-1.png" class="img-fluid airline-logo" alt="EgyptAir" style="max-height: 40px; filter: grayscale(1); opacity: 0.7;">
+                            <div class="partner-card-smooth">
+                                <img src="img/airline-1.png" alt="EgyptAir">
+                            </div>
                         </div>
                         <div class="col-6">
-                            <img src="img/airline-2.png" class="img-fluid airline-logo" alt="Emirates" style="max-height: 40px; filter: grayscale(1); opacity: 0.7;">
+                            <div class="partner-card-smooth">
+                                <img src="img/airline-2.png" alt="Emirates">
+                            </div>
                         </div>
                         <div class="col-6">
-                            <img src="img/airline-3.png" class="img-fluid airline-logo" alt="Qatar Airways" style="max-height: 40px; filter: grayscale(1); opacity: 0.7;">
+                            <div class="partner-card-smooth">
+                                <img src="img/airline-3.png" alt="Qatar Airways">
+                            </div>
                         </div>
                         <div class="col-6">
-                            <img src="img/airline-4.png" class="img-fluid airline-logo" alt="Turkish Airlines" style="max-height: 40px; filter: grayscale(1); opacity: 0.7;">
+                            <div class="partner-card-smooth">
+                                <img src="img/airline-4.png" alt="Turkish Airlines">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </div>
+
 <style>
-    /* تأثير جميل عند تمرير الماوس على اللوجوهات */
-    .airline-logo:hover {
-        filter: grayscale(0) !important;
-        opacity: 1 !important;
-        transform: scale(1.05);
+    /* الزرار الأحمر السلس (Smooth Red) */
+    .btn-smooth-red {
+        background: #bc1823; /* أحمر رسمي فخم */
+        color: #fff;
+        padding: 16px 40px;
+        border-radius: 15px; /* حواف منعمّة وليست دائرية بالكامل */
+        text-decoration: none;
+        font-weight: 700;
+        display: inline-block;
         transition: all 0.3s ease;
+        border: 2px solid #bc1823;
+        box-shadow: 0 10px 20px rgba(188, 24, 35, 0.15);
     }
-    .flight-booking {
-        position: relative;
-        z-index: 1;
+
+    .btn-smooth-red:hover {
+        background: transparent;
+        color: #bc1823;
+        transform: translateY(-3px);
+        box-shadow: 0 15px 25px rgba(188, 24, 35, 0.2);
+    }
+
+    /* حاوية اللوجوهات المنعمة */
+    .official-partners-wrapper {
+        background: #ffffff;
+        padding: 35px;
+        border-radius: 30px; /* إطار خارجي سلس جداً */
+        border: 1px solid #f0f0f0;
+    }
+
+    .partner-card-smooth {
+        background: #fff;
+        border: 1px solid #f5f5f5;
+        height: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        border-radius: 20px; /* حواف الكروت الداخلية سلسة */
+        transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .partner-card-smooth img {
+        max-width: 100%;
+        max-height: 45px;
+        filter: grayscale(1);
+        opacity: 0.5;
+        transition: 0.4s;
+    }
+
+    .partner-card-smooth:hover {
+        background: #fff;
+        border-color: #D4A373;
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    }
+
+    .partner-card-smooth:hover img {
+        filter: grayscale(0);
+        opacity: 1;
+    }
+
+    @media (max-width: 991px) {
+        .official-partners-wrapper { margin-top: 30px; padding: 20px; }
     }
 </style>
-
-
-
-
 
 
 
@@ -1309,4 +1372,5 @@ counters.forEach(counter => observer.observe(counter));
 
 
 </html>
+
 
