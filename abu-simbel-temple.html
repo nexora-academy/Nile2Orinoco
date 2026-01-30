@@ -1459,63 +1459,83 @@
 
 
 
-
-<div class="container-fluid py-5 bg-white">
+<div class="container-fluid py-5 bg-white overflow-hidden">
     <div class="container py-5">
         <div class="row g-5 align-items-center">
             
             <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="tablet-frame-bold">
-                    <div class="tablet-black-bar d-flex align-items-center justify-content-between px-4">
-                        <div class="tablet-dots">
-                            <span class="dot-red"></span>
-                            <span class="dot-yellow"></span>
-                            <span class="dot-green"></span>
+                <div class="stacked-map-container">
+                    
+                    <div class="tablet-frame-bold shadow-lg">
+                        <div class="tablet-black-bar d-flex align-items-center justify-content-between px-4">
+                            <div class="tablet-dots">
+                                <span class="dot-red"></span>
+                                <span class="dot-yellow"></span>
+                                <span class="dot-green"></span>
+                            </div>
+                            <div class="tablet-url-box">
+                                <i class="fas fa-shield-alt me-2 text-success" style="font-size: 10px;"></i>
+                                nile2orinoco.com/satellite-view
+                            </div>
+                            <div class="tablet-icons">
+                                <i class="fas fa-redo-alt" style="font-size: 10px; opacity: 0.6;"></i>
+                            </div>
                         </div>
-                        <div class="tablet-url-box">
-                            <i class="fas fa-shield-alt me-2 text-success" style="font-size: 10px;"></i>
-                            nile2orinoco.com/satellite-view
-                        </div>
-                        <div class="tablet-icons">
-                            <i class="fas fa-redo-alt" style="font-size: 10px; opacity: 0.6;"></i>
+                        
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3714.460145224328!2d31.62340357605963!3d22.33723187965939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1456a988b126055b%3A0xa7d3cc6618f898d2!2z2YXYudin2KjYryDYo9io2Ygg2LPZhdio2YQ!5e1!3m2!1sar!2seg!4v1700000000000!5m2!1sar!2seg&maptype=satellite" 
+                            width="100%" 
+                            height="450" 
+                            style="border:0; display: block;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+
+                    <div class="phone-map-overlay shadow-lg d-none d-md-block">
+                        <div class="phone-screen">
+                            <div class="gps-stats">
+                                <i class="fas fa-map-marker-alt text-danger mb-2"></i>
+                                <small class="d-block text-white-50">LOCATION</small>
+                                <strong class="text-white" style="font-size: 11px;">22.3372° N, 31.6256° E</strong>
+                            </div>
+                            <img src="img/eg-as-1.PNG" alt="Satellite Stats">
                         </div>
                     </div>
-                    
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3714.460145224328!2d31.62340357605963!3d22.33723187965939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1456a988b126055b%3A0xa7d3cc6618f898d2!2z2YXYudin2KjYryDYo9io2Ygg2LPZhdio2YQ!5e1!3m2!1sar!2seg!4v1700000000000!5m2!1sar!2seg&maptype=satellite" 
-                        width="100%" 
-                        height="480" 
-                        style="border:0; display: block;" 
-                        allowfullscreen="" 
-                        loading="lazy">
-                    </iframe>
+
                 </div>
             </div>
 
             <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="ps-lg-4">
-                    <span class="site-tag">Satellite Mapping</span>
-                    <h2 class="display-5 fw-bold mt-3 mb-4">Precision <br><span class="text-gold">Satellite View</span></h2>
+                <div class="ps-lg-5">
+                    <span class="site-tag-smooth">Satellite Mapping</span>
+                    <h2 class="display-5 fw-bold mt-3 mb-4">Precision <br><span class="text-gold-smooth">Satellite View</span></h2>
                     
                     <div class="desc-box mb-4">
-                        <p class="text-secondary lead" style="font-size: 1.15rem;">
+                        <p class="text-secondary" style="font-size: 1.1rem; line-height: 1.8;">
                             View the stunning architecture of Abu Simbel from space. Our satellite imaging highlights the precise relocation of the temples and their unique position on the edge of Lake Nasser.
                         </p>
                     </div>
 
-                    <ul class="list-unstyled mb-5">
-                        <li class="d-flex align-items-center mb-3">
-                            <div class="icon-circle-black me-3"><i class="fas fa-satellite"></i></div>
-                            <span class="fw-bold">Real-time Terrain Data</span>
-                        </li>
-                        <li class="d-flex align-items-center mb-3">
-                            <div class="icon-circle-black me-3"><i class="fas fa-layer-group"></i></div>
-                            <span class="fw-bold">High-Resolution Imaging</span>
-                        </li>
-                    </ul>
+                    <div class="feature-stack mb-5">
+                        <div class="f-card-smooth mb-3">
+                            <div class="f-icon-box"><i class="fas fa-satellite"></i></div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">Real-time Terrain Data</h6>
+                                <small class="text-muted">High-accuracy topographical sync</small>
+                            </div>
+                        </div>
+                        <div class="f-card-smooth">
+                            <div class="f-icon-box"><i class="fas fa-layer-group"></i></div>
+                            <div>
+                                <h6 class="mb-0 fw-bold">High-Resolution Imaging</h6>
+                                <small class="text-muted">Multi-spectrum rock analysis</small>
+                            </div>
+                        </div>
+                    </div>
 
-                    <a href="https://www.google.com/maps/search/?api=1&query=Abu+Simbel+Temple&basemap=satellite" target="_blank" class="btn-black-bold">
-                        EXPLORE SATELLITE MAPS
+                    <a href="https://www.google.com/maps/search/?api=1&query=Abu+Simbel+Temple&basemap=satellite" target="_blank" class="btn-red-smooth w-100 text-center">
+                        EXPLORE SATELLITE MAPS <i class="fas fa-chevron-right ms-2" style="font-size: 12px;"></i>
                     </a>
                 </div>
             </div>
@@ -1526,31 +1546,45 @@
 
 <style>
     :root { 
-        --pure-black: #000000;
-        --gold-theme: #D4A373;
-        --heavy-shadow: 0 40px 100px rgba(0, 0, 0, 0.25);
+        --deep-black: #000000;
+        --smooth-gold: #D4A373;
+        --royal-red: #bc1823;
     }
 
-    .text-gold { color: var(--gold-theme); }
+    .text-gold-smooth { color: var(--smooth-gold); }
+
+    /* تصميم الأجهزة المتداخلة */
+    .stacked-map-container {
+        position: relative;
+        padding: 40px 0;
+    }
 
     .tablet-frame-bold {
         background: #fff;
-        border: 12px solid var(--pure-black);
-        border-radius: 40px;
+        border: 12px solid var(--deep-black);
+        border-radius: 40px; /* حواف منعمة */
         overflow: hidden;
-        box-shadow: var(--heavy-shadow);
-        transition: all 0.5s ease;
+        position: relative;
+        z-index: 1;
+        box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+        transition: 0.5s ease;
     }
 
     .tablet-frame-bold:hover {
-        transform: scale(1.02) translateY(-10px);
-        box-shadow: 0 50px 120px rgba(0, 0, 0, 0.35);
+        transform: translateY(-10px);
     }
 
     .tablet-black-bar {
-        background: var(--pure-black);
+        background: var(--deep-black);
         height: 50px;
-        border-bottom: 2px solid #222;
+    }
+
+    .tablet-url-box {
+        background: #222;
+        color: #888;
+        padding: 5px 30px;
+        border-radius: 12px;
+        font-size: 12px;
     }
 
     .tablet-dots span {
@@ -1564,56 +1598,97 @@
     .dot-yellow { background: #ffbd2e; }
     .dot-green { background: #27c93f; }
 
-    .tablet-url-box {
-        background: #222;
-        color: #888;
-        padding: 5px 40px;
-        border-radius: 10px;
-        font-size: 13px;
-        font-family: 'Segoe UI', sans-serif;
-        letter-spacing: 0.5px;
+    /* الموبايل المتداخل */
+    .phone-map-overlay {
+        position: absolute;
+        width: 155px;
+        height: 290px;
+        background: var(--deep-black);
+        border: 7px solid var(--deep-black);
+        border-radius: 30px;
+        bottom: -30px;
+        right: -30px;
+        z-index: 2;
+        overflow: hidden;
+        transform: rotate(-5deg);
+        box-shadow: 0 20px 50px rgba(0,0,0,0.3);
     }
 
-    .site-tag {
-        color: var(--gold-theme);
+    .phone-screen { position: relative; height: 100%; border-radius: 22px; overflow: hidden; background: #111; }
+    .phone-screen img { width: 100%; height: 100%; object-fit: cover; opacity: 0.5; }
+
+    .gps-stats {
+        position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+        z-index: 3; display: flex; flex-direction: column; justify-content: center;
+        align-items: center; text-align: center; padding: 15px; background: rgba(0,0,0,0.4);
+    }
+
+    /* النصوص والمميزات */
+    .site-tag-smooth {
+        color: var(--smooth-gold);
         font-weight: 800;
         text-transform: uppercase;
         letter-spacing: 3px;
         font-size: 13px;
-        border-bottom: 2px solid var(--gold-theme);
+        border-bottom: 2px solid var(--smooth-gold);
     }
 
-    .icon-circle-black {
-        width: 35px;
-        height: 35px;
-        background: var(--pure-black);
+    .f-card-smooth {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        background: #fdfdfd;
+        padding: 18px;
+        border-radius: 20px;
+        border: 1px solid #f0f0f0;
+        transition: 0.3s;
+    }
+
+    .f-card-smooth:hover {
+        border-color: var(--smooth-gold);
+        background: #fff;
+        transform: translateX(10px);
+    }
+
+    .f-icon-box {
+        width: 50px;
+        height: 50px;
+        background: var(--deep-black);
         color: white;
-        border-radius: 10px;
+        border-radius: 15px;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 14px;
+        font-size: 18px;
     }
 
-    .btn-black-bold {
+    /* الزرار الأحمر السلس */
+    .btn-red-smooth {
         display: inline-block;
-        background: var(--pure-black);
+        background: var(--royal-red);
         color: white;
         padding: 18px 45px;
-        border-radius: 15px;
+        border-radius: 18px;
         font-weight: 700;
         letter-spacing: 1px;
         text-decoration: none;
-        transition: 0.3s;
-        border: 2px solid var(--pure-black);
+        transition: 0.4s;
+        border: 2px solid var(--royal-red);
+        box-shadow: 0 10px 20px rgba(188, 24, 35, 0.2);
     }
 
-    .btn-black-bold:hover {
+    .btn-red-smooth:hover {
         background: transparent;
-        color: var(--pure-black);
+        color: var(--royal-red);
+        box-shadow: 0 15px 30px rgba(188, 24, 35, 0.3);
+        transform: translateY(-3px);
+    }
+
+    @media (max-width: 991px) {
+        .stacked-map-container { margin-bottom: 60px; }
+        .phone-map-overlay { width: 130px; height: 230px; right: 0; bottom: -20px; }
     }
 </style>
-
 
 
 
