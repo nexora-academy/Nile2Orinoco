@@ -117,20 +117,38 @@
             </div>
         </nav>
     </div>
-    <div class="container-fluid bg-primary py-5 mb-5 hero-header">
-        <div class="container py-5">
-            <div class="row justify-content-center py-5">
-                <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
-                    <h1 class="display-3 text-white mb-3 animated slideInDown">Explore the Wonders of Egypt</h1>
-                    <p class="fs-4 text-white mb-4 animated slideInDown">Discover 7,000 years of history and the breathtaking beauty of the Nile.</p>
-                    <div class="position-relative w-75 mx-auto animated slideInDown">
-                        <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Search historical sites...">
-                        <button type="button" class="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2" style="margin-top: 7px;">Search</button>
-                    </div>
+    <div class="container-fluid bg-primary py-5 mb-5 hero-header main-hero">
+    <div class="container py-5">
+        <div class="row justify-content-center py-5">
+            <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                <h1 class="display-3 text-white mb-3 animated slideInDown">Explore the Wonders of Egypt</h1>
+                <p class="fs-4 text-white mb-4 animated slideInDown">Discover 7,000 years of history and the breathtaking beauty of the Nile.</p>
+                <div class="position-relative w-75 mx-auto animated slideInDown">
+                    <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Search historical sites...">
+                    <button type="button" class="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2" style="margin-top: 7px;">Search</button>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
+<style>
+    .main-hero {
+        /* إضافة الصورة مع طبقة تعتيم (Overlay) للحفاظ على وضوح النص */
+        background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)), 
+                    url('img/egypt.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    /* لضمان أن الـ Hero يأخذ مساحة جيدة */
+    .hero-header {
+        margin-top: -100px; /* ليتداخل مع النافبار إذا كان شفافاً */
+        padding-top: 150px !important;
+        padding-bottom: 100px !important;
+    }
+</style>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
@@ -152,46 +170,206 @@
 
 
 
-<div class="container-fluid py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="img-fluid position-absolute w-100 h-100 rounded" src="img/about5-2.png" alt="Ancient Egypt History" style="object-fit: cover;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid py-5 overflow-hidden" style="background-color: #fdfaf5;">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            
+            <div class="col-lg-6">
+                <div class="showcase-container">
+                    <div class="tablet-frame shadow-lg">
+                        <div class="screen">
+                            <img src="img/egypt.png" alt="Egypt History">
+                        </div>
+                    </div>
+                    <div class="phone-frame-right shadow-2xl">
+                        <div class="phone-inner">
+                            <div class="notch"></div>
+                            <img src="img/eg-py-10.webp" alt="Mobile View">
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <h6 class="section-title bg-white text-start text-primary pe-3">Historical Overview</h6>
-                    <h1 class="mb-4">Witness the <span class="text-primary">7,000 Years</span> of Legacy</h1>
-                    <p class="mb-4">Egypt's history is the bedrock of human civilization. From the architectural precision of the Old Kingdom to the artistic splendor of the New Kingdom, every stone tells a story of gods, kings, and eternal life.</p>
-                    <p class="mb-4">Explore our curated guide to the most significant archaeological sites, where you can walk through the same halls as Ramses the Great and Tutankhamun.</p>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="content-wrapper">
+                    <h6 class="section-badge">Historical Overview</h6>
+                    <h1 class="display-6 fw-bold mb-4">Witness the <span style="color: #bc1823;">7,000 Years</span> of Legacy</h1>
                     
-                    <div class="row gy-2 gx-4 mb-4">
-                        <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-university text-primary me-2"></i>Expert Egyptologists</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-map-marker-alt text-primary me-2"></i>Top Historical Sites</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-id-card text-primary me-2"></i>Private Museum Tours</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-clock text-primary me-2"></i>Fast-Track Entry</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-camera text-primary me-2"></i>Exclusive Photo Ops</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-headset text-primary me-2"></i>Multi-lingual Guides</p>
-                        </div>
+                    <p class="mb-3 fw-bold text-dark">Egypt's history is the bedrock of human civilization. From the architectural precision of the Old Kingdom to the artistic splendor of the New Kingdom, every stone tells a story of gods, kings, and eternal life.</p>
+                    
+                    <p class="mb-4 text-secondary small">Explore our curated guide to the most significant archaeological sites, where you can walk through the same halls as Ramses the Great and Tutankhamun.</p>
+                    
+                    <div class="features-grid-custom">
+                        <div class="feat-box"><i class="fa fa-university"></i> Expert Egyptologists</div>
+                        <div class="feat-box"><i class="fa fa-map-marker-alt"></i> Top Historical Sites</div>
+                        <div class="feat-box"><i class="fa fa-id-card"></i> Private Museum Tours</div>
+                        <div class="feat-box"><i class="fa fa-clock"></i> Fast-Track Entry</div>
+                        <div class="feat-box"><i class="fa fa-camera"></i> Exclusive Photo Ops</div>
+                        <div class="feat-box"><i class="fa fa-headset"></i> Multi-lingual Guides</div>
                     </div>
-                    <a class="btn btn-primary py-3 px-5 mt-2" href="egypt-gallery.html">View Blog Gallery</a>
+                    
+                    <a class="btn-main-red" href="egypt-gallery.html">View Blog Gallery</a>
+                    <br>
+</br><br>
+</br>
                 </div>
             </div>
         </div>
     </div>
-    ```
+</div>
+
+<style>
+    /* حاوية العرض */
+    .showcase-container {
+        position: relative;
+        width: 100%;
+        max-width: 520px;
+        margin: 0 auto;
+        padding: 40px 0;
+    }
+
+    /* التابلت المنتظم */
+    .tablet-frame {
+        width: 90%; /* نترك مساحة للموبايل في اليمين */
+        height: 320px;
+        background: #1a1a1a;
+        border-radius: 20px;
+        padding: 10px;
+        border: 1px solid #333;
+    }
+
+    .tablet-frame .screen {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    /* الموبايل في أقصى اليمين */
+    .phone-frame-right {
+        position: absolute;
+        width: 130px;
+        height: 260px;
+        background: #000;
+        border-radius: 24px;
+        padding: 5px;
+        right: 0; /* أقصى اليمين */
+        bottom: 10px; /* مرتفع قليلاً عن الحافة */
+        z-index: 5;
+        border: 3px solid #1a1a1a;
+        animation: smoothSoftFloat 4s ease-in-out infinite;
+    }
+
+    .phone-inner {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .notch {
+        position: absolute;
+        top: 0; left: 50%;
+        transform: translateX(-50%);
+        width: 40px; height: 12px;
+        background: #000;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        z-index: 6;
+    }
+
+    img { width: 100%; height: 100%; object-fit: cover; }
+
+    /* حركة الطفو اللينة */
+    @keyframes smoothSoftFloat {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-12px); }
+    }
+
+    /* تنسيقات النصوص */
+    .section-badge {
+        color: #bc1823;
+        font-weight: 800;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        margin-bottom: 15px;
+    }
+
+    .features-grid-custom {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin-bottom: 35px;
+    }
+
+    .feat-box {
+        font-weight: 700;
+        font-size: 0.85rem;
+        color: #333;
+        display: flex;
+        align-items: center;
+    }
+
+    .feat-box i {
+        color: #bc1823;
+        margin-right: 10px;
+        font-size: 1rem;
+    }
+
+    /* الزرار */
+    .btn-main-red {
+        display: inline-block;
+        padding: 16px 45px;
+        background: #bc1823;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 10px;
+        font-weight: 700;
+        transition: 0.4s;
+    }
+
+    .btn-main-red:hover {
+        background: #333;
+        transform: translateY(-3px);
+        color: #fff;
+    }
+
+    /* الاستجابة للموبايل */
+    @media (max-width: 768px) {
+        .showcase-container { max-width: 100%; }
+        .tablet-frame { width: 85%; height: 250px; }
+        .phone-frame-right { width: 100px; height: 200px; right: 0; }
+        .features-grid-custom { grid-template-columns: 1fr; }
+    }
+</style>
+<br>
+</br>
+
+
+
+
+
+
+
 
 
 
@@ -232,7 +410,7 @@
                 <div class="service-item">
                     <div class="service-inner">
                         <div class="service-img">
-                            <img src="img/pyramids.jpg" class="img-fluid w-100 rounded" alt="Giza Pyramids">
+                            <img src="img/eg-py-2.jpg" class="img-fluid w-100 rounded custom-img-size" alt="Giza Pyramids">
                         </div>
                         <div class="service-title">
                             <div class="service-title-name">
@@ -257,7 +435,7 @@
                 <div class="service-item">
                     <div class="service-inner">
                         <div class="service-img">
-                            <img src="img/gem.jpg" class="img-fluid w-100 rounded" alt="Grand Egyptian Museum">
+                            <img src="img/eg-gr-0.jpg" class="img-fluid w-100 rounded custom-img-size" alt="Grand Egyptian Museum">
                         </div>
                         <div class="service-title">
                             <div class="service-title-name">
@@ -282,7 +460,7 @@
                 <div class="service-item">
                     <div class="service-inner">
                         <div class="service-img">
-                            <img src="img/valley-kings.jpg" class="img-fluid w-100 rounded" alt="Valley of the Kings">
+                            <img src="img/eg-vk-1.jpg" class="img-fluid w-100 rounded custom-img-size" alt="Valley of the Kings">
                         </div>
                         <div class="service-title">
                             <div class="service-title-name">
@@ -307,7 +485,7 @@
                 <div class="service-item">
                     <div class="service-inner">
                         <div class="service-img">
-                            <img src="img/abu-simbel.jpg" class="img-fluid w-100 rounded" alt="Abu Simbel">
+                            <img src="img/eg-as-1.PNG" class="img-fluid w-100 rounded custom-img-size" alt="Abu Simbel">
                         </div>
                         <div class="service-title">
                             <div class="service-title-name">
@@ -332,7 +510,7 @@
                 <div class="service-item">
                     <div class="service-inner">
                         <div class="service-img">
-                            <img src="img/st-catherine.jpg" class="img-fluid w-100 rounded" alt="St. Catherine">
+                            <img src="img/eg-sc-1.jpg" class="img-fluid w-100 rounded custom-img-size" alt="St. Catherine">
                         </div>
                         <div class="service-title">
                             <div class="service-title-name">
@@ -357,7 +535,7 @@
                 <div class="service-item">
                     <div class="service-inner">
                         <div class="service-img">
-                            <img src="img/complex.jpg" class="img-fluid w-100 rounded" alt="Religious Complex">
+                            <img src="img/eg-rc-10.jpg" class="img-fluid w-100 rounded custom-img-size" alt="Religious Complex">
                         </div>
                         <div class="service-title">
                             <div class="service-title-name">
@@ -382,7 +560,7 @@
                 <div class="service-item">
                     <div class="service-inner">
                         <div class="service-img">
-                            <img src="img/nubia.jpg" class="img-fluid w-100 rounded" alt="Nubian Village">
+                            <img src="img/eg-nh-1.jpg" class="img-fluid w-100 rounded custom-img-size" alt="Nubian Village">
                         </div>
                         <div class="service-title">
                             <div class="service-title-name">
@@ -407,7 +585,7 @@
                 <div class="service-item">
                     <div class="service-inner">
                         <div class="service-img">
-                            <img src="img/khan.jpg" class="img-fluid w-100 rounded" alt="Khan El Khalili">
+                            <img src="img/eg-kk-1.PNG" class="img-fluid w-100 rounded custom-img-size" alt="Khan El Khalili">
                         </div>
                         <div class="service-title">
                             <div class="service-title-name">
@@ -432,7 +610,7 @@
                 <div class="service-item">
                     <div class="service-inner">
                         <div class="service-img">
-                            <img src="img/alex-library.jpg" class="img-fluid w-100 rounded" alt="Alexandria Library">
+                            <img src="img/eg-la-1.jpg" class="img-fluid w-100 rounded custom-img-size" alt="Alexandria Library">
                         </div>
                         <div class="service-title">
                             <div class="service-title-name">
@@ -457,7 +635,7 @@
                 <div class="service-item">
                     <div class="service-inner">
                         <div class="service-img">
-                            <img src="img/geology.jpg" class="img-fluid w-100 rounded" alt="Geological Museum">
+                            <img src="img/eg-gm-1.PNG" class="img-fluid w-100 rounded custom-img-size" alt="Geological Museum">
                         </div>
                         <div class="service-title">
                             <div class="service-title-name">
@@ -477,10 +655,19 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </div>
 
+<style>
+/* هذا الكلاس هو المسؤول عن توحيد مقاس جميع الصور */
+.custom-img-size {
+    height: 250px; /* يمكنك التحكم في الارتفاع من هنا ليناسب ذوقك */
+    object-fit: cover; /* يضمن عدم تمدد الصورة وقصها بشكل احترافي */
+    width: 100%;
+}
+</style>
 
 
 
@@ -532,40 +719,74 @@
 
 
 
-
-
-<div class="container-fluid py-5">
-    <div class="container pt-5">
-        <div class="row">
-            <div class="col-lg-6" style="min-height: 500px;">
-                <div class="position-relative h-100 wow fadeInLeft" data-wow-delay="0.1s">
-                    <img class="position-absolute w-100 h-100 rounded shadow" src="img/gem-main.jpg" style="object-fit: cover;" alt="Grand Egyptian Museum">
+<div class="container-fluid py-5" style="background-color: #f8f9fa;">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                <div class="position-relative">
+                    <img class="img-fluid shadow-lg" src="img/eg-gr-0.jpg" 
+                         style="width: 100%; height: 450px; object-fit: cover; border-radius: 30px;" 
+                         alt="Grand Egyptian Museum">
+                    <div class="position-absolute" style="top: -15px; left: -15px; width: 100%; height: 100%; border: 2px solid #bc1823; border-radius: 30px; z-index: -1;"></div>
                 </div>
             </div>
             
-            <div class="col-lg-6 pt-5 pb-lg-5 wow fadeInRight" data-wow-delay="0.3s">
-                <div class="about-text bg-white p-4 p-lg-5 my-lg-5 shadow-sm border-start border-5 border-primary" style="border-radius: 0 20px 20px 0;">
-                    <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;" data-i18n="gem_subtitle">World's Largest Museum</h6>
-                    <h1 class="mb-3" data-i18n="gem_title">The Grand Egyptian Museum</h1>
-                    <p data-i18n="gem_desc">Discover the home of King Tutankhamun's entire collection and thousands of rare artifacts. The GEM is not just a museum; it's a global cultural hub located just steps away from the Great Pyramids of Giza, showcasing the full glory of ancient Egypt.</p>
+            <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+                <div class="about-text bg-white p-4 p-lg-5 shadow-sm border-start border-5 border-primary" style="border-radius: 20px;">
+                    <h6 class="text-primary text-uppercase" style="letter-spacing: 3px; font-weight: bold;" data-i18n="gem_subtitle">World's Largest Museum</h6>
+                    <h1 class="mb-3" style="font-weight: 700;" data-i18n="gem_title">The Grand Egyptian Museum</h1>
+                    <p class="text-muted mb-4" data-i18n="gem_desc">Discover the home of King Tutankhamun's entire collection and thousands of rare artifacts. The GEM is not just a museum; it's a global cultural hub.</p>
                     
-                    <div class="row mb-4">
+                    <div class="row g-3 mb-4">
                         <div class="col-6">
-                            <img class="img-fluid rounded shadow-sm" src="img/gem-statue.jpg" alt="Ramses II Statue">
-                            <small class="text-muted d-block mt-2 text-center" data-i18n="gem_cap_1">Colossus of Ramses II</small>
+                            <div class="small-card">
+                                <img class="img-fluid shadow-sm" src="img/eg-gr-2.PNG" 
+                                     style="width: 100%; height: 120px; object-fit: cover; border-radius: 15px;" 
+                                     alt="Ramses II Statue">
+                                <small class="text-muted d-block mt-2 text-center" data-i18n="gem_cap_1">Colossus of Ramses II</small>
+                            </div>
                         </div>
                         <div class="col-6">
-                            <img class="img-fluid rounded shadow-sm" src="img/gem-stairs.jpg" alt="Grand Staircase">
-                            <small class="text-muted d-block mt-2 text-center" data-i18n="gem_cap_2">The Grand Staircase</small>
+                            <div class="small-card">
+                                <img class="img-fluid shadow-sm" src="img/eg-gr-1.jpg" 
+                                     style="width: 100%; height: 120px; object-fit: cover; border-radius: 15px;" 
+                                     alt="Grand Staircase">
+                                <small class="text-muted d-block mt-2 text-center" data-i18n="gem_cap_2">The Grand Staircase</small>
+                            </div>
                         </div>
                     </div>
                     
-                    <a href="https://visit-gem.com/ar/AdmissionTkt" target="_blank" class="btn btn-primary rounded-pill py-3 px-5 mt-1 shadow" data-i18n="btn_book_ticket">Book Your Ticket Now</a>
+                    <div class="text-center text-lg-start">
+                        <a href="https://visit-gem.com/ar/AdmissionTkt" target="_blank" 
+                           class="btn btn-primary rounded-pill py-3 px-5 shadow fw-bold" 
+                           data-i18n="btn_book_ticket">Book Your Ticket Now</a>
+                    </div>
+                    <br></br>
+                                        <br></br>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<style>
+    /* تحسينات إضافية للمسة احترافية */
+    .about-text {
+        transition: 0.4s;
+    }
+    .about-text:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+    }
+    
+    /* جعل الصور الصغيرة تتفاعل عند مرور الماوس */
+    .small-card img {
+        transition: 0.3s;
+    }
+    .small-card:hover img {
+        transform: scale(1.05);
+    }
+</style>
 
 
 
