@@ -117,37 +117,80 @@
             </div>
         </nav>
     </div>
-    <div class="container-fluid bg-primary py-5 mb-5 trad-hero-header">
+    <div class="container-fluid py-5 mb-5 trad-hero-header">
     <div class="container py-5">
         <div class="row justify-content-center py-5">
             <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
-                <h1 class="display-3 text-white mb-3 animated slideInDown">The Soul of <span style="color: #D4A373;">Egyptian Heritage</span></h1>
+                <h1 class="display-3 text-white mb-3 animated slideInDown">The Soul of <span class="accent-text">Egyptian Heritage</span></h1>
                 
-                <p class="fs-4 text-white mb-4 animated slideInDown">
+                <p class="fs-4 text-white mb-4 animated slideInDown opacity-90">
                     Experience the warmth of Egyptian hospitality, authentic flavors, and centuries-old folk traditions.
                 </p>
 
-                <div class="position-relative w-75 mx-auto animated slideInDown">
-                    <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Search for food, crafts, or folklore...">
-                    <button type="button" class="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2" style="margin-top: 7px; background-color: #D4A373; border-color: #D4A373;">Search</button>
+                <div class="position-relative w-75 mx-auto animated slideInDown search-box-wrapper">
+                    <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5 shadow-lg" type="text" placeholder="Search for food, crafts, or folklore...">
+                    <button type="button" class="btn btn-search rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2 mt-2 shadow-sm">
+                        <i class="fa fa-search me-2"></i>Search
+                    </button>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <style>
-    /* Unique styling for the Traditions page to distinguish it from the History page */
+    /* خلفية تعتمد على التدرج اللوني فقط بدلاً من الصور */
     .trad-hero-header {
-        background: linear-gradient(rgba(20, 24, 62, 0.7), rgba(20, 24, 62, 0.7)), url('img/egyptian-streets-bg.jpg'); /* Suggestion: Use a photo of Old Cairo or a traditional market */
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        /* تدرج لوني يبدأ من الكحلي العميق وينتهي باللون النيلي لإعطاء فخامة */
+        background: radial-gradient(circle at top right, #1a1e4d, #0f172b);
+        padding: 120px 0;
+        position: relative;
+        overflow: hidden;
     }
 
-    /* Custom Golden accent color to represent traditional crafts and lanterns */
-    .trad-hero-header span {
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    /* إضافة لمسة فنية خفيفة (نقشة إسلامية/تراثية خافتة جداً في الخلفية) */
+    .trad-hero-header::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background-image: url('img/eg-tr-1.jpg'); /* نقشة ورقية هادئة */
+        opacity: 0.2;
+        pointer-events: none;
     }
+
+    /* اللون الذهبي النحاسي للنص */
+    .accent-text {
+        color: #D4A373;
+        font-weight: 800;
+        /* ظل ذهبي خفيف خلف الكلمة */
+        text-shadow: 0px 0px 15px rgba(212, 163, 115, 0.4);
+    }
+
+    /* تحسين تصميم مربع البحث */
+    .search-box-wrapper input {
+        height: 65px;
+        font-size: 1.1rem;
+        background: rgba(255, 255, 255, 0.95);
+    }
+
+    .btn-search {
+        background-color: #D4A373;
+        border-color: #D4A373;
+        color: #fff;
+        height: 48px;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+    .btn-search:hover {
+        background-color: #bc8e5d;
+        color: #fff;
+        transform: translateY(-2px);
+    }
+
+    .opacity-90 {
+        opacity: 0.9;
+    }
+</style>
 </style>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -168,52 +211,181 @@
 
 
 
-
-<div class="container-fluid py-5 trad-overview-section">
-    <div class="container">
-        <div class="row g-5">
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
-                <div class="position-relative h-100">
-                    <img class="img-fluid position-absolute w-100 h-100 rounded shadow" src="img/egypt-lifestyle.jpg" alt="Egyptian Lifestyle" style="object-fit: cover;">
+<div class="container-fluid py-5 overflow-hidden" style="background-color: #fdfaf5;">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            
+            <div class="col-lg-6">
+                <div class="showcase-container">
+                    <div class="tablet-frame shadow-lg">
+                        <div class="screen">
+                            <img src="img/eg-tr-1.jpg" alt="Egyptian Lifestyle">
+                        </div>
+                    </div>
+                    <div class="phone-frame-right shadow-2xl">
+                        <div class="phone-inner">
+                            <div class="notch"></div>
+                            <img src="img/eg-tr-2.webp" alt="Traditional Vibes">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                <h6 class="section-title bg-white text-start text-primary pe-3">Cultural Soul</h6>
-                <h1 class="mb-4">Experience the <span class="text-primary">Authentic</span> Egyptian Spirit</h1>
-                <p class="mb-4">Beyond the monuments lies a vibrant culture built on warmth and hospitality. Egyptian traditions are a beautiful blend of ancient customs and modern life, where every gathering is a celebration of family and friendship.</p>
-                <p class="mb-4">From the aromatic spices of local markets to the rhythmic beats of folk music, immerse yourself in the daily rituals that make Egypt truly unique.</p>
-                
-                <div class="row gy-2 gx-4 mb-4">
-                    <div class="col-sm-6">
-                        <p class="mb-0"><i class="fa fa-coffee text-primary me-2"></i>Warm Hospitality</p>
+
+            <div class="col-lg-6">
+                <div class="content-wrapper">
+                    <h6 class="section-badge-trad">Cultural Soul</h6>
+                    <h1 class="display-6 fw-bold mb-4">Experience the <span style="color: #D4A373;">Authentic</span> Egyptian Spirit</h1>
+                    
+                    <p class="mb-3 fw-bold text-dark">Beyond the monuments lies a vibrant culture built on warmth and hospitality. Egyptian traditions are a beautiful blend of ancient customs and modern life.</p>
+                    
+                    <p class="mb-4 text-secondary small">From the aromatic spices of local markets to the rhythmic beats of folk music, immerse yourself in the daily rituals that make Egypt truly unique, where every gathering is a celebration of family.</p>
+                    
+                    <div class="features-grid-custom">
+                        <div class="feat-box"><i class="fa fa-coffee"></i> Warm Hospitality</div>
+                        <div class="feat-box"><i class="fa fa-utensils"></i> Authentic Cuisine</div>
+                        <div class="feat-box"><i class="fa fa-palette"></i> Traditional Crafts</div>
+                        <div class="feat-box"><i class="fa fa-music"></i> Folk Music & Dance</div>
+                        <div class="feat-box"><i class="fa fa-home"></i> Local Traditions</div>
+                        <div class="feat-box"><i class="fa fa-heart"></i> Friendly Locals</div>
                     </div>
-                    <div class="col-sm-6">
-                        <p class="mb-0"><i class="fa fa-utensils text-primary me-2"></i>Authentic Cuisine</p>
-                    </div>
-                    <div class="col-sm-6">
-                        <p class="mb-0"><i class="fa fa-palette text-primary me-2"></i>Traditional Crafts</p>
-                    </div>
-                    <div class="col-sm-6">
-                        <p class="mb-0"><i class="fa fa-music text-primary me-2"></i>Folk Music & Dance</p>
-                    </div>
-                    </div>
-                
-                <a class="btn btn-primary py-3 px-5 mt-2" href="traditions-gallery.html">Explore Heritage</a>
+                    
+                    <a class="btn-main-trad" href="traditions-gallery.html">Explore Heritage</a>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
 <style>
-    /* لمسة جمالية لتغيير لون الأيقونات لتناسب جو التقاليد الدافئ */
-    .trad-overview-section .text-primary {
-        color: #D4A373 !important; /* لون ذهبي/نحاسي يعبر عن الأصالة */
+    /* حاوية العرض */
+    .showcase-container {
+        position: relative;
+        width: 100%;
+        max-width: 520px;
+        margin: 0 auto;
+        padding: 40px 0;
     }
-    .trad-overview-section .btn-primary {
-        background-color: #D4A373;
-        border-color: #D4A373;
+
+    /* التابلت */
+    .tablet-frame {
+        width: 90%;
+        height: 320px;
+        background: #1a1a1a;
+        border-radius: 20px;
+        padding: 10px;
+        border: 1px solid #333;
+    }
+
+    .tablet-frame .screen {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    /* الموبايل بتصميم الأيفون */
+    .phone-frame-right {
+        position: absolute;
+        width: 135px;
+        height: 270px;
+        background: #000;
+        border-radius: 24px;
+        padding: 6px;
+        right: 0;
+        bottom: 0px;
+        z-index: 5;
+        border: 3px solid #222;
+        animation: smoothSoftFloat 4s ease-in-out infinite;
+    }
+
+    .phone-inner {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .notch {
+        position: absolute;
+        top: 0; left: 50%;
+        transform: translateX(-50%);
+        width: 45px; height: 15px;
+        background: #000;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        z-index: 6;
+    }
+
+    .showcase-container img { width: 100%; height: 100%; object-fit: cover; }
+
+    /* حركة الطفو */
+    @keyframes smoothSoftFloat {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-15px); }
+    }
+
+    /* تنسيقات النصوص والألوان التراثية */
+    .section-badge-trad {
+        color: #D4A373;
+        font-weight: 800;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    .features-grid-custom {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin-bottom: 35px;
+    }
+
+    .feat-box {
+        font-weight: 700;
+        font-size: 0.9rem;
+        color: #444;
+        display: flex;
+        align-items: center;
+    }
+
+    .feat-box i {
+        color: #D4A373; /* اللون النحاسي */
+        margin-right: 12px;
+        font-size: 1.1rem;
+    }
+
+    /* الزرار باللون النحاسي الدافئ */
+    .btn-main-trad {
+        display: inline-block;
+        padding: 16px 45px;
+        background: #D4A373;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 50px; /* شكل بيضاوي للمسة عصرية */
+        font-weight: 700;
+        transition: 0.4s;
+        box-shadow: 0 4px 15px rgba(212, 163, 115, 0.3);
+    }
+
+    .btn-main-trad:hover {
+        background: #333;
+        transform: translateY(-3px);
+        color: #fff;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+
+    /* الاستجابة للهواتف */
+    @media (max-width: 768px) {
+        .showcase-container { max-width: 100%; margin-bottom: 30px; }
+        .tablet-frame { width: 85%; height: 240px; }
+        .phone-frame-right { width: 110px; height: 220px; }
+        .features-grid-custom { grid-template-columns: 1fr; }
+        .display-6 { font-size: 1.8rem; }
     }
 </style>
-
 
 
 
@@ -263,8 +435,8 @@
                 <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="office-item p-4 shadow-sm">
                         <div class="office-img mb-4 position-relative overflow-hidden rounded">
-                            <a href="img/tradition-hospitality.jpg" data-lightbox="trad-gallery" data-title="Generosity (Karam)">
-                                <img src="img/tradition-hospitality.jpg" class="img-fluid w-100" alt="Hospitality">
+                            <a href="img/eg-tr-3.jpg" data-lightbox="trad-gallery" data-title="Generosity (Karam)">
+                                <img src="img/eg-tr-3.jpg" class="img-fluid w-100" alt="Hospitality">
                                 <div class="egy-overlay"><i class="fa fa-search-plus"></i></div>
                             </a>
                         </div>
@@ -278,8 +450,8 @@
                 <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="office-item p-4 shadow-sm">
                         <div class="office-img mb-4 position-relative overflow-hidden rounded">
-                            <a href="img/tradition-fanoos.jpg" data-lightbox="trad-gallery" data-title="Ramadan Vibes">
-                                <img src="img/tradition-fanoos.jpg" class="img-fluid w-100" alt="Ramadan">
+                            <a href="img/eg-tr-5.jpg" data-lightbox="trad-gallery" data-title="Ramadan Vibes">
+                                <img src="img/eg-tr-5.jpg" class="img-fluid w-100" alt="Ramadan">
                                 <div class="egy-overlay"><i class="fa fa-search-plus"></i></div>
                             </a>
                         </div>
@@ -293,8 +465,8 @@
                 <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="office-item p-4 shadow-sm">
                         <div class="office-img mb-4 position-relative overflow-hidden rounded">
-                            <a href="img/tradition-tea.jpg" data-lightbox="trad-gallery" data-title="The Tea Ritual">
-                                <img src="img/tradition-tea.jpg" class="img-fluid w-100" alt="Tea">
+                            <a href="img/eg-tr-6.webp" data-lightbox="trad-gallery" data-title="The Tea Ritual">
+                                <img src="img/eg-tr-6.webp" class="img-fluid w-100" alt="Tea">
                                 <div class="egy-overlay"><i class="fa fa-search-plus"></i></div>
                             </a>
                         </div>
@@ -308,8 +480,8 @@
                 <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
                     <div class="office-item p-4 shadow-sm">
                         <div class="office-img mb-4 position-relative overflow-hidden rounded">
-                            <a href="img/tradition-tannoura.jpg" data-lightbox="trad-gallery" data-title="Folk Arts">
-                                <img src="img/tradition-tannoura.jpg" class="img-fluid w-100" alt="Arts">
+                            <a href="img/eg-tr-7.jpg" data-lightbox="trad-gallery" data-title="Folk Arts">
+                                <img src="img/eg-tr-7.jpg" class="img-fluid w-100" alt="Arts">
                                 <div class="egy-overlay"><i class="fa fa-search-plus"></i></div>
                             </a>
                         </div>
@@ -323,8 +495,8 @@
                 <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="office-item p-4 shadow-sm">
                         <div class="office-img mb-4 position-relative overflow-hidden rounded">
-                            <a href="img/tradition-friday.jpg" data-lightbox="trad-gallery" data-title="Friday Family Gathering">
-                                <img src="img/tradition-friday.jpg" class="img-fluid w-100" alt="Family">
+                            <a href="img/eg-tr-8.jpg" data-lightbox="trad-gallery" data-title="Friday Family Gathering">
+                                <img src="img/eg-tr-8.jpg" class="img-fluid w-100" alt="Family">
                                 <div class="egy-overlay"><i class="fa fa-search-plus"></i></div>
                             </a>
                         </div>
@@ -338,8 +510,8 @@
                 <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
                     <div class="office-item p-4 shadow-sm">
                         <div class="office-img mb-4 position-relative overflow-hidden rounded">
-                            <a href="img/tradition-sham.jpg" data-lightbox="trad-gallery" data-title="Sham El-Nessim">
-                                <img src="img/tradition-sham.jpg" class="img-fluid w-100" alt="Spring">
+                            <a href="img/eg-tr-9.jpg" data-lightbox="trad-gallery" data-title="Sham El-Nessim">
+                                <img src="img/eg-tr-9.jpg" class="img-fluid w-100" alt="Spring">
                                 <div class="egy-overlay"><i class="fa fa-search-plus"></i></div>
                             </a>
                         </div>
@@ -353,8 +525,8 @@
                 <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="office-item p-4 shadow-sm">
                         <div class="office-img mb-4 position-relative overflow-hidden rounded">
-                            <a href="img/tradition-food.jpg" data-lightbox="trad-gallery" data-title="Street Food Culture">
-                                <img src="img/tradition-food.jpg" class="img-fluid w-100" alt="Food">
+                            <a href="img/eg-tr-10.jpg" data-lightbox="trad-gallery" data-title="Street Food Culture">
+                                <img src="img/eg-tr-10.jpg" class="img-fluid w-100" alt="Food">
                                 <div class="egy-overlay"><i class="fa fa-search-plus"></i></div>
                             </a>
                         </div>
@@ -368,8 +540,8 @@
                 <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
                     <div class="office-item p-4 shadow-sm">
                         <div class="office-img mb-4 position-relative overflow-hidden rounded">
-                            <a href="img/tradition-henna.jpg" data-lightbox="trad-gallery" data-title="Henna Nights">
-                                <img src="img/tradition-henna.jpg" class="img-fluid w-100" alt="Henna">
+                            <a href="img/eg-tr-11.webp" data-lightbox="trad-gallery" data-title="Henna Nights">
+                                <img src="img/eg-tr-11.webp" class="img-fluid w-100" alt="Henna">
                                 <div class="egy-overlay"><i class="fa fa-search-plus"></i></div>
                             </a>
                         </div>
