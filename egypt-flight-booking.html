@@ -173,625 +173,250 @@
 
 
 
+<div id="flight-page-refined">
 
-
-<style>
-.hero-features {
-    position: relative;
-    min-height: 40vh;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-}
-
-/* الفيديو */
-.hero-video {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* طبقة تغميق */
-.hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.45);
-}
-
-/* المحتوى */
-.hero-content {
-    position: relative;
-    z-index: 2;
-}
-
-/* الكروت — هادئة */
-.feature-card {
-    background: rgba(255,255,255,0.92);
-    backdrop-filter: blur(6px);
-    padding: 28px 22px;
-    border-radius: 18px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
-    transition: 0.3s;
-    height: 100%;
-}
-
-/* Hover خفيف */
-.feature-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 18px 35px rgba(0,0,0,0.16);
-}
-
-/* أيقونة أصغر وهادئة */
-.icon-box {
-    font-size: 26px;
-    color: #0d6efd;
-    margin-bottom: 12px;
-}
-
-/* النص */
-.feature-card h4 {
-    font-weight: 700;
-    font-size: 20px;
-    margin-bottom: 8px;
-}
-
-.feature-card p {
-    color: #555;
-    font-size: 15px;
-    margin: 0;
-}
-
-@media (max-width: 768px) {
-    .feature-card {
-        padding: 22px 18px;
-    }
-}
-</style>
-
-
-<!-- SECTION -->
-<div class="container-fluid hero-features">
-
-    <!-- فيديو الخلفية -->
-    <video class="hero-video" autoplay muted loop playsinline>
-        <source src="video/eg-ar.mp4" type="video/mp4">
-    </video>
-
-    <!-- طبقة تغميق -->
-   
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="container py-5">
-    <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
-        <h5 class="sub-title text-primary px-3">Flight Connections</h5>
-        <h2 class="display-5 fw-bold mb-4">Flights from <span class="text-success">Venezuela</span> <i class="fas fa-long-arrow-alt-right mx-2 text-muted"></i> <span class="text-primary">Cairo</span></h2>
-    </div>
-
-    <div class="row justify-content-center mb-5 wow fadeInUp" data-wow-delay="0.3s">
-        <div class="col-md-5">
-            <div class="input-group shadow-sm rounded-pill overflow-hidden border-0">
-                <span class="input-group-text bg-white border-0 ps-4">
-                    <i class="fas fa-plane-departure text-primary"></i>
-                </span>
-                <select id="airport" class="form-select form-select-lg border-0 py-3" style="font-size: 1rem; cursor: pointer;" onchange="showRoutes()">
-                    <option value="CCS">Caracas (CCS) - Simon Bolivar</option>
-                    <option value="MAR">Maracaibo (MAR) - La Chinita</option>
-                    <option value="VLN">Valencia (VLN) - Arturo Michelena</option>
-                </select>
+    <div class="container-fluid hero-features p-0 overflow-hidden" style="height: 50vh; min-height: 400px;">
+        <video class="hero-video" autoplay muted loop playsinline style="filter: brightness(0.5);">
+            <source src="video/eg-ar.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content h-100 d-flex align-items-center">
+            <div class="row w-100">
+                <div class="col-lg-8 text-white reveal-up">
+                    <h6 class="text-uppercase fw-bold text-warning mb-2" style="letter-spacing: 4px;">Global Logistics</h6>
+                    <h1 class="display-4 fw-bold mb-0">Venezuela <i class="fas fa-long-arrow-alt-right mx-2 text-primary text-glow"></i> Cairo</h1>
+                    <p class="lead opacity-75 mt-3">Intercontinental connections designed for comfort and safety.</p>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="row g-4 justify-content-center" id="routesContainer">
+    <div class="container position-relative" style="margin-top: -60px; z-index: 20;">
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-8 reveal-stagger">
+                <div class="safety-box-premium text-start p-4 shadow-lg">
+                    <div class="row align-items-center">
+                        <div class="col-md-1 text-center d-none d-md-block">
+                            <div class="icon-circle bg-gradient-primary" style="width: 50px; height: 50px; font-size: 20px;">
+                                <i class="fas fa-plane-departure"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-11">
+                            <label class="fw-bold small text-muted mb-2 ms-2">Select Departure Airport</label>
+                            <select id="airport" class="form-select form-select-lg border-0 shadow-none bg-light rounded-pill" style="cursor: pointer;" onchange="showRoutes()">
+                                <option value="CCS">Caracas (CCS) - Simon Bolivar</option>
+                                <option value="MAR">Maracaibo (MAR) - La Chinita</option>
+                                <option value="VLN">Valencia (VLN) - Arturo Michelena</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+
+    <div class="container py-5 mt-4">
+        <div class="text-center mb-5 reveal-up">
+            <h2 class="display-6 fw-bold">Available Flight Paths</h2>
+            <div class="mx-auto bg-primary rounded-pill" style="width: 60px; height: 4px;"></div>
+        </div>
+
+        <div class="row g-4 justify-content-center" id="routesContainer">
+            </div>
+    </div>
+
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-xl-6 reveal-up">
+                <div class="mockup-container position-relative">
+                    <div class="tablet-mockup shadow-lg">
+                        <div class="tablet-screen">
+                            <img src="img/eg-eg-ar.jpeg" class="w-100 h-100" style="object-fit: cover;" alt="Egypt Guide">
+                        </div>
+                        <div class="tablet-reflection"></div>
+                    </div>
+                    <div class="mobile-mockup floating-soft shadow-lg">
+                        <div class="mobile-screen">
+                            <img src="img/eg-vz-ar.jpg" class="w-100 h-100" style="object-fit: cover;" alt="Venezuela Connection">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-6">
+                <div class="ps-xl-4">
+                    <h6 class="text-primary fw-bold text-uppercase mb-3" style="letter-spacing: 2px;">Smooth Transitions</h6>
+                    <h2 class="display-5 fw-bold mb-4">Bridging Continents</h2>
+                    <p class="text-muted fs-5 mb-4">Experience a hassle-free journey from South America to Egypt with our verified partner routes.</p>
+                    
+                    <div class="safety-box-premium text-start mb-4 reveal-up shadow-sm p-3">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="icon-circle bg-gradient-primary" style="width: 45px; height: 45px; font-size: 16px;">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Optimized Layovers</h6>
+                                <p class="small text-muted mb-0">Routes selected for minimum waiting time and maximum comfort.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://www.egyptair.com" target="_blank" class="btn btn-primary btn-lg rounded-pill px-5 py-3 fw-bold shadow-sm reveal-up">
+                        Book Your Trip <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
+<style>
+    /* Global Elements */
+    .hero-features { position: relative; border-radius: 0 0 50px 50px; }
+    .hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .text-glow { text-shadow: 0 0 15px rgba(13, 110, 253, 0.6); }
+
+    /* Safety Box Refined */
+    .safety-box-premium {
+        background: #ffffff;
+        border-radius: 35px;
+        padding: 40px 30px;
+        text-align: center;
+        box-shadow: 0 15px 45px rgba(0,0,0,0.06);
+        border: 1px solid rgba(0,0,0,0.03);
+        transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    .safety-box-premium:hover { transform: translateY(-10px); box-shadow: 0 25px 60px rgba(0,0,0,0.12); }
+
+    .icon-circle {
+        border-radius: 20px; display: flex; align-items: center; justify-content: center; color: white; margin: 0 auto;
+    }
+    .bg-gradient-primary { background: linear-gradient(135deg, #0d6efd, #00d4ff); }
+
+    /* Visual Flight Path Styling */
+    .flight-path-visual {
+        background: #f9f9f9;
+        border-radius: 20px;
+        padding: 20px 10px;
+        border: 1px dashed #ddd;
+    }
+    .path-dot {
+        width: 12px; height: 12px; border-radius: 50%; background: #0d6efd;
+        border: 2px solid #fff; box-shadow: 0 0 0 3px rgba(13,110,253,0.1);
+        margin: 0 auto; z-index: 2; position: relative;
+    }
+    .path-line {
+        height: 2px; background: #e0e0e0; flex-grow: 1; margin: 0 5px;
+        position: relative; top: -22px; /* Adjust based on dot size */
+    }
+    .path-line i { font-size: 10px; color: #bbb; background: #f9f9f9; padding: 0 4px; }
+
+    /* Mockups */
+    .mockup-container { padding: 40px 0; }
+    .tablet-mockup {
+        width: 90%; height: 400px; background: #111; border-radius: 40px;
+        padding: 12px; border: 6px solid #222; position: relative;
+    }
+    .tablet-screen { border-radius: 30px; overflow: hidden; height: 100%; }
+    .mobile-mockup {
+        width: 165px; height: 330px; background: #111; border-radius: 35px;
+        padding: 10px; border: 5px solid #222; position: absolute; right: -10px; bottom: -20px; z-index: 5;
+    }
+    .mobile-screen { border-radius: 25px; overflow: hidden; height: 100%; }
+    .floating-soft { animation: floatAnim 5s ease-in-out infinite; }
+    @keyframes floatAnim { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+
+    /* Reveal Animations */
+    .reveal-up, .reveal-stagger { opacity: 0; transform: translateY(50px); }
+    .reveal-up.active, .reveal-stagger.active { 
+        animation: fadeInUpDesign 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; 
+    }
+    @keyframes fadeInUpDesign { to { opacity: 1; transform: translateY(0); } }
+</style>
+
 <script>
-const routes = {
+const routesData = {
     CCS: [
-        { airline: "Turkish Airlines", transit: ["Istanbul"], icon: "fa-plane", url: "https://www.turkishairlines.com" },
-        { airline: "Qatar Airways", transit: ["Doha"], icon: "fa-plane", url: "https://www.qatarairways.com" },
-        { airline: "Air Europa + EgyptAir", transit: ["Madrid"], icon: "fa-plane", url: "https://www.aireuropa.com" }
+        { airline: "Turkish Airlines", from: "CCS", transit: "IST", to: "CAI", url: "https://www.turkishairlines.com" },
+        { airline: "Qatar Airways", from: "CCS", transit: "DOH", to: "CAI", url: "https://www.qatarairways.com" },
+        { airline: "Air Europa", from: "CCS", transit: "MAD", to: "CAI", url: "https://www.aireuropa.com" }
     ],
     MAR: [
-        { airline: "Turkish Airlines", transit: ["Istanbul"], icon: "fa-plane", url: "https://www.turkishairlines.com" },
-        { airline: "Lufthansa + EgyptAir", transit: ["Frankfurt"], icon: "fa-plane", url: "https://www.lufthansa.com" }
+        { airline: "Turkish Airlines", from: "MAR", transit: "IST", to: "CAI", url: "https://www.turkishairlines.com" },
+        { airline: "Lufthansa", from: "MAR", transit: "FRA", to: "CAI", url: "https://www.lufthansa.com" }
     ],
     VLN: [
-        { airline: "Qatar Airways", transit: ["Doha"], icon: "fa-plane", url: "https://www.qatarairways.com" },
-        { airline: "Iberia + EgyptAir", transit: ["Madrid"], icon: "fa-plane", url: "https://www.iberia.com" }
+        { airline: "Qatar Airways", from: "VLN", transit: "DOH", to: "CAI", url: "https://www.qatarairways.com" },
+        { airline: "Iberia", from: "VLN", transit: "MAD", to: "CAI", url: "https://www.iberia.com" }
     ]
 };
 
 function showRoutes() {
     const airport = document.getElementById("airport").value;
     const container = document.getElementById("routesContainer");
-    
-    // مسح الحاوية تمهيداً لحركة الظهور الجديد
     container.innerHTML = "";
 
-    routes[airport].forEach((r, index) => {
-        const transitText = r.transit.join(" → ");
-        
-        // إنشاء عنصر الكارت برمجياً لإضافة الـ Classes الخاصة بالأنيميشن
+    routesData[airport].forEach((r, index) => {
         const cardCol = document.createElement("div");
-        cardCol.className = `col-md-6 col-lg-4 animate-up`;
-        // تأخير بسيط لكل كارت ليظهروا واحداً تلو الآخر
-        cardCol.style.animationDelay = `${index * 0.15}s`;
+        cardCol.className = `col-lg-4 col-md-6 reveal-stagger active`;
+        cardCol.style.animationDelay = `${index * 0.1}s`;
 
         cardCol.innerHTML = `
-            <div class="card shadow-lg border-0 h-100 rounded-5 overflow-hidden hover-card border-top border-4 border-primary">
-                <div class="card-body text-center p-4">
-                    <div class="mb-3">
-                        <div class="bg-light rounded-circle d-inline-flex align-items-center justify-content-center shadow-sm" style="width: 70px; height: 70px;">
-                            <i class="fas ${r.icon} fa-2x text-primary"></i>
+            <div class="safety-box-premium h-100">
+                <h5 class="fw-bold mb-3">${r.airline}</h5>
+                
+                <div class="flight-path-visual mb-4">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div style="flex:1">
+                            <div class="path-dot"></div>
+                            <small class="fw-bold d-block mt-2">${r.from}</small>
+                            <span style="font-size:10px" class="text-muted text-uppercase">Origin</span>
+                        </div>
+                        
+                        <div class="path-line"><i class="fas fa-plane"></i></div>
+
+                        <div style="flex:1">
+                            <div class="path-dot" style="background:#ffc107"></div>
+                            <small class="fw-bold d-block mt-2 text-warning">${r.transit}</small>
+                            <span style="font-size:10px" class="text-muted text-uppercase">Transit</span>
+                        </div>
+
+                        <div class="path-line"><i class="fas fa-chevron-right"></i></div>
+
+                        <div style="flex:1">
+                            <div class="path-dot" style="background:#198754"></div>
+                            <small class="fw-bold d-block mt-2">${r.to}</small>
+                            <span style="font-size:10px" class="text-muted text-uppercase">Egypt</span>
                         </div>
                     </div>
-                    
-                    <h5 class="fw-bold mb-2">${r.airline}</h5>
-
-                    <div class="mb-4">
-                        <span class="badge bg-primary-light text-primary rounded-pill px-3 py-2">
-                             <i class="fas fa-clock me-1"></i> Transit Flight
-                        </span>
-                    </div>
-
-                    <p class="mb-4 text-muted small">
-                        <i class="fas fa-map-marker-alt text-success me-1"></i> Venezuela 
-                        <i class="fas fa-chevron-right mx-1" style="font-size: 0.7rem;"></i> 
-                        <span class="text-dark fw-bold">${transitText}</span>
-                        <i class="fas fa-chevron-right mx-1" style="font-size: 0.7rem;"></i> 
-                        <i class="fas fa-pyramid text-primary me-1"></i> Cairo
-                    </p>
-
-                    <button class="btn btn-primary rounded-pill px-5 py-2 fw-bold shadow-sm transition-all"
-                        onclick="window.open('${r.url}','_blank')">
-                        Book Flight
-                    </button>
                 </div>
+
+                <button onclick="window.open('${r.url}','_blank')" class="btn btn-primary w-100 rounded-pill fw-bold py-2 shadow-sm">
+                    Book Flight <i class="fas fa-external-link-alt ms-2" style="font-size:12px"></i>
+                </button>
             </div>
         `;
         container.appendChild(cardCol);
     });
 }
 
-// تشغيل الدالة عند التحميل لأول مرة
-document.addEventListener("DOMContentLoaded", showRoutes);
-</script>
-
-<style>
-/* كلاس الانيميشن من أسفل لأعلى */
-.animate-up {
-    animation: fadeInUpCustom 0.8s both cubic-bezier(0.2, 0.8, 0.2, 1);
-}
-
-@keyframes fadeInUpCustom {
-    from {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* تأثيرات الكارت */
-.hover-card {
-    transition: all 0.4s ease;
-    background: #ffffff;
-}
-
-.hover-card:hover {
-    transform: translateY(-12px) !important;
-    box-shadow: 0 25px 50px rgba(0,0,0,0.15) !important;
-}
-
-.bg-primary-light {
-    background-color: rgba(var(--bs-primary-rgb), 0.1);
-}
-
-/* تحسين شكل الـ Select */
-.form-select:focus {
-    box-shadow: none;
-    border-color: transparent;
-}
-
-.transition-all {
-    transition: 0.3s;
-}
-
-.btn-primary:hover {
-    letter-spacing: 1px;
-    background-color: var(--bs-secondary);
-}
-</style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="container-fluid py-5 overflow-hidden" style="background: linear-gradient(180deg,#f8faf5,#ffffff);">
-    <div class="container py-4">
-        <div class="row g-5 align-items-center">
-
-            <!-- MOCKUPS -->
-            <div class="col-xl-6 reveal-up">
-
-                <div class="mockup-container position-relative">
-
-                    <!-- Tablet -->
-                    <div class="tablet-mockup shadow-lg">
-                        <div class="tablet-screen">
-                            <img src="img/eg-eg-ar.jpeg" class="w-100 h-100" style="object-fit: cover;" alt="">
-                        </div>
-                        <div class="tablet-reflection"></div>
-                    </div>
-
-                    <!-- Mobile -->
-                    <div class="mobile-mockup floating-soft">
-                        <div class="mobile-screen">
-                            <img src="img/eg-vz-ar.jpg" class="w-100 h-100" style="object-fit: cover;" alt="">
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- TEXT -->
-            <div class="col-xl-6">
-
-                <span class="badge bg-primary-subtle text-primary mb-3 px-3 py-2 reveal-up">
-                    Flight Management
-                </span>
-
-                <h1 class="display-5 fw-bold mb-4 reveal-up">
-                    From the <span class="text-primary">Orinoco</span><br>
-                    to the <span class="text-secondary">Nile</span>
-                </h1>
-
-                <p class="text-muted fs-5 mb-4 reveal-up">
-                    We connect South America with North Africa through optimized
-                    partner routes and premium long-haul experiences.
-                </p>
-
-                <!-- INFO BOX -->
-                <div class="route-box mb-4 reveal-up">
-                    <div class="d-flex align-items-start gap-3">
-                        <i class="fas fa-route text-primary fa-lg mt-1"></i>
-                        <div>
-                            <h6 class="fw-bold mb-1">
-                                Caracas → Istanbul / Madrid → Cairo
-                            </h6>
-                            <p class="small text-muted mb-0">
-                                Carefully selected transit routes with trusted airlines
-                                for smoother connections.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <a href="https://www.egyptair.com" target="_blank"
-                   class="btn btn-primary btn-lg rounded-pill px-5 py-3 fw-bold btn-glow reveal-up">
-                   Explore Flight Schedules
-                </a>
-
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<style>
-
-/* ===== Mockup Layout ===== */
-
-.mockup-container {
-    padding: 30px 0;
-}
-
-/* Tablet */
-.tablet-mockup {
-    width: 88%;
-    height: 420px;
-    background: linear-gradient(#2e2e2e,#1e1e1e);
-    border-radius: 42px;
-    padding: 16px;
-    border: 5px solid #3a3a3a;
-    position: relative;
-}
-
-.tablet-screen {
-    width: 100%;
-    height: 100%;
-    border-radius: 28px;
-    overflow: hidden;
-    background: #000;
-}
-
-/* انعكاس إضاءة */
-.tablet-reflection {
-    position: absolute;
-    inset: 0;
-    border-radius: 42px;
-    background: linear-gradient(120deg, transparent 30%, rgba(255,255,255,.08), transparent 70%);
-    pointer-events: none;
-}
-
-/* Mobile */
-.mobile-mockup {
-    width: 180px;
-    height: 360px;
-    background: linear-gradient(#1f1f1f,#111);
-    border-radius: 38px;
-    padding: 12px;
-    position: absolute;
-    right: -10px;
-    bottom: -25px;
-    border: 4px solid #2c2c2c;
-    box-shadow: 0 20px 40px rgba(0,0,0,.25);
-    z-index: 5;
-}
-
-.mobile-screen {
-    width: 100%;
-    height: 100%;
-    border-radius: 26px;
-    overflow: hidden;
-    background: #000;
-}
-
-/* حركة هادئة */
-.floating-soft {
-    animation: floatSoft 6s ease-in-out infinite;
-}
-
-@keyframes floatSoft {
-    0%,100% { transform: translateY(0); }
-    50% { transform: translateY(-18px); }
-}
-
-/* ===== Text Area ===== */
-
-.route-box {
-    background: #ffffff;
-    border-radius: 18px;
-    padding: 22px;
-    box-shadow: 0 12px 30px rgba(0,0,0,.08);
-    border-left: 4px solid #0d6efd;
-}
-
-/* زرار */
-.btn-glow {
-    transition: .25s;
-    box-shadow: 0 8px 18px rgba(13,110,253,.25);
-}
-
-.btn-glow:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 14px 28px rgba(13,110,253,.35);
-}
-
-/* ===== Reveal Animation ===== */
-.reveal-up {
-    opacity: 0;
-    transform: translateY(60px);
-    transition: opacity .9s ease, transform .9s ease;
-}
-
-.reveal-up.active {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Responsive */
-@media (max-width: 992px) {
-
-    .tablet-mockup {
-        width: 100%;
-        height: 360px;
-    }
-
-    .mobile-mockup {
-        right: 0;
-        bottom: -15px;
-        width: 150px;
-        height: 300px;
-    }
-}
-</style>
-
-<script>
+// Global Activation Logic
 document.addEventListener("DOMContentLoaded", function() {
-    const reveals = document.querySelectorAll('.reveal-up');
-
+    showRoutes(); // Initial Load
+    
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry, index) => {
             if (entry.isIntersecting) {
                 setTimeout(() => {
                     entry.target.classList.add('active');
-                }, index * 120); // تأخير تدريجي لكل عنصر
+                }, index * 120);
             }
         });
-    }, {
-        threshold: 0.15
-    });
+    }, { threshold: 0.1 });
 
-    reveals.forEach(el => observer.observe(el));
+    document.querySelectorAll('.reveal-up, .reveal-stagger').forEach(el => observer.observe(el));
 });
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         
