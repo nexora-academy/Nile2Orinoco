@@ -179,7 +179,7 @@
     .skiptranslate iframe, .goog-te-banner-frame, #goog-gt-tt { display: none !important; }
     .goog-te-gadget { color: transparent !important; font-size: 0px !important; }
     html { padding-top: 0 !important; }
-</style>              </div>
+</style>  <div id="google_translate_element" style="display:none;"></div>            </div>
             </nav>
         </div>
 
@@ -594,7 +594,11 @@ counters.forEach(counter => observer.observe(counter));
 
 
 
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
+<script src="js/main.js"></script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     </body>
 
