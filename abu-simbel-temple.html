@@ -117,53 +117,52 @@
 <div id="google_translate_element" style="display:none;"></div>
 
 <script type="text/javascript">
-    // 1. تشغيل المحرك
+    // 1. إعداد المحرك
     function googleTranslateElementInit() {
         new google.translate.TranslateElement({
-            pageLanguage: 'en', 
+            pageLanguage: 'en',
             includedLanguages: 'ar,en,es',
             autoDisplay: false
         }, 'google_translate_element');
-
-        // ميزة إضافية: التحقق من وجود لغة محفوظة مسبقاً بعد تحميل المحرك
-        setTimeout(function() {
-            var savedLang = localStorage.getItem('userLanguage');
-            if (savedLang && savedLang !== 'en') {
-                changeLanguage(savedLang);
-            }
-        }, 1000); // ننتظر ثانية لضمان تحميل القائمة
     }
 
-    // 2. دالة تغيير اللغة مع الحفظ في الذاكرة
+    // 2. دالة تغيير اللغة مع الحفظ الذكي
     function changeLanguage(lang) {
+        localStorage.setItem('userLanguage', lang); // نحفظ اللغة فوراً
+        
         var selectField = document.querySelector(".goog-te-combo");
         if (selectField) {
             selectField.value = lang;
             selectField.dispatchEvent(new Event('change'));
-            localStorage.setItem('userLanguage', lang); // حفظ الاختيار هنا
         } else {
-            setTimeout(function() {
-                changeLanguage(lang);
-            }, 500);
+            // محاولة إعادة التشغيل لو المترجم مهنج على السيرفر
+            setTimeout(function() { changeLanguage(lang); }, 500);
         }
     }
 
-    // 3. تحميل الملف
-    (function() {
-        var gtScript = document.createElement('script');
-        gtScript.type = 'text/javascript';
-        gtScript.async = true;
-        gtScript.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(gtScript, s);
-    })();
+    // 3. كود التشغيل التلقائي عند التحميل (مهم جداً لـ GitHub/Vercel)
+    window.addEventListener('load', function() {
+        var checkReplace = setInterval(function() {
+            var selectField = document.querySelector(".goog-te-combo");
+            var savedLang = localStorage.getItem('userLanguage');
+            
+            if (selectField) {
+                if (savedLang && savedLang !== 'en') {
+                    changeLanguage(savedLang);
+                }
+                clearInterval(checkReplace); // توقف عن البحث بمجرد التنفيذ
+            }
+        }, 300); // بيفحص كل 300 مللي ثانية لحد ما المحرك يظهر
+    });
 </script>
 
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 <style>
+    /* الحل النهائي لمشاكل التنسيق على السيرفرات */
     body { top: 0 !important; position: static !important; }
-    .skiptranslate iframe, .goog-te-banner-frame { display: none !important; }
+    .skiptranslate iframe, .goog-te-banner-frame, #goog-gt-tt { display: none !important; }
     .goog-te-gadget { color: transparent !important; font-size: 0px !important; }
-    /* منع ظهور الفراغ الأبيض في الأعلى */
     html { padding-top: 0 !important; }
 </style>
             </div>
