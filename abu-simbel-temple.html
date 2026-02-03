@@ -104,16 +104,68 @@
                     </div>
                     <a href="index.html" class="nav-item nav-link">Back To Home Page</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <i class="fa fa-language me-2"></i>Language
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end m-0">
-                            <a href="javascript:void(0)" onclick="setLanguage('ar')" class="dropdown-item">العربية</a>
-                            <a href="javascript:void(0)" onclick="setLanguage('en')" class="dropdown-item">English</a>
-                            <a href="javascript:void(0)" onclick="setLanguage('es')" class="dropdown-item">Español</a>
-                        </div>
-                    </div>
-                </div>
+    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+        <i class="fa fa-language me-2"></i>Language
+    </a>
+    <div class="dropdown-menu dropdown-menu-end m-0">
+        <a href="javascript:void(0)" onclick="changeLanguage('ar')" class="dropdown-item">العربية</a>
+        <a href="javascript:void(0)" onclick="changeLanguage('en')" class="dropdown-item">English</a>
+        <a href="javascript:void(0)" onclick="changeLanguage('es')" class="dropdown-item">Español</a>
+    </div>
+</div>
+
+<div id="google_translate_element" style="display:none;"></div>
+
+<script type="text/javascript">
+    // 1. تشغيل المحرك
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en', 
+            includedLanguages: 'ar,en,es',
+            autoDisplay: false
+        }, 'google_translate_element');
+
+        // ميزة إضافية: التحقق من وجود لغة محفوظة مسبقاً بعد تحميل المحرك
+        setTimeout(function() {
+            var savedLang = localStorage.getItem('userLanguage');
+            if (savedLang && savedLang !== 'en') {
+                changeLanguage(savedLang);
+            }
+        }, 1000); // ننتظر ثانية لضمان تحميل القائمة
+    }
+
+    // 2. دالة تغيير اللغة مع الحفظ في الذاكرة
+    function changeLanguage(lang) {
+        var selectField = document.querySelector(".goog-te-combo");
+        if (selectField) {
+            selectField.value = lang;
+            selectField.dispatchEvent(new Event('change'));
+            localStorage.setItem('userLanguage', lang); // حفظ الاختيار هنا
+        } else {
+            setTimeout(function() {
+                changeLanguage(lang);
+            }, 500);
+        }
+    }
+
+    // 3. تحميل الملف
+    (function() {
+        var gtScript = document.createElement('script');
+        gtScript.type = 'text/javascript';
+        gtScript.async = true;
+        gtScript.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gtScript, s);
+    })();
+</script>
+
+<style>
+    body { top: 0 !important; position: static !important; }
+    .skiptranslate iframe, .goog-te-banner-frame { display: none !important; }
+    .goog-te-gadget { color: transparent !important; font-size: 0px !important; }
+    /* منع ظهور الفراغ الأبيض في الأعلى */
+    html { padding-top: 0 !important; }
+</style>
             </div>
         </nav>
     </div>
