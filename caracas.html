@@ -119,11 +119,63 @@
         <i class="fa fa-language me-2"></i>Language
     </a>
     <div class="dropdown-menu dropdown-menu-end m-0">
-        <a href="javascript:void(0)" onclick="setLanguage('ar')" class="dropdown-item">العربية</a>
-        <a href="javascript:void(0)" onclick="setLanguage('en')" class="dropdown-item">English</a>
-        <a href="javascript:void(0)" onclick="setLanguage('es')" class="dropdown-item">Español</a>
+        <a href="javascript:void(0)" onclick="changeLanguage('ar')" class="dropdown-item">العربية</a>
+        <a href="javascript:void(0)" onclick="changeLanguage('en')" class="dropdown-item">English</a>
+        <a href="javascript:void(0)" onclick="changeLanguage('es')" class="dropdown-item">Español</a>
     </div>
-</div>                </div>
+</div>
+
+<div id="google_translate_element" style="display:none;"></div>
+
+<script type="text/javascript">
+    // 1. إعداد المحرك
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: 'ar,en,es',
+            autoDisplay: false
+        }, 'google_translate_element');
+    }
+
+    // 2. دالة تغيير اللغة مع الحفظ الذكي
+    function changeLanguage(lang) {
+        localStorage.setItem('userLanguage', lang); // نحفظ اللغة فوراً
+        
+        var selectField = document.querySelector(".goog-te-combo");
+        if (selectField) {
+            selectField.value = lang;
+            selectField.dispatchEvent(new Event('change'));
+        } else {
+            // محاولة إعادة التشغيل لو المترجم مهنج على السيرفر
+            setTimeout(function() { changeLanguage(lang); }, 500);
+        }
+    }
+
+    // 3. كود التشغيل التلقائي عند التحميل (مهم جداً لـ GitHub/Vercel)
+    window.addEventListener('load', function() {
+        var checkReplace = setInterval(function() {
+            var selectField = document.querySelector(".goog-te-combo");
+            var savedLang = localStorage.getItem('userLanguage');
+            
+            if (selectField) {
+                if (savedLang && savedLang !== 'en') {
+                    changeLanguage(savedLang);
+                }
+                clearInterval(checkReplace); // توقف عن البحث بمجرد التنفيذ
+            }
+        }, 300); // بيفحص كل 300 مللي ثانية لحد ما المحرك يظهر
+    });
+</script>
+
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<style>
+    /* الحل النهائي لمشاكل التنسيق على السيرفرات */
+    body { top: 0 !important; position: static !important; }
+    .skiptranslate iframe, .goog-te-banner-frame, #goog-gt-tt { display: none !important; }
+    .goog-te-gadget { color: transparent !important; font-size: 0px !important; }
+    html { padding-top: 0 !important; }
+</style>               </div>
             </nav>
         </div>
 
