@@ -1,16 +1,7 @@
 (function ($) {
     "use strict";
 
-    // 1. إدارة الـ Spinner
-    var hideSpinner = function () {
-        if ($('#spinner').length > 0) {
-            $('#spinner').removeClass('show');
-        }
-    };
-    // إخفاء إجباري بعد 3 ثواني حتى لو فشل كل شيء
-    setTimeout(hideSpinner, 3000);
-
-    // 2. إعدادات جوجل للترجمة (Global)
+    // 1. الترجمة الذكية
     window.googleTranslateElementInit = function() {
         new google.translate.TranslateElement({
             pageLanguage: 'en',
@@ -19,7 +10,6 @@
         }, 'google_translate_element');
     };
 
-    // 3. دالة تغيير اللغة وحفظها
     window.changeLanguage = function(lang) {
         localStorage.setItem('userLanguage', lang);
         var selectField = document.querySelector(".goog-te-combo");
@@ -29,21 +19,19 @@
         }
     };
 
-    // 4. التشغيل الذكي (يراقب ظهور محرك جوجل باستمرار)
+    // فحص اللغة وتطبيقها أول ما المترجم يجهز
     var checkTranslateReady = setInterval(function() {
         var selectField = document.querySelector(".goog-te-combo");
         var savedLang = localStorage.getItem('userLanguage');
-        
         if (selectField) {
-            hideSpinner(); // اخفي التحميل فوراً عند جاهزية المترجم
             if (savedLang && savedLang !== 'en') {
                 window.changeLanguage(savedLang);
             }
             clearInterval(checkTranslateReady);
         }
-    }, 500);
+    }, 300);
 
-    // --- أكواد القالب الباقية (WOW, Scroll, etc.) ---
+    // 2. بقية وظائف القالب (WOW, Scroll, Carousel)
     new WOW().init();
 
     $(window).scroll(function () {
